@@ -1,0 +1,312 @@
+[
+    {
+      "title": "Clean Water for All",
+      "description": "Provide access to clean water in underserved communities.",
+      "category": "Water",
+      "total_fund": 5000,
+      "fund_raised": 1200
+    },
+    {
+      "title": "Education for Every Child",
+      "description": "Support education initiatives to ensure every child has access to quality education.",
+      "category": "Education",
+      "total_fund": 10000,
+      "fund_raised": 3500
+    },
+    {
+      "title": "Feeding the Hungry",
+      "description": "Combat hunger by providing nutritious meals to those in need.",
+      "category": "Food",
+      "total_fund": 8000,
+      "fund_raised": 2000
+    },
+    {
+      "title": "Empowering Women in Tech",
+      "description": "Support programs that empower women in technology and STEM fields.",
+      "category": "Technology",
+      "total_fund": 12000,
+      "fund_raised": 4800
+    },
+    {
+      "title": "Green Energy Revolution",
+      "description": "Promote the use of sustainable and green energy sources.",
+      "category": "Environment",
+      "total_fund": 15000,
+      "fund_raised": 6000
+    },
+    {
+      "title": "Animal Welfare Initiative",
+      "description": "Protect and care for animals through various welfare programs.",
+      "category": "Animals",
+      "total_fund": 7000,
+      "fund_raised": 2500
+    },
+    {
+      "title": "Healthcare for Underserved Communities",
+      "description": "Provide healthcare services to communities with limited access.",
+      "category": "Health",
+      "total_fund": 9000,
+      "fund_raised": 3200
+    },
+    {
+      "title": "Art for Everyone",
+      "description": "Support art programs that make art accessible to everyone.",
+      "category": "Arts",
+      "total_fund": 6000,
+      "fund_raised": 1800
+    },
+    {
+      "title": "Community Sports Development",
+      "description": "Promote sports and physical activities in local communities.",
+      "category": "Sports",
+      "total_fund": 7500,
+      "fund_raised": 2800
+    },
+    {
+      "title": "Disaster Relief Fund",
+      "description": "Provide immediate relief to communities affected by natural disasters.",
+      "category": "Disaster Relief",
+      "total_fund": 11000,
+      "fund_raised": 4200
+    },
+    {
+      "title": "Renewable Energy for Rural Areas",
+      "description": "Bring renewable energy solutions to rural and remote areas.",
+      "category": "Environment",
+      "total_fund": 13000,
+      "fund_raised": 5500
+    },
+    {
+      "title": "Youth Empowerment Program",
+      "description": "Empower young individuals through skill development and mentorship.",
+      "category": "Education",
+      "total_fund": 9500,
+      "fund_raised": 3800
+    },
+    {
+      "title": "Cancer Research and Support",
+      "description": "Contribute to cancer research and provide support to patients.",
+      "category": "Health",
+      "total_fund": 18000,
+      "fund_raised": 7200
+    },
+    {
+      "title": "Tech for Good Hackathon",
+      "description": "Organize hackathons to develop technology solutions for social issues.",
+      "category": "Technology",
+      "total_fund": 8500,
+      "fund_raised": 3000
+    },
+    {
+      "title": "Sustainable Agriculture Initiative",
+      "description": "Promote sustainable farming practices and support farmers.",
+      "category": "Food",
+      "total_fund": 12000,
+      "fund_raised": 4500
+    },
+    {
+      "title": "Protecting Endangered Species",
+      "description": "Contribute to conservation efforts to protect endangered species.",
+      "category": "Animals",
+      "total_fund": 10000,
+      "fund_raised": 3700
+    },
+    {
+      "title": "Music Education for Underprivileged Youth",
+      "description": "Provide music education opportunities to underprivileged youth.",
+      "category": "Arts",
+      "total_fund": 7000,
+      "fund_raised": 2400
+    },
+    {
+      "title": "Community Garden Project",
+      "description": "Establish community gardens for sustainable food production.",
+      "category": "Environment",
+      "total_fund": 9500,
+      "fund_raised": 3200
+    },
+    {
+      "title": "Youth Mental Health Awareness",
+      "description": "Raise awareness and support for youth mental health issues.",
+      "category": "Health",
+      "total_fund": 11000,
+      "fund_raised": 4200
+    },
+    {
+      "title": "Women's Empowerment in Business",
+      "description": "Support programs that empower women in the business world.",
+      "category": "Education",
+      "total_fund": 13000,
+      "fund_raised": 5000
+    },
+    {
+      "title": "Community Fitness Center",
+      "description": "Establish fitness centers to promote community health and wellness.",
+      "category": "Sports",
+      "total_fund": 8000,
+      "fund_raised": 2800
+    },
+    {
+      "title": "Community Library Expansion",
+      "description": "Expand community libraries to increase access to books and education.",
+      "category": "Education",
+      "total_fund": 12000,
+      "fund_raised": 4800
+    },
+    {
+      "title": "Emergency Medical Services",
+      "description": "Provide emergency medical services in underserved areas.",
+      "category": "Health",
+      "total_fund": 15000,
+      "fund_raised": 6000
+    },
+    {
+      "title": "Green Transportation Initiative",
+      "description": "Promote green and sustainable transportation solutions.",
+      "category": "Environment",
+      "total_fund": 10000,
+      "fund_raised": 3800
+    },
+    {
+      "title": "Supporting Local Artisans",
+      "description": "Empower local artisans and promote handmade crafts.",
+      "category": "Arts",
+      "total_fund": 7500,
+      "fund_raised": 2500
+    },
+    {
+      "title": "Community Clean-Up Campaign",
+      "description": "Organize clean-up campaigns to beautify and improve local communities.",
+      "category": "Environment",
+      "total_fund": 9000,
+      "fund_raised": 3200
+    },
+  {
+    "title": "Tech Literacy for Seniors",
+    "description": "Provide technology education and support for senior citizens.",
+    "category": "Technology",
+    "total_fund": 8500,
+    "fund_raised": 3000
+  },
+  {
+    "title": "Community Kitchen Renovation",
+    "description": "Renovate community kitchens to enhance food preparation facilities.",
+    "category": "Food",
+    "total_fund": 12000,
+    "fund_raised": 4500
+  },
+  {
+    "title": "Wildlife Conservation Education",
+    "description": "Educate communities about the importance of wildlife conservation.",
+    "category": "Animals",
+    "total_fund": 10000,
+    "fund_raised": 3700
+  },
+  {
+    "title": "Public Art Installations",
+    "description": "Support public art installations to beautify urban spaces.",
+    "category": "Arts",
+    "total_fund": 7000,
+    "fund_raised": 2400
+  },
+  {
+    "title": "Sports Equipment Drive",
+    "description": "Collect and distribute sports equipment to underserved youth.",
+    "category": "Sports",
+    "total_fund": 9500,
+    "fund_raised": 3200
+  },
+  {
+    "title": "Mobile Health Clinics",
+    "description": "Launch mobile health clinics to provide healthcare in remote areas.",
+    "category": "Health",
+    "total_fund": 11000,
+    "fund_raised": 4200
+  },
+  {
+    "title": "Coding Bootcamp for Youth",
+    "description": "Empower youth with coding skills through intensive bootcamp programs.",
+    "category": "Technology",
+    "total_fund": 13000,
+    "fund_raised": 5000
+  },
+  {
+    "title": "Community Farming Co-op",
+    "description": "Establish a cooperative for community farming and sustainable agriculture.",
+    "category": "Food",
+    "total_fund": 8000,
+    "fund_raised": 2800
+  },
+  {
+    "title": "Reforestation Project",
+    "description": "Contribute to reforestation efforts to combat deforestation.",
+    "category": "Environment",
+    "total_fund": 12000,
+    "fund_raised": 4800
+  },
+  {
+    "title": "Animal-Assisted Therapy Programs",
+    "description": "Implement therapy programs using animals to support mental health.",
+    "category": "Animals",
+    "total_fund": 15000,
+    "fund_raised": 6000
+  },
+  {
+    "title": "Youth Film and Media Workshop",
+    "description": "Provide workshops for youth to learn about film and media production.",
+    "category": "Arts",
+    "total_fund": 9500,
+    "fund_raised": 3800
+  },
+  {
+    "title": "Community Yoga Classes",
+    "description": "Offer free yoga classes to promote physical and mental well-being.",
+    "category": "Sports",
+    "total_fund": 18000,
+    "fund_raised": 7200
+  },
+  {
+    "title": "STEM Education Outreach",
+    "description": "Promote STEM education through outreach programs in schools.",
+    "category": "Education",
+    "total_fund": 8500,
+    "fund_raised": 3000
+  },
+  {
+    "title": "Zero-Waste Community Initiative",
+    "description": "Encourage communities to adopt zero-waste practices for a sustainable future.",
+    "category": "Environment",
+    "total_fund": 12000,
+    "fund_raised": 4500
+  },
+  {
+    "title": "Mental Health Support Helpline",
+    "description": "Establish a helpline to provide support for mental health issues.",
+    "category": "Health",
+    "total_fund": 10000,
+    "fund_raised": 3700
+  },
+  {
+    "title": "Girls in STEM Scholarships",
+    "description": "Provide scholarships to encourage girls to pursue STEM fields.",
+    "category": "Technology",
+    "total_fund": 7000,
+    "fund_raised": 2400
+  },
+  {
+    "title": "Community Soup Kitchen",
+    "description": "Operate a community soup kitchen to provide meals for the homeless.",
+    "category": "Food",
+    "total_fund": 9000,
+    "fund_raised": 3200
+  },
+  {
+    "title": "Marine Conservation Awareness",
+    "description": "Raise awareness about marine conservation and protect marine life.",
+    "category": "Environment",
+    "total_fund": 11000,
+    "fund_raised": 4200
+  }
+]
+
+  
