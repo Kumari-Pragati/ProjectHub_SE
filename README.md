@@ -38,6 +38,11 @@ Using DataDrop is simple. Follow these steps:
 
 - Share the generated code with others to share your text.
 
+ ## Selenium Test Cases
+- File Uplaod and Send all functionality by Python Script
+- File Uplaod and Send by JavaScript
+- Text Share by Python Script
+- Text Code based Sharing by Javascript 
 
 ## What Sets DataDrop Apart?
 
@@ -47,6 +52,6 @@ Using DataDrop is simple. Follow these steps:
 
 - Email and Phone Integration 📧📱: DataDrop takes file sharing to the next level by providing integration not only with email but also with phones. In addition to sending files directly to someone's email, DataDrop enables users to send files directly to a recipient's phone number.
 
-## Thank You very much for giving us an opportunity to explore such a unique project ! 😊
+
 
 
