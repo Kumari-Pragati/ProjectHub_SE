@@ -1,0 +1,121 @@
+/* Payment Page Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./assets/images/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .payment-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    margin: 2rem;
+  }
+  
+  .payment-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-method {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .payment-method label {
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .payment-method input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .half-width {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-group.half-width .input-group {
+    width: calc(50% - 0.5rem);
+  }
+  
+  .btn-primary {
+    background-color: #0056b3; /* Your primary color */
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #003d82; /* A darker shade for hover state */
+  }
+  
+  .payment-details {
+    display: none; /* Hide all payment details by default */
+  }
+  
+  .payment-details.active {
+    display: block; /* Show active payment details */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .payment-card {
+      width: 90%;
+      margin: 1rem;
+    }
+    .half-width {
+      flex-direction: column;
+    }
+    .input-group.half-width .input-group {
+      width: 100%;
+    }
+  }
+  
