@@ -47,7 +47,7 @@ This Streamlit app allows users to log in and receive music recommendations base
     pip install -r requirements.txt
 
 3. **Run the Application:** ▶️ <br>
-   streamlit run app.py
+   streamlit run main.py
    
 4. **Use the Below Credentials to log in** 🔐 <br>
    ID: admin  <br>
