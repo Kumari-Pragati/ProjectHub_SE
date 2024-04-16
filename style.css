@@ -1,0 +1,447 @@
+/* Global Styles */
+/* Add your CSS styles here */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Add more CSS styles as needed */
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Add these styles to your existing CSS */
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.login, .register {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+}
+
+.login:hover, .register:hover {
+    background-color: #ff8533;
+}
+
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+position: sticky;
+top: 0;
+z-index: -1;
+    height: 500px;
+    overflow: hidden;
+    /* background-color: #ff6600; */
+    background-attachment: fixed;
+
+}
+
+
+
+.intro {
+color: white;
+    z-index: 1;
+    text-align: center;
+    padding: 100px 20px;
+    background-attachment: fixed;
+
+   
+}
+
+.intro h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Search Section */
+.search {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.search input[type="text"]:focus {
+    border-color: #ff6600;
+}
+
+.search button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #ff8533;
+}
+
+/* Featured Concerts Section */
+.featured-concerts {
+    height: 70vh;
+    background-color: white;
+
+    padding: 50px 20px;
+}
+
+.featured-concerts h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.carousel {
+    background-color: white;
+
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.concert {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 300px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.concert:hover {
+    transform: translateY(-5px);
+}
+
+.concert img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.concert h3 {
+    margin: 10px 0;
+}
+
+.concert p {
+    margin-bottom: 10px;
+}
+
+.concert button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.concert button:hover {
+    background-color: #ff8533;
+}
+
+/* Concert Categories Section */
+/* Concert Categories Section */
+.concert-categories {
+    background-color: white;
+    padding: 50px 20px;
+}
+
+.concert-categories h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category {
+    flex: 0 0 calc(33.33% - 40px); /* Adjust width for three cards per row */
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 394px;
+}
+
+.category img {
+    width: 61%;
+    height: 85%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.category h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+/* Interactive Map Section */
+.interactive-map {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 50px; /* Add margin to separate it from the previous section */
+}
+
+.interactive-map h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-content {
+    border: 2px solid;
+    position: sticky;
+    top: 0; /* Adjust the distance from the top as needed */
+
+
+    padding: 20px;
+    height: 300px; /* Ensure the content fills the map */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn.pixabay.com/photo/2013/06/20/13/52/world-140304_640.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+}
+
+.map-content h3 {
+    margin-top: 0; /* Remove default margin */
+    font-size: 20px; /* Adjust font size */
+}
+
+.map-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.map-content li {
+    margin-bottom: 10px;
+    font-size: 18px; /* Adjust font size */
+}
+
+
+.location-icon {
+    position: absolute;
+    width: 20px; /* Adjust size as needed */
+    cursor: pointer; /* Add cursor style for hover effect */
+}
+
+.icon-tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 4px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.location-icon:hover + .icon-tooltip {
+    opacity: 1; /* Show tooltip on hover */
+}
+
+/* Additional styling can be applied as needed */
+
+
+/* Newsletter Section */
+.newsletter {
+    z-index: 1;
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+    border-color: #ff6600;
+}
+
+button[type="submit"] {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff8533;
+}
+
+/* Footer Section */
+footer {
+ 
+
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-info {
+    
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff6600;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #map {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .category {
+        width: calc(50% - 40px); /* Adjust width for two cards per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .category {
+        width: calc(100% - 40px); /* Adjust width for single card per row */
+    }
+}
+/* Add this style for tooltips */
+.tooltip {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 5px);
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+/* Adjust this style as needed for location icons */
+.location-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.location-icon:hover {
+    transform: scale(1.2);
+}
