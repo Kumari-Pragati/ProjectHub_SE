@@ -1,0 +1,41 @@
+body {
+    color: #ebe3e3;
+    font-family: Arial, sans-serif;
+    background: url('welcome-banner.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center; /* Center text content */
+}
+
+.driver-info-header {
+    background-color: #c01414;
+    color: #130b0b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.driver-info {
+    margin-bottom: 20px;
+}
+
+.driver-option {
+    display: inline-block;
+    background-color: #c01414;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.driver-option:hover {
+    background-color: #8b0000; /* Change to desired hover color */
+}
