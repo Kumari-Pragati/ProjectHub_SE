@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - Tourly Travel Agency</title>
+  <link rel="stylesheet" href="./payment.css">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- Add your existing links to stylesheets and fonts here -->
+</head>
+<body>
+
+<div class="payment-container">
+  <div class="payment-card">
+    <h1 class="payment-title">Complete Your Payment</h1>
+   
+      <div class="payment-method">
+        <label>
+          <input type="radio" name="paymentMethod" id="credit_card" value="card" checked>
+          Pay with Credit/Debit Card
+        </label>
+        <label>
+          <input type="radio" name="paymentMethod" id="upi" value="upi">
+          Pay with UPI
+        </label>
+      </div>
+    <form action="payd.html" method="get" class="payment-form" >
+      <div class="payment-details card-details active">
+        <div class="input-group">
+          <label for="cardName">Name on Card</label>
+          <input type="text" id="cardName" name="cardName" placeholder="John Doe" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="cardNumber">Credit Card Number</label>
+          <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="cardExpiry">Expiry Date</label>
+          <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/YY" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="cardCVC">CVC</label>
+          <input type="text" id="cardCVC" name="cardCVC" placeholder="123" required>
+        </div>
+      </div>
+      <input type="submit" class="btn btn-primary card-details" id="pay_credit"value="Pay Now">
+    </form>
+    <form action="payd.html" method="get" class="payment-form" >
+      <div class="payment-details upi-details">
+        <div class="input-group">
+          <label for="upiId">UPI ID</label>
+          <input type="text" id="upi_Id" name="upiId" placeholder="example@upi" required>
+        </div>
+      </div>
+      
+      <!-- <button type="submit" class="btn btn-primary" >Pay Now</button> -->
+      <input type="submit" class="btn btn-primary upi-details" id="pay_upi" value="Pay Now">
+    </form>
+
+  </div>
+</div>
+
+<script src="./pay.js"></script>
+<!-- Additional scripts can be added here -->
+
+<script>
+    'use strict';
+  
+    // Get all the necessary elements from the DOM
+    const paymentMethods = document.querySelectorAll('input[name="paymentMethod"]');
+    const cardDetails = document.querySelector('.card-details');
+    const upiDetails = document.querySelector('.upi-details');
+    const cardSubmitButton = document.querySelector('.btn.card-details');
+    const upiSubmitButton = document.querySelector('.btn.upi-details');
+  
+    // Function to hide all payment details
+    function hideAllPaymentDetails() {
+      cardDetails.classList.remove('active');
+      upiDetails.classList.remove('active');
+    }
+  
+    // Function to show payment details based on the selected payment method
+    function showPaymentDetails(paymentMethod) {
+      hideAllPaymentDetails();
+      if (paymentMethod.value === 'card') {
+        cardDetails.classList.add('active');
+        cardSubmitButton.style.display = 'inline-block'; // Show card submit button
+        upiSubmitButton.style.display = 'none'; // Hide UPI submit button
+      } else if (paymentMethod.value === 'upi') {
+        upiDetails.classList.add('active');
+        upiSubmitButton.style.display = 'inline-block'; // Show UPI submit button
+        cardSubmitButton.style.display = 'none'; // Hide card submit button
+      }
+    }
+  
+    // Function to check if all form fields are filled
+    function checkFormFields() {
+      const formInputs = document.querySelectorAll('.payment-form input active');
+      let isFormValid = true;
+  
+      formInputs.forEach(input => {
+        if (input.value.trim() === '') {
+          isFormValid = false;
+        }
+      });
+  
+      return isFormValid;
+    }
+  
+    // Add change event listeners to the payment method radio buttons
+    paymentMethods.forEach(method => {
+      method.addEventListener('change', function () {
+        showPaymentDetails(method);
+      });
+    });
+  
+    // Initialize the form with the correct payment details displayed
+    const checkedPaymentMethod = document.querySelector('input[name="paymentMethod"]:checked');
+    showPaymentDetails(checkedPaymentMethod);
+  
+    // Add submit event listener to the form
+    const paymentForm = document.querySelectorAll('.payment-form');
+    paymentForm.forEach(form => {
+      form.addEventListener('submit', function(event) {
+        if (!checkFormFields()) {
+          event.preventDefault();
+          alert('Please fill in all the required fields.');
+        } else {
+          window.location.href = 'payd.html';
+        }
+      });
+    });
+  
+  </script>
+  
+</body>
+</html>
