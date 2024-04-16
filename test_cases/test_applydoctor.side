@@ -1,0 +1,175 @@
+{
+  "id": "5dc72427-bee9-44dc-8e5a-fb4f312dcc94",
+  "version": "2.0",
+  "name": "test",
+  "url": "http://localhost:5000",
+  "tests": [{
+    "id": "77465432-a0b2-4ee5-8037-f6de6b6ff38a",
+    "name": "applyfordoc",
+    "commands": [{
+      "id": "6dfff03a-f361-4653-be6d-4766816fa1c0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78c8c601-7881-45a3-bb38-bc44f1f12d3c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "852x642",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c41f0cdd-bc7e-4da7-9d80-ebf8497f2c76",
+      "comment": "",
+      "command": "click",
+      "target": "css=line:nth-child(2)",
+      "targets": [
+        ["css=line:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd8eeb46-ea17-4468-8df7-5f51c92917aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Apply for doctor",
+      "targets": [
+        ["linkText=Apply for doctor", "linkText"],
+        ["css=.nav-links > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Apply for doctor')]", "xpath:link"],
+        ["xpath=//div[@id='root']/header/nav/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/applyfordoctor')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Apply for doctor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d6a8958-5e99-4ad6-a7de-073fc120a617",
+      "comment": "",
+      "command": "click",
+      "target": "name=specialization",
+      "targets": [
+        ["name=specialization", "name"],
+        ["css=.form-input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='specialization']", "xpath:attributes"],
+        ["xpath=//section[@id='contact']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec49c3a5-6a19-449d-afe2-914eb6f7a074",
+      "comment": "",
+      "command": "type",
+      "target": "name=specialization",
+      "targets": [
+        ["name=specialization", "name"],
+        ["css=.form-input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='specialization']", "xpath:attributes"],
+        ["xpath=//section[@id='contact']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "heart"
+    }, {
+      "id": "e3647168-d7cf-49f5-a59d-622178760bd5",
+      "comment": "",
+      "command": "click",
+      "target": "name=experience",
+      "targets": [
+        ["name=experience", "name"],
+        ["css=.form-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='experience']", "xpath:attributes"],
+        ["xpath=//section[@id='contact']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95dd5171-d5c5-4e03-9c34-3416423e20f8",
+      "comment": "",
+      "command": "click",
+      "target": "name=specialization",
+      "targets": [
+        ["name=specialization", "name"],
+        ["css=.form-input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='specialization']", "xpath:attributes"],
+        ["xpath=//section[@id='contact']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43ee38c9-b53a-4900-ae7c-21172cfdf710",
+      "comment": "",
+      "command": "click",
+      "target": "name=experience",
+      "targets": [
+        ["name=experience", "name"],
+        ["css=.form-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='experience']", "xpath:attributes"],
+        ["xpath=//section[@id='contact']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33cd4d17-ac8c-4954-8f7f-9e00a747a2d9",
+      "comment": "",
+      "command": "type",
+      "target": "name=experience",
+      "targets": [
+        ["name=experience", "name"],
+        ["css=.form-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='experience']", "xpath:attributes"],
+        ["xpath=//section[@id='contact']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "25"
+    }, {
+      "id": "e44606e7-c135-4105-ba37-3d2a9a01be9f",
+      "comment": "",
+      "command": "click",
+      "target": "name=fees",
+      "targets": [
+        ["name=fees", "name"],
+        ["css=.form-input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='fees']", "xpath:attributes"],
+        ["xpath=//section[@id='contact']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c6d0514-ee3a-43a7-b7a7-887ecd5f32ba",
+      "comment": "",
+      "command": "type",
+      "target": "name=fees",
+      "targets": [
+        ["name=fees", "name"],
+        ["css=.form-input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='fees']", "xpath:attributes"],
+        ["xpath=//section[@id='contact']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "2500"
+    }, {
+      "id": "2d60463a-6745-470f-8431-12eb30165050",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-btn",
+      "targets": [
+        ["css=.form-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//section[@id='contact']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "df5705c8-eaa1-4638-b48d-a758fb6c92bd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["77465432-a0b2-4ee5-8037-f6de6b6ff38a"]
+  }],
+  "urls": ["http://localhost:5000/"],
+  "plugins": []
+}
