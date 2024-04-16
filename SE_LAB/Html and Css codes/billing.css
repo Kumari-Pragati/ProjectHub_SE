@@ -1,0 +1,86 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(welcome-banner.jpg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+header {
+    padding: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.billing {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.payment-option {
+    margin-bottom: 15px;
+}
+
+.payment-option input[type="radio"] {
+    display: none; /* Hide the actual radio buttons */
+}
+
+.payment-option label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.payment-option label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.payment-option input[type="radio"]:checked + label:before {
+    background-color: #c01414; /* Change color for checked state */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #c01414; /* Button color */
+    color: #fff; /* Button text color */
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #900; /* Button color on hover */
+}

@@ -1,0 +1,450 @@
+{
+  "id": "c083776e-34b5-4309-b0b1-f9207754aa6e",
+  "version": "2.0",
+  "name": "Car-Rent",
+  "url": "http://127.0.0.1:5500",
+  "tests": [{
+    "id": "80b55d67-17e2-44f1-940a-b83c3a531ea6",
+    "name": "TestOne",
+    "commands": [{
+      "id": "4cd37a3b-65c1-4319-825b-81e21b1a58de",
+      "comment": "",
+      "command": "open",
+      "target": "/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a069dea-3ebd-4873-b849-6315bf5a76dc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa3f4543-37a7-4404-b8f5-724748afec48",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'register.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e12a1c0f-16fd-4122-bf13-a2b62ea69e4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(2)",
+      "targets": [
+        ["css=button:nth-child(2)", "css:finder"],
+        ["xpath=//button[@onclick='login()']", "xpath:attributes"],
+        ["xpath=//div[@id='button_container']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ec222929-88c6-429c-9761-25cc69e3686a",
+    "name": "TestTwo",
+    "commands": [{
+      "id": "d4f2ba94-40c3-41c9-99f7-e3ce27bbf6c6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f03a458-c64a-42eb-9748-6bd0fecbec92",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0acbe52a-162a-4a1c-b77b-aae3daadc444",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3ca437a-4bd8-40d3-b552-1afec3c3bffb",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarDropdown",
+      "targets": [
+        ["id=navbarDropdown", "id"],
+        ["linkText=Our Services", "linkText"],
+        ["css=#navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//a[@id='navbarDropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e620f5a-1714-4fe5-a553-69d50245cecf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Select Driver",
+      "targets": [
+        ["linkText=Select Driver", "linkText"],
+        ["css=li:nth-child(2) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Select Driver')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'driverinfo.html')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Select Driver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3b2e058-6ef6-4e39-9444-7c1cc94df86d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.car-info",
+      "targets": [
+        ["css=.car-info", "css:finder"],
+        ["xpath=//section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebead54e-56e6-49d7-a0ab-8974c5a6a879",
+      "comment": "",
+      "command": "click",
+      "target": "css=.car-info",
+      "targets": [
+        ["css=.car-info", "css:finder"],
+        ["xpath=//section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4c56bd5-2667-4d91-8725-d470e1d1a74a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.car-info-section:nth-child(2) p:nth-child(4)",
+      "targets": [
+        ["css=.car-info-section:nth-child(2) p:nth-child(4)", "css:finder"],
+        ["xpath=//div[2]/a/p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'Years-Active: 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57a13198-9b0a-462a-a798-1bbc726b7d4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.car-info-section:nth-child(4) p:nth-child(3)",
+      "targets": [
+        ["css=.car-info-section:nth-child(4) p:nth-child(3)", "css:finder"],
+        ["xpath=//div[4]/a/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Model: Model S')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50231ca5-b355-4773-9656-5625d0896bc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.payment-option:nth-child(3) > label",
+      "targets": [
+        ["css=.payment-option:nth-child(3) > label", "css:finder"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Debit Card')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac0bfcd1-f6f0-40a0-8d9e-b677d649eabb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.payment-option:nth-child(4) > label",
+      "targets": [
+        ["css=.payment-option:nth-child(4) > label", "css:finder"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'UPI (Unified Payments Interface)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c01bf0e-e371-449e-8f43-9fc3b8b0405b",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Proceed to Payment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7c746841-2a4a-4fe1-a260-ed6968ba1264",
+    "name": "TestThree",
+    "commands": [{
+      "id": "e0cc8f2d-0058-4fc9-bbbf-f00b2409f8b2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65c166a3-e32d-4540-991f-b5abfc8dfe55",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e1e994f-d741-488b-a784-254d24b136b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarDropdown",
+      "targets": [
+        ["id=navbarDropdown", "id"],
+        ["linkText=Our Services", "linkText"],
+        ["css=#navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//a[@id='navbarDropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6d0e1a1-4ecf-4640-a8ef-ae8fa57b49d2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Select Driver",
+      "targets": [
+        ["linkText=Select Driver", "linkText"],
+        ["css=li:nth-child(2) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Select Driver')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'driverinfo.html')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Select Driver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f172cf84-0c9d-479a-8f60-4dcbe601227e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.car-info-section:nth-child(1) p:nth-child(3)",
+      "targets": [
+        ["css=.car-info-section:nth-child(1) p:nth-child(3)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Gender: Male')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22b3c210-923c-4d8c-87e4-45232fe3f60d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89e15f47-38e9-4c58-8223-cce1f0a6ee11",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'register.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4cf1044-332c-4e21-bb79-c4f1de357894",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarDropdown",
+      "targets": [
+        ["id=navbarDropdown", "id"],
+        ["linkText=Our Services", "linkText"],
+        ["css=#navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//a[@id='navbarDropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56d63c9e-2bcd-4fa8-9947-25c693daf3c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Select Driver",
+      "targets": [
+        ["linkText=Select Driver", "linkText"],
+        ["css=li:nth-child(2) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Select Driver')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'driverinfo.html')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Select Driver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfe2c32d-228a-4cff-aa49-57f03908f750",
+      "comment": "",
+      "command": "click",
+      "target": "css=.car-info-section:nth-child(1) h2",
+      "targets": [
+        ["css=.car-info-section:nth-child(1) h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Driver 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2f84a5b0-7441-4941-ad81-d6a4023ee4a5",
+    "name": "NewTest",
+    "commands": [{
+      "id": "f1407c1b-1c9a-4236-a660-6f0cdb664f0a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b0b410d-ff05-4e9a-88b9-aac05ed96015",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "958x1031",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b68cddd-cc13-4a7e-9342-4ec3c87b762c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7363b18-5f23-4ec3-bb28-84bf108ada6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarDropdown",
+      "targets": [
+        ["id=navbarDropdown", "id"],
+        ["linkText=Our Services", "linkText"],
+        ["css=#navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//a[@id='navbarDropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b621fd3-518a-42cd-ae42-433a92a8ad90",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Select Driver",
+      "targets": [
+        ["linkText=Select Driver", "linkText"],
+        ["css=li:nth-child(2) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Select Driver')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'driverinfo.html')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Select Driver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9851a5b8-07c6-4cd2-ab10-33d55b0e7b92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.car-info-section:nth-child(4) p:nth-child(2)",
+      "targets": [
+        ["css=.car-info-section:nth-child(4) p:nth-child(2)", "css:finder"],
+        ["xpath=//div[4]/a/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Name: Kashish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "471ec7bc-c510-423b-be84-40beb79db1d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.car-info-section:nth-child(3) p:nth-child(4)",
+      "targets": [
+        ["css=.car-info-section:nth-child(3) p:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/a/p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'Year: 2021')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e7fd5c1-acc0-4436-b984-4c74886561ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.payment-option:nth-child(1) > label",
+      "targets": [
+        ["css=.payment-option:nth-child(1) > label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Cash on Delivery (COD)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a31ef123-c7b0-44cf-9774-d178c51f5a79",
+      "comment": "",
+      "command": "click",
+      "target": "css=.payment-option:nth-child(2) > label",
+      "targets": [
+        ["css=.payment-option:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Credit Card')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24ca26d1-c34f-4a20-9c93-fadad4dca552",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Proceed to Payment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0fcc332e-9145-4fee-9a08-af58f2e3ddd5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["80b55d67-17e2-44f1-940a-b83c3a531ea6"]
+  }],
+  "urls": ["http://127.0.0.1:5500/"],
+  "plugins": []
+}

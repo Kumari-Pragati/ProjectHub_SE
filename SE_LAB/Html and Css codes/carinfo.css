@@ -1,0 +1,76 @@
+body {
+    color: #ebe3e3;
+    font-family: Arial, sans-serif;
+    background: url('welcome-banner.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center; /* Center text content */
+}
+
+.car-info-header {
+    background-color: #c01414;
+    color: #130b0b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.car-info-brand {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.car-info-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.car-info-nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.car-info-nav li a {
+    text-decoration: none;
+    color: #ebe3e3;
+    transition: color 0.3s ease-in-out;
+}
+
+.car-info-nav li a:hover {
+    color: #080805; /* Change to desired hover color */
+}
+
+.car-info-hero {
+    padding: 100px 0;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-stretch: expanded;
+    color: #fff9f9;
+}
+
+.car-info-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.car-info-section {
+    padding: 20px; /* Adjust padding */
+    margin: 20px auto; /* Centering and spacing */
+    max-width: 300px; /* Adjust width */
+    background-color: #ffffff; /* Background color for the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+.car-info-section h2 {
+    margin-bottom: 20px;
+}
