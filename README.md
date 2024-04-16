@@ -6,6 +6,7 @@
 This Streamlit app allows users to log in and receive music recommendations based on their detected emotions. The application captures the user's emotion through a webcam stream and recommends songs accordingly.
 
 ![Uploading VinylDiscDanceMusicGIF (2).gif…]()
+![MusicTomAndJerryGIF](https://github.com/pragyapranati/Music-Recommender/assets/128420734/306cd56d-c89f-421b-8a42-60eb55968b66)
 
 
 #### Technologies Used:
