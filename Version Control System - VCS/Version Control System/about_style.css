@@ -1,0 +1,97 @@
+/* Custom CSS variables */
+:root {
+    --primary-color: #1e88e5; /* Blue */
+    --secondary-color: #37474f; /* Dark gray */
+    --text-color: #333; /* Dark gray for text */
+    --background-color: #f5f5f5; /* Light gray for background */
+  }
+  
+  /* Body styles */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Footer styles */
+  .footer-top {
+    background: var(--secondary-color);
+    padding: 50px 0; /* Adjust padding as needed */
+    color: white;
+    text-align: center;
+  }
+  
+  .footer-brand img {
+    width: 180px;
+    display: block; /* Ensure the image doesn't inherit margins */
+    margin: 0 auto 20px; /* Center the image */
+  }
+  
+  .footer-text {
+    font-size: 18px; /* Adjust font size */
+    line-height: 1.7;
+    margin-bottom: 30px; /* Add some space after the text */
+  }
+  
+  .contact-item ion-icon {
+    font-size: 20px; /* Adjust icon size */
+  }
+  
+  .footer-form .input-field {
+    width: calc(100% - 40px); /* Adjust width */
+    max-width: 300px; /* Set maximum width if needed */
+    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 10px; /* Adjust padding */
+    border: 1px solid #ccc; /* Add border for better visibility */
+    border-radius: 5px; /* Add border radius */
+    margin-bottom: 10px; /* Add margin bottom */
+  }
+  
+  
+  .footer-form .btn {
+    padding: 10px 20px; /* Adjust button padding */
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color); /* Change button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-form .btn:hover {
+    background-color: #1565c0; /* Darker color on hover */
+  }
+  
+  .footer-bottom {
+    background: var(--secondary-color);
+    padding: 20px 0; /* Adjust padding */
+    text-align: center;
+  }
+  
+  .footer-bottom-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .footer-bottom-list li:not(:last-child)::after {
+    content: "|"; /* Use separator */
+    margin-left: 10px; /* Adjust space between links */
+  }
+  
+  /* Links */
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0d47a1; /* Darker color on hover */
+  }
+  

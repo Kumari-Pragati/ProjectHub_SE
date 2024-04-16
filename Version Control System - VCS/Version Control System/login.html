@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Tourly</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-image: url("./images/World\ Map.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-card">
+        <h2 class="login-title">Welcome To the Future of Version Control!</h2>
+       
+      <p class="login-subtitle">Login to continue</p>
+      <form action="homepage.html" method="get" class="login-form">
+        <div class="input-wrapper">
+          <label for="email" class="input-label">Email</label>
+          <input type="" name="email" id="email" required placeholder="Enter Your Email" class="input-field">
+        </div>
+        <div class="input-wrapper">
+          <label for="password" class="input-label">Password</label>
+          <input type="password" name="password" id="password" required placeholder="Enter Your Password" class="input-field">
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="login">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
