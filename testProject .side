@@ -1,0 +1,79 @@
+{
+  "id": "e252c750-1262-4f81-828c-f1dfe1af0dbb",
+  "version": "2.0",
+  "name": "testProject ",
+  "url": "https://www.amazon.in/",
+  "tests": [{
+    "id": "2d37e89c-0842-4284-ac5f-d70452d7f072",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "d55a7baf-02ad-444f-a5d5-a1fdfdaa5674",
+    "name": "test1",
+    "commands": [{
+      "id": "f3a6a1fb-f24f-425e-b8f8-504365912339",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bec7898f-d29e-4a60-aa89-6dbd24210e84",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "644x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2047d67a-2475-43b3-a234-b78d8ad8744d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b81237f-29c8-4cb0-984e-5633c48c73af",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c8cde82-64a4-48a8-97da-906d0e0312d9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Best Sellers",
+      "targets": [
+        ["linkText=Best Sellers", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Sellers')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/bestsellers/?ref_=nav_cs_bestsellers')]", "xpath:href"],
+        ["xpath=//div[5]/div[2]/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Sellers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3767b9f9-765f-4bd5-8855-4e1865cef118",
+      "comment": "",
+      "command": "click",
+      "target": "css=#B07CXFJT8Q .p13n-sc-truncate-desktop-type2",
+      "targets": [
+        ["css=#B07CXFJT8Q .p13n-sc-truncate-desktop-type2", "css:finder"],
+        ["xpath=//div[@id='B07CXFJT8Q']/a[2]/span/div", "xpath:idRelative"],
+        ["xpath=//a[2]/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6cebd0d2-91b2-4e4e-900c-b470a3c2d027",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2d37e89c-0842-4284-ac5f-d70452d7f072"]
+  }],
+  "urls": ["https://www.amazon.in/"],
+  "plugins": []
+}

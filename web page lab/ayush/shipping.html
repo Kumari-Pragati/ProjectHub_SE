@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Addresses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #87ceeb; /* Sky blue background */
+            margin: 0;
+            padding: 0;
+        }
+        .shipping-container {
+            max-width: 900px; /* Enlarged box */
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .address {
+            margin-bottom: 20px; /* Increased margin */
+            border: 1px solid #ccc; /* Added border */
+            padding: 15px; /* Added padding */
+            border-radius: 5px; /* Rounded corners */
+        }
+        .address strong {
+            font-weight: bold;
+        }
+
+        /* Go back button styles */
+        .go-back-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+
+        .btn-go-back {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #6c757d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-go-back:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="go-back-container">
+        <button onclick="goBack()" class="btn-go-back">Go Back</button>
+    </div>
+
+    <div class="shipping-container">
+        <h1>Shipping Addresses</h1>
+        <div class="address">
+            <p><strong>Home:</strong> 123, Rajiv Nagar, Delhi, PIN Code: 463846. </p>
+        </div>
+        <div class="address">
+            <p><strong>Office:</strong> 74, IIITVICD, DIU, PIN Code: 362520. </p>
+        </div>
+        <div class="address">
+            <p><strong>Other:</strong> 456, Bandra West, Mumbai, PIN Code: 400050. </p>
+        </div>
+    </div>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>

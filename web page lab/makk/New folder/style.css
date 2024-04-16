@@ -1,0 +1,142 @@
+/* Reset some default styles */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url('back4.png'); /* Add background image */
+    background-size: cover; /* Resize the background image to cover the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* Login container styles */
+.login-container {
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Photo container styles */
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.photo-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input field styles */
+.field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+.forgot-password:hover,
+.forgot-email:hover {
+    text-decoration: underline;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Submit button styles */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Links styles */
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* "or login with" text styles */
+.or-login-with {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Social login buttons styles */
+.loginBtn {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.loginBtn--google {
+    background-color: hsl(199, 59%, 82%);
+    color: #fff;
+}
+
+.loginBtn--facebook {
+    background-color: hsl(183, 67%, 76%);
+    color: #fff;
+}

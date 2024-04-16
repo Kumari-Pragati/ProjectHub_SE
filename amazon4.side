@@ -1,0 +1,72 @@
+{
+  "id": "6c56a15f-5f71-4e41-a6ee-93c9c7bf8708",
+  "version": "2.0",
+  "name": "amazon4",
+  "url": "https://www.amazon.in/",
+  "tests": [{
+    "id": "c554ae48-17e6-4b6f-b16a-d63ccbb53e54",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "5259577c-2c27-4d9e-960a-e1cc6109e97b",
+    "name": "amazon1",
+    "commands": [{
+      "id": "dea3e88f-3653-47c4-b438-398e40ff29ee",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f906c7ef-bdb1-4ad7-a567-6cfc5e9a3f55",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36027ed9-e759-4a4a-be89-b6f0d9a10e2d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Best Sellers",
+      "targets": [
+        ["linkText=Best Sellers", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Sellers')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/bestsellers/?ref_=nav_cs_bestsellers')]", "xpath:href"],
+        ["xpath=//div[5]/div[2]/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Sellers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b25f82e-86f5-4528-8de9-7419e4918841",
+      "comment": "",
+      "command": "click",
+      "target": "css=#B06Y2FG6R7 .p13n-sc-truncate-desktop-type2",
+      "targets": [
+        ["css=#B06Y2FG6R7 .p13n-sc-truncate-desktop-type2", "css:finder"],
+        ["xpath=//div[@id='B06Y2FG6R7']/a[2]/span/div", "xpath:idRelative"],
+        ["xpath=//a[2]/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "865d020b-9ff5-44a5-9cbc-86279d2699c6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9584238c-e43f-4e63-9a53-8f1dc548fea5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c554ae48-17e6-4b6f-b16a-d63ccbb53e54"]
+  }],
+  "urls": ["https://www.amazon.in/"],
+  "plugins": []
+}

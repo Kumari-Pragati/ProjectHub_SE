@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Gateway</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      .container {
+        max-width: 500px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      .company-name {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .amount {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      .payment-methods {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .payment-method {
+        flex: 1;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: box-shadow 0.3s, transform 0.3s;
+        margin-bottom: 20px;
+      }
+      .payment-method:hover {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+      }
+      .payment-method img {
+        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+      }
+      .payment-method p {
+        margin: 0;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="company-name">Intigeners Pvt. Ltd.</h1>
+      <h2 class="amount">Amount to be Paid: ₹10000</h2>
+      <div class="payment-methods">
+        <div class="payment-method" onclick="selectPayment('cards')">
+          <img
+            src="https://img.icons8.com/material-outlined/96/000000/visa.png"
+            alt="Credit/Debit Cards"
+          />
+          <p>Credit/Debit Cards</p>
+        </div>
+        <div class="payment-method" onclick="selectPayment('netbanking')">
+          <img
+            src="https://img.icons8.com/material-outlined/96/000000/atm--v2.png"
+            alt="Netbanking"
+          />
+          <p>Netbanking</p>
+        </div>
+        <div class="payment-method" onclick="selectPayment('upi')">
+          <img
+            src="https://img.icons8.com/material-outlined/96/000000/mobile-payment.png"
+            alt="UPI/QR"
+          />
+          <p>UPI/QR</p>
+        </div>
+        <div class="payment-method" onclick="selectPayment('wallets')">
+          <img
+            src="https://img.icons8.com/material-outlined/96/000000/wallet-app.png"
+            alt="Wallets"
+          />
+          <p>Wallets</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function selectPayment(method) {
+        // Redirect to the corresponding payment details page
+        window.location.href = method + ".html";
+      }
+    </script>
+  </body>
+  <button onclick="goBack()" class="btn btn-secondary" style="padding: 10px 20px; font-size: 18px; background-color: #6c757d; color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Go Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+</html>

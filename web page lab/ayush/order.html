@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #87ceeb; /* Blue background */
+            margin: 0;
+            padding: 0;
+        }
+        .order-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px; /* Increased spacing below heading */
+        }
+        .order-details {
+            margin-bottom: 30px; /* Increased spacing between containers */
+            display: flex; /* Flexbox layout */
+            justify-content: space-between; /* Space between items */
+        }
+        .order-details p {
+            margin: 15px 0; /* Increased spacing between paragraphs */
+            font-size: 18px; /* Increased font size */
+            flex: 0 0 70%; /* 70% width for order details */
+        }
+        .order-details p strong {
+            font-size: 20px; /* Increased font size for strong tags */
+        }
+        .order-date {
+            font-size: 18px; /* Increased font size */
+            flex: 0 0 30%; /* 30% width for order date */
+            text-align: right; /* Align text to the right */
+            color: #777; /* Gray color for order date */
+        }
+        .go-back-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+
+        .btn-go-back {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #6c757d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-go-back:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="go-back-container">
+        <button onclick="goBack()" class="btn-go-back">Go Back</button>
+    </div>
+
+    <div class="order-container">
+        <h1>Order Details</h1>
+        <div class="order-details">
+            <div>
+                <p><strong>Product 1:</strong> T-Shirt</p>
+                <p><strong>Price:</strong> $20.00</p>
+            </div>
+            <div class="order-date">Order Date: Jan 2, 2024</div>
+        </div>
+        <div class="order-details">
+            <div>
+                <p><strong>Product 2:</strong> Shoes</p>
+                <p><strong>Price:</strong> $50.00</p>
+            </div>
+            <div class="order-date">Order Date: Feb 2, 2024</div>
+        </div>
+        <div class="order-details">
+            <div>
+                <p><strong>Product 3:</strong> Jeans</p>
+                <p><strong>Price:</strong> $30.00</p>
+            </div>
+            <div class="order-date">Order Date: Dec 21, 2023</div>
+        </div>
+    </div>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>
