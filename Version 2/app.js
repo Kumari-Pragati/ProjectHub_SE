@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "/*removed from here*/",
+  password: "Qbeta@123",
   database: "onlineedu",
 });
 

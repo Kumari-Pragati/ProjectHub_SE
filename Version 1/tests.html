@@ -24,15 +24,33 @@
     </header>
 
     <h1>Tests and Quizzes</h1>
-    <main id="testContainer">
-        <section id="testList">
-            <!-- Test items will be dynamically added here -->
-        </section>
-    </main>
+
+    <h2>Quiz 1</h2>
+    <form>
+        <h3>Question 1:</h3>
+        <p>What is the capital of France?</p>
+        <input type="radio" name="q1" value="a"> a)  Paris<br>
+        <input type="radio" name="q1" value="b"> b) London<br>
+        <input type="radio" name="q1" value="c"> c) Rome<br>
+
+        <h3>Question 2:</h3>
+        <p>What is the largest planet in our solar system?</p>
+        <input type="radio" name="q2" value="a"> a) Jupiter<br>
+        <input type="radio" name="q2" value="b"> b) Saturn<br>
+        <input type="radio" name="q2" value="c"> c) Earth<br>
+
+        <h3>Question 3:</h3>
+        <p>What is the chemical symbol for gold?</p>
+        <input type="radio" name="q3" value="a"> a) Au<br>
+        <input type="radio" name="q3" value="b"> b) Ag<br>
+        <input type="radio" name="q3" value="c"> c) Fe<br>
+
+        <br>
+        <input type="button" value="Submit Quiz" onclick="submitQuiz()">
+    </form>
+
     <footer>
         <p>&copy; 2024 Online Learning Platform</p>
     </footer>
-    <script src="JS/tests.js"></script>
-
 </body>
 </html>

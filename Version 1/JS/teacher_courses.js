@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>${course.description}</p>
             <button class="openBtn">Open</button>
             <button class="addRBtn">Add Resource</button>
-            <button class="addTestBtn">Add Test</button>
             <button class="deleteBtn">Delete</button>
             <span class="enrolled">Enrolled students: 0</span>
         `;
@@ -72,13 +71,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (target.classList.contains('addRBtn')) {
             // Add resource logic
+            // alert('Opening...');
             const courseName = target.parentElement.querySelector('h3').textContent;
             window.location.href = `add_resources.html?course=${encodeURIComponent(courseName)}`;
-        } else if (target.classList.contains('addTestBtn')) {
-            // Add test logic
-            const courseName = target.parentElement.querySelector('h3').textContent;
-            window.location.href = `add_test.html?course=${encodeURIComponent(courseName)}`;
-        } else if (target.classList.contains('openBtn')) {
+        }
+        else if (target.classList.contains('openBtn')) {
             // Open course logic
             const courseName = target.parentElement.querySelector('h3').textContent;
             const resources = JSON.parse(localStorage.getItem('resources')) || [];
