@@ -1,6 +1,5 @@
 # Spy Camera
 
-![Spy Camera Logo](https://example.com/spy-camera-logo.png)
 
 ## Overview
 
