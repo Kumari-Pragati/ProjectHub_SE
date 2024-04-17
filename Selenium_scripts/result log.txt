@@ -1,0 +1,82 @@
+Running 'proj_test'
+00:41:17
+1.
+open on http://localhost:5173/ OK
+00:41:18
+2.
+setWindowSize on 1936x1048 OK
+00:41:18
+3.
+click on linkText=IIITV Airport OK
+00:41:18
+4.
+click on css=.next OK
+00:41:18
+5.
+click on css=.next OK
+00:41:19
+6.
+click on css=.next OK
+00:41:19
+7.
+click on css=.next OK
+00:41:19
+8.
+click on css=.next OK
+00:41:20
+9.
+click on css=.footer__column:nth-child(2) > .footer__heading OK
+00:41:20
+10.
+click on css=.footer__column:nth-child(2) > .footer__heading OK
+00:41:20
+11.
+click on css=.footer__column:nth-child(1) > .footer__heading OK
+00:41:20
+12.
+click on css=.footer__column:nth-child(3) > .footer__heading OK
+00:41:20
+13.
+click on linkText=Careers OK
+00:41:20
+14.
+storeWindowHandle on root OK
+00:41:21
+15.
+selectWindow on handle=${win2346} OK
+00:41:21
+16.
+selectWindow on handle=${root} OK
+00:41:21
+17.
+selectWindow on handle=${win2346} OK
+00:41:21
+18.
+selectWindow on handle=${root} OK
+00:41:21
+19.
+click on linkText=Login/Signup OK
+00:41:21
+20.
+click on css=.nav-links > a OK
+00:41:21
+21.
+selectWindow on handle=${win7789} OK
+00:41:21
+22.
+click on name=username OK
+00:41:22
+23.
+type on name=username with value ABC OK
+00:41:22
+24.
+click on name=password OK
+00:41:22
+25.
+type on name=password with value LMFAO OK
+00:41:23
+26.
+click on css=.btn:nth-child(5) OK
+00:41:23
+'proj_test' completed successfully
+00:41:23
