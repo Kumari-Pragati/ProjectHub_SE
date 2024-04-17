@@ -63,10 +63,10 @@ This project constitutes an expense tracking system meticulously crafted to faci
 Test scripts for the project are written using Selenium.
 To run the test scripts, follow these steps:
 
-1. Install Python if not already installed.
-2. Install Pip
-
-3. Install Selenium:
+1. npm install mocha 
+2. npm install selenium-webdriver
+3. To Run:
    ```bash
-   pip install selenium
+   npx mocha <file_name>.spec.js
+   ```
    ```
