@@ -1,0 +1,388 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #009688;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+  }
+  
+  header h1 a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .login-signup {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .login-signup a {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: white;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .services ul,
+  .help ul,
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .services li,
+  .help li,
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  .services a,
+  .help a,
+  .contact-info .value {
+    text-decoration: none;
+    color: #009688;
+  }
+  
+  footer {
+    background-color: #009688;
+    color: white;
+    padding: 10px;
+  }
+
+.forms {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* height: 500px; */
+  }
+  
+  .forms h3 {
+    font-size: 1.2em;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 2rem;
+    margin-top: -10px;
+    background-color: rgb(25, 86, 124);;
+  }
+  
+  .forms ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .forms li {
+
+    background-color: #ffffff;
+    height: 6rem;
+    width: 14rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    list-style: none;
+  }
+  
+  .forms a {
+    text-decoration: none;
+    color: #009688;
+  }
+
+/* Add this CSS to your existing styles.css file */
+
+.services {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services h2 {
+    font-size: 1.2em;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 2rem;
+    margin-top: -10px;
+    background-color: #19567c;
+}
+
+.services ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services li {
+    background-color: #ffffff;
+    height: 6rem;
+    width: 14rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    list-style: none;
+}
+
+.services a {
+    text-decoration: none;
+    color: #009688;
+}
+
+/* Add this CSS to your existing styles.css file */
+
+.services-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Center align the text */
+}
+
+.services-all h2 {
+    margin-top: 0; /* Remove default margin for the h2 element */
+    font-size: 1.2em;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 2rem;
+    margin-top: -10px;
+    background-color: #19567c;
+}
+
+.forms,
+.services {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px); /* Adjust the width as needed */
+}
+
+.forms h3,
+.services h3 {
+    /* font-size: 1.2em;
+    color: #ffffff;
+    padding: 1rem;
+    margin: -10px 0 10px;
+    background-color: #19567c; */
+
+    font-size: 1.2em;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 2rem;
+    margin-top: -10px;
+    background-color: #19567c;
+}
+
+.forms ul,
+.services ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forms li,
+.services li {
+    background-color: #ffffff;
+    height: 6rem;
+    width: 14rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    list-style: none;
+}
+
+.forms a,
+.services a {
+    text-decoration: none;
+    color: #009688;
+}
+
+.candidate-info {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* width: calc(50% - 20px);  */
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.candidate-info h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #19567c;
+}
+
+.candidate-info p {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.candidate-info a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #009688;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.candidate-info a:hover {
+  background-color: #00796b;
+}
+
+.voting-page {
+
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.voting-page h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #19567c;
+}
+
+.voting-page p {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.voting-page a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #009688;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.voting-page a:hover {
+  background-color: #00796b;
+}
+
+.result-page {
+
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.result-page h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #19567c;
+}
+
+.result-page p {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.result-page a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #009688;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.result-page a:hover {
+  background-color: #00796b;
+}
+
+
+
+@media (max-width: 768px) {
+    .forms,
+    .services {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (min-width: 768px) {
+    .services-all {
+        flex-direction: row;
+    }
+
+    .forms,
+    .services {
+        margin-right: 20px; /* Add some margin between the sections */
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <div class="login-signup">
+            <a href="../Home/index.html">Home Page →</a>
+        </div>
+    </header>
+    <main>
+        
+        <section class="services-all">
+            <div class="forms">
+                    <h3>ADMIN OPERATIONS</h3>
+                <ul>
+                    <li style="background-color: rgba(135, 206, 250, 0.2);"><button class="b1" id="startElectionBtn">Start Conducting Election</button></li>
+                    <li style="background-color: rgba(144, 238, 144, 0.42);"><button class="b1" id="seeAllVotersBtn">See All Registered Voters</button></li>
+                    <li style="background-color: rgba(255, 250, 205, 0.55);"><button class="b1" id="verifyVoterBtn">Verify Voter</button></li>
+                    <li style="background-color: rgba(255, 215, 0, 0.34);"><button class="b1" id="displayCandidateBtn">Fill Candidate Info</button></li>
+                    <li style="background-color: rgba(135, 206, 250, 0.2);"><button class="b1" id="setDeadlineBtn">Set Deadline</button></li>
+                    <li style="background-color: rgba(144, 238, 144, 0.42);"><button class="b1" id="giveResultBtn">Give Result</button></li>
+                </ul>
+            </div>
+        </section>
+        <div id="votersTableContainer" class="hidden">
+            <h2>All Registered Voters</h2>
+            <table id="votersTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Verification</th> <!-- Added column for verification -->
+                    </tr>
+                </thead>
+                <tbody id="votersTableBody">
+                    <!-- Voter info will be populated here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="candidateInfoContainer" class="hidden">
+            <h2>Candidate Information</h2>
+            <table id="candidateTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Party</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="candidateTableBody">
+                    <!-- Candidate info will be populated here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="deadlineContainer" class="hidden">
+            <h2>Set Deadline</h2>
+            <input type="datetime-local" id="deadlineDateTime">
+            <button id="setDeadlineTimeBtn">Set Deadline Time</button>
+        </div>
+        <div id="popupModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <p>Election is Live</p>
+            </div>
+        </div>
+
+        <div id="resultOptionsContainer" class="hidden">
+            <h2>Give Result</h2>
+            <button id="sendSMSBtn">Send by SMS</button>
+            <button id="sendEmailBtn">Send by Email</button>
+            <p id="resultMessage"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
