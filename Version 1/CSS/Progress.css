@@ -59,5 +59,21 @@ footer {
     padding: 10px;
     position: relative;
     bottom: 0;
-    width: 100%;
+}
+
+/* progressBadge */
+.progressBadge {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 30vw;
+}
+#progressBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
 }
