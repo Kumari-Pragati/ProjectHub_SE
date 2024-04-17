@@ -1,0 +1,33 @@
+.view-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-item {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 300px;
+}
+
+.image-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.view-image-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-image-btn:hover {
+    background-color: #0056b3;
+}
