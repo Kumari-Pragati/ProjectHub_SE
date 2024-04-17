@@ -16,7 +16,7 @@ def test_addRequestBookToDatabase():
     driver.find_element(By.CSS_SELECTOR, ".bg-gray-200:nth-child(1)").send_keys("admin")
     driver.find_element(By.CSS_SELECTOR, ".bg-gray-200:nth-child(2)").send_keys("admin")
     driver.find_element(By.CSS_SELECTOR, ".text-1\\.5xl").click()
-    driver.find_element(By.CSS_SELECTOR, ".w-full:nth-child(1) > .form-checkbox").click()
+    driver.find_element(By.CSS_SELECTOR, ".w-full:nth-child(2) > .form-checkbox").click()
     
     try:
         WebDriverWait(driver, 10).until(EC.alert_is_present())
