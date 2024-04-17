@@ -1,0 +1,78 @@
+/* General navbar styles */
+.navbar {
+    background-color: #fff;
+    color: #333;
+    display: flex; /* This ensures the navbar itself is a flex container */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Add styles for .navbar-container to ensure layout */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Make it span the entire width of .navbar */
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 0;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-right: 1rem;
+  }
+  
+  .nav-links {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-links:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #007bff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-links:hover:after {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+    }
+  
+    .nav-menu {
+      flex-direction: row;
+      margin-top: 1rem;
+      text-align: center;
+    }
+  
+    .nav-item {
+      margin-right: 0;
+    }
+  }
+  

@@ -1,0 +1,44 @@
+.navextention {
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    background: white;
+    padding: 0;
+    border-radius: 0 0 10px 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    width: 80%;
+}
+
+.opened {
+    height: auto;
+    padding: 20px 40px 30px 40px;
+}
+
+.navextentioncolumn {
+    display: flex;
+    flex-flow: column;
+}
+
+.navextention h2 {
+    color: #551a8b;
+}
+
+.navextentioncolumn div {
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+}
+
+.navextention div a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #000;
+    background: #00000011;
+    padding: 8px;
+    border-radius: 5px;
+}
