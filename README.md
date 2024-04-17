@@ -1,2 +1,16 @@
-# ProjectHub_SE
-This GitHub repository contains the Software Engineering Lab projects for educational purposes. It includes comprehensive project documentation, source code, and testing frameworks to help students learn and contribute. Explore, learn, and contribute to help improve your software engineering skills. 
+# smart-cctv-tkinter
+This is a tkinter gui app for smart camera.
+
+
+you just need to run main.py file inorder to run full app 
+
+you would need :
+opencv
+tkinter
+
+installed to run these scripts properly
+
+video : https://youtu.be/vNeaJacy99s
+
+thanks ;) 
+
