@@ -1,0 +1,260 @@
+{
+  "id": "a716c2c7-c33e-4c92-8b22-1606b3105a2e",
+  "version": "2.0",
+  "name": "food-delivery-system",
+  "url": "http://127.0.0.1:5500",
+  "tests": [{
+    "id": "c8f83ee9-c6d0-4f41-8c64-5273eb8c7d5a",
+    "name": "TEST-1",
+    "commands": [{
+      "id": "8ab960c4-c979-4be4-9afc-943f75057cac",
+      "comment": "",
+      "command": "open",
+      "target": "/login.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ed6b1b1-0977-457b-9810-cfd2f8ab70b2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1301x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b20c2f40-04b6-43c8-8994-33f0df2fe294",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "610ebc5d-41f0-4afc-b20b-9de8342ca36c",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Tanay"
+    }, {
+      "id": "d3ea491f-44bf-417b-9972-6eadf097718d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "0f230999-1f05-4705-8d59-77efa2f36ab1",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ce1445a-fe17-40e5-87b5-13990887a809",
+      "comment": "",
+      "command": "click",
+      "target": "css=.settings_account-inner:nth-child(4) > .settings__left--account-content",
+      "targets": [
+        ["css=.settings_account-inner:nth-child(4) > .settings__left--account-content", "css:finder"],
+        ["xpath=//a[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb7e5a48-7955-4a93-a706-7e6164c83818",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//button[@onclick='showPastOrders()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Past Orders')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6c42389-a153-478a-be17-f11987e28ed6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(2)",
+      "targets": [
+        ["css=.button:nth-child(2)", "css:finder"],
+        ["xpath=//button[@onclick='showOrdersToDeliver()']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Orders to Deliver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93596806-9db9-4754-bc1c-cab511499911",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toDeliver button",
+      "targets": [
+        ["css=.toDeliver button", "css:finder"],
+        ["xpath=(//button[@onclick='goToSettingsPage()'])[2]", "xpath:attributes"],
+        ["xpath=(//div[@id='back-to-main-menu']/button)[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b241a5f-349e-432e-bbf0-3030feedf513",
+      "comment": "",
+      "command": "click",
+      "target": "css=.settings_account-inner:nth-child(5)",
+      "targets": [
+        ["css=.settings_account-inner:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(@href, 'history.html')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcf13653-f87a-4d0d-9484-e65a79fbb6bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='goToSettingsPage()']", "xpath:attributes"],
+        ["xpath=//div[@id='back-to-main-menu']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back to Main Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d6a9222-f61b-44fb-9c6a-c2f177a7cb23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.settings_account-inner:nth-child(6) .settings__left--account-name",
+      "targets": [
+        ["css=.settings_account-inner:nth-child(6) .settings__left--account-name", "css:finder"],
+        ["xpath=//a[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54a1ce84-f446-47f6-a286-6f7254df18c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=currentPassword",
+      "targets": [
+        ["id=currentPassword", "id"],
+        ["name=currentPassword", "name"],
+        ["css=#currentPassword", "css:finder"],
+        ["xpath=//input[@id='currentPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='changePasswordForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2bf31f4-f3b6-4560-a1dd-dc868773a28c",
+      "comment": "",
+      "command": "type",
+      "target": "id=currentPassword",
+      "targets": [
+        ["id=currentPassword", "id"],
+        ["name=currentPassword", "name"],
+        ["css=#currentPassword", "css:finder"],
+        ["xpath=//input[@id='currentPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='changePasswordForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "473cda08-fb17-423e-8291-42ffb87923b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=newPassword",
+      "targets": [
+        ["id=newPassword", "id"],
+        ["name=newPassword", "name"],
+        ["css=#newPassword", "css:finder"],
+        ["xpath=//input[@id='newPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='changePasswordForm']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "8606c152-0d51-45f8-9c27-fc449ab12dde",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirmPassword",
+      "targets": [
+        ["id=confirmPassword", "id"],
+        ["name=confirmPassword", "name"],
+        ["css=#confirmPassword", "css:finder"],
+        ["xpath=//input[@id='confirmPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='changePasswordForm']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "6606f74e-ab31-4c1d-9131-0ecf09ba0218",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(7)",
+      "targets": [
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@value='Change Password']", "xpath:attributes"],
+        ["xpath=//form[@id='changePasswordForm']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "598413ad-251e-4542-b604-fb2526683baf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back to Main Menu",
+      "targets": [
+        ["linkText=Back to Main Menu", "linkText"],
+        ["css=.backToMainMenu > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back to Main Menu')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'setting.html')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back to Main Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "410dd077-aa9a-4473-9258-43dea21c9056",
+      "comment": "",
+      "command": "click",
+      "target": "css=.LogOutBtn",
+      "targets": [
+        ["css=.LogOutBtn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fde5d650-cd76-4ae3-aa3e-76510e4b7064",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c8f83ee9-c6d0-4f41-8c64-5273eb8c7d5a"]
+  }],
+  "urls": ["http://127.0.0.1:5500/"],
+  "plugins": []
+}
