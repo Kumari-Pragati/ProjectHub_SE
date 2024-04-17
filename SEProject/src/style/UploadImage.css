@@ -1,0 +1,117 @@
+.upload-image-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .upload-form {
+    margin-bottom: 20px;
+  }
+  .upload-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set height to fill the viewport */
+  }
+  .upload-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light gray background color */
+  }
+  
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 10px; /* Add border radius */
+    background-color: #fff; /* White background color */
+  }
+  
+  .upload-form input[type="file"],
+  .upload-form input[type="text"],
+  .upload-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%; /* Set width to 80% of container */
+  }
+  
+  .upload-form button {
+    background-color: #007bff; /* Blue button background color */
+    color: #fff; /* White button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .image-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .upload-form input[type="file"],
+  .upload-form input[type="text"],
+  .upload-form button {
+    margin-bottom: 10px; /* Add some spacing between inputs and button */
+  }
+  
+  .image-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upload-form input[type="file"],
+  .upload-form input[type="text"],
+  .upload-form button {
+    margin-right: 10px;
+  }
+  
+  .image-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .image-item {
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .image-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .image-item p {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .upload-form input[type="file"] {
+    display: block;
+    margin: 0 auto; /* Center the input field */
+  }
+  
+  .upload-form input[type="text"],
+  .upload-form button {
+    margin-right: 10px;
+  }
