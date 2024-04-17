@@ -1,2 +1,8 @@
-# ProjectHub_SE
-This GitHub repository contains the Software Engineering Lab projects for educational purposes. It includes comprehensive project documentation, source code, and testing frameworks to help students learn and contribute. Explore, learn, and contribute to help improve your software engineering skills. 
+#BonVoyage
+BonVoyage was created out of the necessity that transportation must never be hectic in remote areas. Our website keeps you connected and secure and always on the go!
+##Group Members
+-Devrikh Jatav
+-Gaganpreet Singh
+-Inarat Hussain
+-Sneha Chinchkar Achyut
+-Arpita
