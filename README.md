@@ -25,8 +25,8 @@
 ### For Customers:
 
 1. User-Friendly Ordering: Easy-to-navigate interface with clear menu categories, item descriptions, and images.
-2. Customization Options: Ability to customize orders, add special instructions, and select portion sizes.
-3. Secure Payment: Integration with secure payment gateways for credit/debit cards, and cash on delivery.
+2. Cart: Easy Add to Cart option for customers.
+3. Secure Payment: Integration with secure payment for credit/debit cards, and cash on delivery.
 4. Easy Login: Create your account easily and login using username and password.
 
 ### For Restaurants:
