@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Profile Cards</title>
+    <style>
+        /* Styles for the dropdown */
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 35px;
+            font-size: 12px; /* Reduced font size */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 10px; /* Adjust according to your design */
+            right: 10px; /* Adjust according to your design */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #c7c5c5;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 8px 12px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Styles for the card layout */
+        .card-container {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            padding-top: 10%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .card {
+            box-shadow: 0px 0px 10px rgba(167, 166, 166, 0.5);
+            background-color: #f1f1f1;
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .card h2,
+        .card h3,
+        .card p {
+            margin-bottom: 5px;
+        }
+
+        .card-info {
+            margin-top: 10px;
+        }
+
+        .card-info h4 {
+            margin-bottom: 5px;
+            margin-top: 0; /* Adjust margin top */
+        }
+
+        /* Styles for progress bars */
+        .progress-bars {
+            text-align: left;
+        }
+
+        .progress-bar {
+            background-color: #f3f3f3;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            padding: 3px;
+        }
+
+        .progress-bar::after {
+            content: '';
+            display: block;
+            background-color: #4CAF50; /* Progress bar color */
+            height: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img style="width: 100px;" src="images/WhatsApp Image 2024-02-14 at 15.19.10.jpeg" alt="Person 1">
+            <h2 id="name">Yash Bharti</h2>
+            <p style="font-weight: 500; margin-top: 0%;" id="designation">UI/UX Designer</p><br>
+            <p style="font-weight: 550; font-family: Arial, Helvetica, sans-serif;"><span
+                    style="font-size: 20px; font-weight: 600; " id="followers">45K+</span> Followers</p>
+        </div>
+
+        <div class="card">
+            <div class="card-info">
+                <h4 style="margin-top: 0%;"><u>Page Reach</u></h4>
+                <div class="dropdown">
+                    <a href="http://127.0.0.1:5503/Signup/HomePage/Home.html">
+                        <button>Back</button>
+                    </a>
+                    <button id="selectedSocialMedia" onclick="changeSocialMedia('Instagram')">Instagram</button>
+                    <button id="selectedSocialMedia" onclick="changeSocialMedia('Facebook')">facebook</button>
+                    <button id="selectedSocialMedia" onclick="changeSocialMedia('Twitter')">Twitter</button>
+                    <!--
+                        <button class="dropbtn" id="selectedSocialMedia">Select Social Media</button>
+                    <div class="dropdown-content">
+                        <P onclick="changeSocialMedia('Instagram')">Instagram</p>
+                        <p onclick="changeSocialMedia('Facebook')">Facebook</p>
+                        <p onclick="changeSocialMedia('Twitter')">Twitter</p>
+                    </div>
+                    -->
+                </div>
+                <p><span style="font-weight: 600; font-size: x-large; color: #cf93db;" id="visitorPerMonth">85.8 </span> Visitor per month
+                </p>
+                <p style="color: #6497fd; font-weight: bold;"> September 2019 </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h4 style="margin-top: 0%;"><u>Audience Location</u></h4>
+            <div class="progress-bars">
+                <div class="progress-bar" style="width: 60%; background-color: #facec6;">Bangladesh: 3.2k</div>
+                <div class="progress-bar" style="width: 30%; background-color: #b9dfff;">Saudi Arabia: 1.6k</div>
+                <div class="progress-bar" style="width: 80%; background-color: #b6fcb6;">India: 8.9k</div>
+                <div class="progress-bar" style="width: 100%; background-color: #ffdbb0;">China: 10k</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeSocialMedia(socialMedia) {
+            document.getElementById("selectedSocialMedia").textContent = socialMedia;
+            // Simulating data update based on selected social media
+            if (socialMedia === 'Instagram') {
+                document.getElementById("name").textContent = "Nurul Amin";
+                document.getElementById("designation").textContent = "Instagram Designer";
+                document.getElementById("followers").textContent = "100K+";
+                document.getElementById("visitorPerMonth").textContent = "150.5";
+            } else if (socialMedia === 'Facebook') {
+                document.getElementById("name").textContent = "Nurul_XD";
+                document.getElementById("designation").textContent = "Facebook Designer";
+                document.getElementById("followers").textContent = "200K+";
+                document.getElementById("visitorPerMonth").textContent = "250.5";
+            } else if (socialMedia === 'Twitter') {
+                document.getElementById("name").textContent = "Amin Narul";
+                document.getElementById("designation").textContent = "Twitter Designer";
+                document.getElementById("followers").textContent = "300K+";
+                document.getElementById("visitorPerMonth").textContent = "350.5";
+            }
+        }
+    </script>
+</body>
+
+</html>
