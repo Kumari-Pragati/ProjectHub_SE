@@ -24,12 +24,12 @@ This project is a comprehensive stock market dashboard that allows users to sign
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/stock-market-dashboard.git
+   git clone https://github.com/PrajasW/ProjectHub_SE.git
 
 2. **Navigate to the project directory:**
 
     ```bash
-    cd stock-market-dashboard
+    cd ProjectHub_SE
     ```
 
 3. **Install dependencies:**
@@ -38,24 +38,13 @@ This project is a comprehensive stock market dashboard that allows users to sign
     npm install
     ```
 
-4. **Set up environment variables:**
-
-    - Create a `.env` file in the root directory.
-    - Add the following environment variables:
-
-        ```plaintext
-        PORT=3000
-        DB_URI=<your_mongodb_connection_string>
-        API_KEY=<your_api_key>
-        ```
-
-5. **Run the application:**
+4. **Run the application:**
 
     ```bash
-    npm start
+    npm run start
     ```
 
-6. **Access the application in your browser at** `http://localhost:3000`.
+5. **Access the application in your browser at** `http://localhost:3000`.
 
 ## Usage
 
@@ -64,9 +53,21 @@ This project is a comprehensive stock market dashboard that allows users to sign
 3. Buy and sell stocks as desired.
 4. Monitor your portfolio and track your investments.
 
-## Credits
+## Testing
 
-- API Provider: for providing real-time stock market data.
+We have done testing using both Selenium IDE and Selenium web-driver.
+
+### Selenium IDE
+We have tested logging in the user, buying two different stocks, after which we checked and verified the changes in user portfolio.
+
+test is located in `testing/ide-test`
+
+### Selenium Web-driver
+We have written python scripts using selenium webdriver library, using the chrome browser to test we tested the following:
+
+1. Register new user and log-in `testing/register-test.py`
+2. Login the user and buy new stock `testing/stock-buy-test`
+
 
 ## Acknowledgements
 
