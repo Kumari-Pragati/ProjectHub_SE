@@ -1,0 +1,50 @@
+.countryList {
+  width: 100%;
+  height: 65vh;
+  list-style: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 1.6rem;
+}
+.countryList {
+  overflow: hidden;
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* For Chrome, Safari, and Opera */
+.countryList::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  background-color: #007BFF; /* Change this to your preferred color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px; /* Make it more rounded */
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add some shadow */
+  text-transform: uppercase; /* Make the text uppercase */
+  letter-spacing: 0.05em; /* Increase spacing between letters */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade for hover state */
+  transform: translateY(-2px); /* Move the button up a bit */
+}
+
+button:active {
+  background-color: #003d80; /* Even darker shade for active state */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Reduce the shadow */
+  transform: translateY(0); /* Move the button back to its original position */
+}
