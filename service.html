@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sercive.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <!-- <a href="home.html" class="navbutton">Home</a> -->
+            <a href="Buycar.html"  class="navbutton">Buy Car</a>
+            <a href="Sellcar.html"  class="navbutton">Sell Car</a>
+            <a href="Rentcar.html"  class="navbutton">Rent Car</a>
+            <a href="service.html"  class="navbutton">Service And Maintenance</a>
+            <!-- <a href="sales.html" id="sales" class="navbutton">Sales</a> -->
+        </div>
+        </header>
+        <div>
+    <p id="needservice">Need service or maintenance for your car? Schedule an appointment below:</p>
+    <form id="serviceForm">
+        <label for="carMake">Car Make:</label>
+        <input type="text" id="carMake" name="carMake" required>
+        <label for="carModel">Car Model:</label>
+        <input type="text" id="carModel" name="carModel" required>
+        <label for="serviceType">Service Type:</label>
+        <select id="serviceType" name="serviceType" required>
+            <option value="Oil Change">Oil Change</option>
+            <option value="Tire Rotation">Tire Rotation</option>
+            <option value="Brake Inspection">Brake Inspection</option>
+            
+        </select>
+        <button type="submit">Schedule Appointment</button>
+    </form>
+        </div>
+</body>
+</html>

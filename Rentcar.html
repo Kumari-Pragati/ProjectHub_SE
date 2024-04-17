@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rentcar.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <!-- <a href="home.html" class="navbutton">Home</a> -->
+            <a href="Buycar.html"  class="navbutton">Buy Car</a>
+            <a href="Sellcar.html"  class="navbutton">Sell Car</a>
+            <a href="Rentcar.html"  class="navbutton">Rent Car</a>
+            <a href="service.html"  class="navbutton">Service And Maintenance</a>
+            <!-- <a href="sales.html" id="sales" class="navbutton">Sales</a> -->
+        </div>
+        </header>
+        <div>
+            <h2>Rent a Car</h2>
+    <p id="planning trip">Planning a trip? Rent a car from us. Fill out the form below to reserve:</p>
+    <form id="rentCarForm">
+        <label for="pickupDate">Pickup Date:</label>
+        <input type="date" id="pickupDate" name="pickupDate" required>
+        <label for="returnDate">Return Date:</label>
+        <input type="date" id="returnDate" name="returnDate" required>
+        <label for="carType">Car Type:</label>
+        <select id="carType" name="carType" required>
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+            <option value="Truck">Truck</option>
+           
+        </select>
+        <button type="submit">Reserve</button>
+    </form>
+        </div>
+</body>
+</html>
