@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #weather {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div>
+            <label for="city">Select City:</label>
+            <select id="city">
+                <option value="Gandhinagar">Gujarat</option>
+                <option value="Mumbai">Mumbai</option>
+            </select>
+            <button onclick="fetchWeather()">Get Weather</button>
+        </div>
+        <div id="weather"></div>
+    </div>
+
+    <script>
+        function fetchWeather() {
+            var selectedCity = $('#city').val();
+            var apiKey = '2bfc929b99274034fb9ceff86148027d';
+
+            // Retrieve latitude and longitude for the selected city (you might need an additional API or database for this)
+            var cityCoordinates = getCityCoordinates(selectedCity);
+
+            // If you have a method to get city coordinates synchronously, you can proceed, otherwise handle asynchronously
+            if (cityCoordinates) {
+                var latitude = cityCoordinates.latitude;
+                var longitude = cityCoordinates.longitude;
+
+                $.ajax({
+                    url: 'https://api.openweathermap.org/data/3.0/onecall?lat=' + latitude + '&lon=' + longitude + '&exclude=minutely,hourly&appid=' + apiKey,
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function(data) {
+                        // Display weather data on the webpage
+                        var weatherInfo = 'City: ' + selectedCity + '<br>' +
+                                            'Temperature: ' + data.main.temp + '°C<br>' +
+                                            'Weather: ' + data.weather[0].description;
+
+                        $('#weather').html(weatherInfo);
+                    },
+                    error: function() {
+                        $('#weather').html('Error fetching weather data.');
+                    }
+                });
+            } else {
+                $('#weather').html('Error: City coordinates not found.');
+            }
+        }
+
+        // Dummy function to get city coordinates (replace with your actual method to obtain coordinates)
+        function getCityCoordinates(city) {
+            // Here you would typically make another API call or use a database to get the coordinates
+            // For demonstration purposes, returning dummy coordinates
+            var dummyCoordinates = {
+                latitude: 0.25, // Replace with actual latitude
+                longitude: 5.25 // Replace with actual longitude
+            };
+            return dummyCoordinates;
+        }
+    </script>
+</body>
+</html>

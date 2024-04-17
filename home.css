@@ -1,0 +1,99 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px 0px #000;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    flex: 1 1 100%;
+    text-align: center;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    color: #0056b3;
+    background-color: #e8f0fe;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content section {
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    color: #007BFF;
+}
+
+.content p {
+    color: #212121;
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+    .nav a {
+        flex: 1 1 auto;
+    }
+}
+
+@media (min-width: 900px) {
+    .nav {
+        flex-wrap: nowrap;
+    }
+
+    .nav a {
+        flex: 1 1 200px;
+    }
+}
+
+/* Interactive styles */
+.nav a.active {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.nav a.active:hover {
+    color: #fff;
+}
+
+.content section:target {
+    animation: slideDown 0.5s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
