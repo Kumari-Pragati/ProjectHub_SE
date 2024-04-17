@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div class="alan-btn"></div>
+<script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "39448ee8d18f1f2ce1f1b4b42291b1ab2e956eca572e1d8b807a3e2338fdd0dc/stage",
+    authData: {data:"your auth data if needed"},
+    onCommand: function (commandData) {
+      switch(commandData.command) {
+        case 'openGoogle':
+          window.open('https://www.google.com', '_blank');
+          break;
+        case 'openYoutube':
+          window.open('https://www.youtube.com', '_blank');
+          break;
+        case 'searchWikipedia':
+          window.open('https://www.wikipedia.org', '_blank');
+          break;
+        case 'tellJoke':
+          alanBtnInstance.playText("Why don't scientists trust atoms? Because they make up everything!");
+          break;
+        case 'playMusic':
+          window.open('https://www.spotify.com', '_blank');
+          break;
+        case 'tellFunFact':
+          alanBtnInstance.playText("Did you know that the shortest war in history lasted only 38 minutes? It was between Britain and Zanzibar in 1896.");
+          break;
+        case 'translatePhrase':
+          // Implement translation functionality
+          break;
+        case 'defineWord':
+          // Implement word definition functionality
+          break;
+        case 'sendEmail':
+          window.open('https://outlook.live.com/mail/inbox', '_blank');
+          break;
+        case 'makeCall':
+          // Implement call functionality
+          break;
+        case 'tellStory':
+          alanBtnInstance.playText("Once upon a time, in a land far, far away...");
+          break;
+        // Add cases for other intents here
+        default:
+          // Handle unknown commands
+          break;
+      }
+    },
+    rootEl: document.querySelector(".alan-btn"),
+  });
+</script>
+</body>
+</html>

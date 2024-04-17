@@ -1,2 +1,19 @@
-# ProjectHub_SE
-This GitHub repository contains the Software Engineering Lab projects for educational purposes. It includes comprehensive project documentation, source code, and testing frameworks to help students learn and contribute. Explore, learn, and contribute to help improve your software engineering skills. 
+# JARVIS
+## Description
+JARVIS is an AI assistant that listens to commands and responds accordingly. It also includes weather detection using the OpenWeather API.
+
+## Features
+- Voice recognition: JARVIS can understand spoken commands.
+- Natural language processing: JARVIS can interpret and respond to commands in a human-like manner.
+- Weather detection: JARVIS can provide current weather information using the OpenWeather API.
+
+## Contributing
+Team Members:
+Sanket Trivedi (202251145)
+Tushant Akar (202251146)
+Vaddadi Lakshmi Nihalmai Joshna (202251149)
+Anjali Lodhi (202252306)
+Prashant Reddy (202252315)
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
