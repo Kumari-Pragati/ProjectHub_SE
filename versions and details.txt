@@ -29,17 +29,17 @@ This version of the website relies on local storage for data storage and managem
 5. Modify the CSS files to customize the website's appearance.
 
 ### Testing with Selenium:
-1. Install Selenium WebDriver for your preferred programming language (e.g., Python).
-2. Write test scripts using Selenium WebDriver to interact with the website.
-3. Use test scripts to automate user interactions such as course enrollment, resource viewing, and test taking.
-4. Execute the test scripts to ensure the website functions as expected.
+Test Scenarios: Test scripts were created to cover various user interactions and functionalities of the website, including course enrollment, resource viewing, and test taking.
+Selenium Setup: Selenium WebDriver was installed and configured in a programming language such as Python.
+Test Script Development: Test scripts were written using Selenium WebDriver to automate user interactions on the website.
+Execution: The test scripts were executed to validate the functionality of the website, ensuring that courses could be added, resources viewed, and tests taken successfully.
 
 ---
 
 ## Version 2: MySQL Database Implementation with Authentication
 
 ### Overview:
-This version of the website integrates with a MySQL database for data storage and management. It also includes user authentication features, allowing users to register, log in, and access personalized content.
+This version of the website uses ejs file and integrates with a MySQL database for data storage and management. It also includes user authentication features, allowing users to register, log in, and access personalized content.
 
 ### Features:
 - Users can register for an account with email and password.
@@ -69,10 +69,10 @@ This version of the website integrates with a MySQL database for data storage an
 7. Modify the CSS files to customize the website's appearance.
 
 ### Testing with Selenium:
-1. Install Selenium WebDriver for your preferred programming language (e.g., Python).
-2. Write test scripts using Selenium WebDriver to interact with the website.
-3. Use test scripts to automate user interactions such as registration, login, course enrollment, resource viewing, and test taking.
-4. Execute the test scripts to ensure the website functions as expected.
+Test Scenarios: Test scripts were created to cover various user interactions and functionalities of the website, including course enrollment, resource viewing, and test taking.
+Selenium Setup: Selenium WebDriver was installed and configured in a programming language such as Python.
+Test Script Development: Test scripts were written using Selenium WebDriver to automate user interactions on the website.
+Execution: The test scripts were executed to validate the functionality of the website, ensuring that courses could be added, resources viewed, and tests taken successfully.
 
 ---
 
