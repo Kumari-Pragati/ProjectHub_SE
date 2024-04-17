@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Maths"
+    },
+    {
+        "id": 2,
+        "name": "DBMS"
+    },
+    {
+        "id": 3,
+        "name": "Data Structures and Algorithms"
+    },
+    {
+        "id": 4,
+        "name": "C Programming"
+    },
+    {
+        "id": 5,
+        "name": "Digital Logic Design"
+    }
+]

@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
+}
+
+// enum Role {
+//   USER
+//   VERIFIED_USER
+// }
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+enum Status {
+  VERIFIED
+  PENDING
+  NA
+}
+
+model Profile {
+  id         String   @id @default(uuid())
+  userId     String   @unique
+  name       String
+  imageUrl   String
+  email      String   @unique
+  verifyimageUrl String
+  // role       Role     @default(USER)
+  createdAt  DateTime @default(now())
+  upadatedAt DateTime @updatedAt
+  status     Status   @default(NA)
+
+  questions Question[]
+}
+
+model Subject {
+  id        String     @id @default(uuid())
+  name      String
+  questions Question[]
+}
+
+model Question {
+  id          String     @id @default(uuid())
+  description String
+  imageUrl    String
+  difficulty  Difficulty
+  profileId   String
+  marks       Int
+  subjectId   String
+  isPrivate   Boolean
+  profile     Profile    @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  subject     Subject    @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+
+  @@index([profileId])
+  @@index([subjectId])
+}

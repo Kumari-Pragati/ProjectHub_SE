@@ -1,0 +1,849 @@
+[
+  
+  {
+    "id": 1,
+    "question": "What is the value of 2 + 2?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Maths",
+    "privacy": "private"
+  },
+  {
+    "id": 2,
+    "question": "What is the formula for the area of a circle?",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 3,
+    "question": "What is the formula for the perimeter of a rectangle?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 4,
+    "question": "Solve for x: 3x + 5 = 17.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 5,
+    "question": "What is the value of the square root of 144?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Maths",
+    "privacy": "private"
+  },
+  {
+    "id": 6,
+    "question": "What is the formula for the volume of a cube?",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 7,
+    "question": "What is the formula for finding the hypotenuse of a right triangle?",
+    "marks": 4,
+    "difficulty": "medium",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 8,
+    "question": "What is the value of 3 factorial?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Maths",
+    "privacy": "private"
+  },
+  {
+    "id": 9,
+    "question": "Solve for x: 4x - 7 = 25.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 10,
+    "question": "What is the sum of angles in a triangle?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 11,
+    "question": "What is the value of pi (π)?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 12,
+    "question": "What is the formula for the area of a rectangle?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 13,
+    "question": "Solve for x: 2x + 3 = 11.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 14,
+    "question": "What is the formula for the volume of a cylinder?",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 15,
+    "question": "What is the formula for finding the area of a triangle?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 16,
+    "question": "What is the value of the cube root of 27?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 17,
+    "question": "Solve for x: 5x - 8 = 12.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 18,
+    "question": "What is the formula for finding the circumference of a circle?",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 19,
+    "question": "What is the value of 7 squared?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 20,
+    "question": "What is the formula for finding the volume of a sphere?",
+    "marks": 4,
+    "difficulty": "medium",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 21,
+    "question": "What is the value of 2^10?",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 22,
+    "question": "What is the value of log(base 2) 8?",
+    "marks": 4,
+    "difficulty": "hard",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 23,
+    "question": "What is the value of sin(π/2)?",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 24,
+    "question": "What is the value of tan(π/4)?",
+    "marks": 4,
+    "difficulty": "hard",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  {
+    "id": 25,
+    "question": "What is the value of cos(π)?",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "Maths",
+    "privacy": "public"
+  },
+  
+
+    {
+      "id": 21,
+      "question": "What is a Database Management System (DBMS)?",
+      "marks": 2,
+      "difficulty": "easy",
+      "subject": "DBMS",
+      "privacy": "private"
+    },
+    {
+      "id": 22,
+      "question": "Explain the concept of normalization in DBMS.",
+      "marks": 3,
+      "difficulty": "medium",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 23,
+      "question": "What is the difference between a DBMS and an RDBMS?",
+      "marks": 2,
+      "difficulty": "easy",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 24,
+      "question": "What are the advantages of using a DBMS?",
+      "marks": 3,
+      "difficulty": "medium",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 25,
+      "question": "Explain ACID properties in the context of DBMS transactions.",
+      "marks": 4,
+      "difficulty": "medium",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 26,
+      "question": "What is a primary key in DBMS?",
+      "marks": 2,
+      "difficulty": "easy",
+      "subject": "DBMS",
+      "privacy": "private"
+    },
+    {
+      "id": 27,
+      "question": "What is a foreign key in DBMS?",
+      "marks": 2,
+      "difficulty": "easy",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 28,
+      "question": "Explain the concept of indexing in DBMS.",
+      "marks": 3,
+      "difficulty": "medium",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 29,
+      "question": "What is a database schema?",
+      "marks": 2,
+      "difficulty": "easy",
+      "subject": "DBMS",
+      "privacy": "private"
+    },
+    {
+      "id": 30,
+      "question": "What is the difference between DDL and DML in DBMS?",
+      "marks": 3,
+      "difficulty": "medium",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 31,
+      "question": "Explain the concept of data redundancy in DBMS.",
+      "marks": 2,
+      "difficulty": "easy",
+      "subject": "DBMS",
+      "privacy": "private"
+    },
+    {
+      "id": 32,
+      "question": "What is the role of a DBA in DBMS?",
+      "marks": 3,
+      "difficulty": "medium",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 33,
+      "question": "Explain the concept of concurrency control in DBMS.",
+      "marks": 4,
+      "difficulty": "medium",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 34,
+      "question": "What is a trigger in DBMS?",
+      "marks": 2,
+      "difficulty": "easy",
+      "subject": "DBMS",
+      "privacy": "private"
+    },
+    {
+      "id": 35,
+      "question": "Explain the concept of a database view in DBMS.",
+      "marks": 3,
+      "difficulty": "medium",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 36,
+      "question": "What is the difference between a database and a data warehouse?",
+      "marks": 2,
+      "difficulty": "easy",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 37,
+      "question": "Explain the concept of referential integrity in DBMS.",
+      "marks": 3,
+      "difficulty": "medium",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of a DBMS backup and recovery strategy?",
+      "marks": 4,
+      "difficulty": "medium",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+    {
+      "id": 39,
+      "question": "Explain the concept of a database transaction in DBMS.",
+      "marks": 2,
+      "difficulty": "easy",
+      "subject": "DBMS",
+      "privacy": "private"
+    },
+    {
+      "id": 40,
+      "question": "What is the role of SQL in DBMS?",
+      "marks": 3,
+      "difficulty": "medium",
+      "subject": "DBMS",
+      "privacy": "public"
+    },
+      
+
+  {
+    "id": 41,
+    "question": "What is a linked list?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "private"
+  },
+  {
+    "id": 42,
+    "question": "What is a stack and how does it work?",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 43,
+    "question": "Explain the concept of recursion.",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 44,
+    "question": "What is a queue and how does it differ from a stack?",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 45,
+    "question": "Explain the concept of time complexity in algorithms.",
+    "marks": 4,
+    "difficulty": "medium",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 46,
+    "question": "What is a binary search tree?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "private"
+  },
+  {
+    "id": 47,
+    "question": "What is the difference between a linked list and an array?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 48,
+    "question": "Explain the concept of dynamic programming.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 49,
+    "question": "What is the difference between BFS and DFS?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "private"
+  },
+  {
+    "id": 50,
+    "question": "Explain the concept of hashing.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 51,
+    "question": "What is an AVL tree?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 52,
+    "question": "Explain the concept of greedy algorithms.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 53,
+    "question": "What is a heap data structure?",
+    "marks": 2,
+    "difficulty": "hard",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "private"
+  },
+  {
+    "id": 54,
+    "question": "Explain the concept of binary search.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 55,
+    "question": "What is a priority queue?",
+    "marks": 2,
+    "difficulty": "hard",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 56,
+    "question": "Explain the concept of backtracking.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 57,
+    "question": "What is a trie data structure?",
+    "marks": 2,
+    "difficulty": "hard",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "private"
+  },
+  {
+    "id": 58,
+    "question": "Explain the concept of divide and conquer algorithms.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 59,
+    "question": "What is a graph data structure?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },
+  {
+    "id": 60,
+    "question": "Explain the concept of topological sorting.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Data Structures and Algorithms",
+    "privacy": "public"
+  },  
+
+  {
+    "id": 61,
+    "question": "What is C programming?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "C Programming",
+    "privacy": "private"
+  },
+  {
+    "id": 62,
+    "question": "Explain the difference between C and C++.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 63,
+    "question": "What are the basic data types in C?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 64,
+    "question": "Explain the concept of arrays in C.",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 65,
+    "question": "What is a pointer in C?",
+    "marks": 4,
+    "difficulty": "hard",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 66,
+    "question": "Explain the concept of functions in C.",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "C Programming",
+    "privacy": "private"
+  },
+  {
+    "id": 67,
+    "question": "What are the different types of loops in C?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 68,
+    "question": "Explain the concept of structures in C.",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 69,
+    "question": "What is the use of 'sizeof' operator in C?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "C Programming",
+    "privacy": "private"
+  },
+  {
+    "id": 70,
+    "question": "Explain the concept of recursion in C.",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 71,
+    "question": "What is the difference between 'scanf' and 'gets' in C?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 72,
+    "question": "Explain the concept of file handling in C.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 73,
+    "question": "What is the purpose of 'malloc' function in C?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "C Programming",
+    "privacy": "private"
+  },
+  {
+    "id": 74,
+    "question": "Explain the concept of bitwise operators in C.",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 75,
+    "question": "What is the 'const' keyword used for in C?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 76,
+    "question": "Explain the concept of 'typedef' in C.",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 77,
+    "question": "What is the difference between '++i' and 'i++' in C?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "C Programming",
+    "privacy": "private"
+  },
+  {
+    "id": 78,
+    "question": "Explain the concept of 'static' variables in C.",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 79,
+    "question": "What is the use of 'exit' function in C?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "C Programming",
+    "privacy": "public"
+  },
+  {
+    "id": 80,
+    "question": "Explain the concept of 'union' in C.",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "C Programming",
+    "privacy": "public"
+  },  
+  
+  {
+    "id": 81,
+    "question": "What is digital logic design?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Digital Logic Design",
+    "privacy": "private"
+  },
+  {
+    "id": 82,
+    "question": "What are logic gates?",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 83,
+    "question": "Explain the concept of Boolean algebra.",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 84,
+    "question": "What is a truth table?",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 85,
+    "question": "Explain the concept of combinational circuits.",
+    "marks": 4,
+    "difficulty": "hard",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 86,
+    "question": "What is a flip-flop in digital logic design?",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Digital Logic Design",
+    "privacy": "private"
+  },
+  {
+    "id": 87,
+    "question": "Explain the concept of sequential circuits.",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 88,
+    "question": "What are synchronous and asynchronous circuits?",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 89,
+    "question": "Explain the concept of multiplexers and demultiplexers.",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Digital Logic Design",
+    "privacy": "private"
+  },
+  {
+    "id": 90,
+    "question": "What is a decoder in digital logic design?",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 91,
+    "question": "Explain the concept of encoders in digital logic design.",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 92,
+    "question": "What are registers and counters?",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 93,
+    "question": "Explain the concept of shift registers.",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Digital Logic Design",
+    "privacy": "private"
+  },
+  {
+    "id": 94,
+    "question": "What is a state diagram?",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 95,
+    "question": "Explain the concept of finite state machines.",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 96,
+    "question": "What is a counter in digital logic design?",
+    "marks": 3,
+    "difficulty": "hard",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 97,
+    "question": "Explain the concept of asynchronous sequential circuits.",
+    "marks": 2,
+    "difficulty": "easy",
+    "subject": "Digital Logic Design",
+    "privacy": "private"
+  },
+  {
+    "id": 98,
+    "question": "What is a JK flip-flop?",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 99,
+    "question": "Explain the concept of hazard in digital circuits.",
+    "marks": 2,
+    "difficulty": "hard",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  },
+  {
+    "id": 100,
+    "question": "What is a half adder and a full adder?",
+    "marks": 3,
+    "difficulty": "medium",
+    "subject": "Digital Logic Design",
+    "privacy": "public"
+  }
+]
