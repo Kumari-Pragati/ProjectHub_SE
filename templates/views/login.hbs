@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity Hospital | Login</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/adc294ab5c.js" crossorigin="anonymous"></script>
+
+	{{!-- social_style.css --}}
+	<link rel="stylesheet" href="css/social_style.css">
+
+    <!-- Custom CSS -->
+    <style>
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar-brand img {
+            height: 50px; /* Adjust the height as needed */
+        }
+
+        .navbar-nav {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar-nav li {
+            margin-right: 15px;
+        }
+
+        .navbar-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar-toggler {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .navbar-toggler span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .navbar-nav.active {
+            display: block;
+        }
+		.footer-v1 {
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header-v1">
+            <!-- Topbar -->
+            <div class="topbar-v1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-inline top-v1-contacts">
+                                <li><i class="fa fa-envelope"></i> Email: unityhospital@gmail.com</li>
+                                <li><i class="fa fa-phone"></i> Contact no : 63002 51986</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Topbar -->
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a href="/">
+                        <img src="img/logo/unity_white.jpg" alt="Logo">
+                    </a>
+                </div>
+
+                <ul class="navbar-nav">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about.hbs">ABOUT US</a></li>
+                    <li><a href="doctors.hbs">DOCTORS</a></li>
+                    <li><a href="gallery.hbs">GALLERY</a></li>
+                    <li><a href="blog.hbs">BLOGS</a></li>
+                    <li><a href="/contact">CONTACT US</a></li>
+                    <li><a href="/registration">REGISTRATION</a></li>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="appointment.hbs">BOOK APPOINTMENT</a></li>
+                </ul>
+
+                <button class="navbar-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+            <!-- End Navbar -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Login Form -->
+        <div style="display: flex; justify-content: center; align-items: center; height: 80vh;">
+            <form class="reg-page" style="width: 100%; max-width: 350px; padding: 20px; border: 1px solid #cce7ec; border-radius: 5px;">
+                <div style="margin-bottom: 20px;">
+                    <h2 style="text-align: center;">LOGIN TO YOUR ACCOUNT</h2>
+                </div>
+
+                <div style="margin-bottom: 20px; display: flex; justify-content: center;">
+                    <div style="position: relative;">
+                        <i class="fa fa-envelope" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%);"></i>
+                        <input type="email" name="userid" placeholder="Email Address" class="form-control" required="" style="width: calc(100% - 20px); padding-left: 30px;">
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 20px; display: flex; justify-content: center;">
+                    <div style="position: relative;">
+                        <i class="fa fa-key" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%);"></i>
+                        <input type="password" name="usrpsw" placeholder="Password" class="form-control" required="" style="width: calc(100% - 20px); padding-left: 30px;">
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 20px; text-align: left;">
+                    <label><input type="checkbox"> Stay signed in</label>
+                </div>
+
+                <div style="margin-bottom: 20px; display: flex; justify-content: center;">
+                    <button class="btn btn-primary" type="submit" onclick="userlogin()" style="width: 100%;">Login</button>
+                </div>
+
+                <hr>
+
+                <div style="text-align: center;">
+                    <h4>Forget your Password?</h4>
+                    <p>No worries, <a class="color-green" href="#">click here</a> to reset your password.</p>
+                </div>
+            </form>
+        </div>
+        <!-- End Login Form -->
+
+        <!-- Footer -->
+        <div class="footer-v1">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- About -->
+                        <div class="col-md-3">
+                            <a href="/"><img id="logo-footer" class="footer-logo" src="img/logo/unity_white.jpg" alt=""></a>
+                            <p>At Unity Hospital, we are convinced that 'quality' and 'lowest cost' are not mutually exclusive when it comes to healthcare delivery.</p>
+                            <p>Our mission is to deliver high quality, affordable healthcare services to the broader population in India.</p>
+                        </div><!--/col-md-3-->
+                        <!-- End About -->
+
+                        <!-- Latest -->
+                        <div class="col-md-4">
+                            <div class="posts">
+                                <div class="headline"><h2>Latest Posts</h2></div>
+                                <ul class="list-unstyled latest-list">
+                                    <li>
+                                        <a href="blog.hbs">Incredible content</a>
+                                        <small>December 16, 2020</small>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.hbs">Latest Images</a>
+                                        <small>December 16, 2020</small>
+                                    </li>
+                                    <li>
+                                        <a href="terms.hbs">Terms and Conditions</a>
+                                        <small>December 16, 2020</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--/col-md-4-->
+                        <!-- End Latest -->
+
+                        <!-- Link List -->
+                        <div class="col-md-4">
+                            <div class="headline"><h2>Useful Links</h2></div>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="about.hbs">About us</a><i class="fa fa-angle-right"></i></li>
+                                <li><a href="/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
+                                <li><a href="appointment.hbs">Book Appointment</a><i class="fa fa-angle-right"></i></li>
+                            </ul>
+                        </div><!--/col-md-4-->
+                        <!-- End Link List -->
+
+                        <!-- Address -->
+                        <div class="col-md-4 map-img">
+                            <div class="headline"><h2>Contact Us</h2></div>
+                            <address style="margin-bottom: 40px;">
+                                Unity Hospital <br>
+                                Ahmedabad, IN <br>
+                                Phone: 630 025 1986 <br>
+                                Email: unityhospital@gmail.com 
+                            </address>
+                        </div><!--/col-md-4-->
+                        <!-- End Address -->
+                    </div>
+                </div>
+            </div>
+			<!--/footer-->
+
+		 <div class="col-md-12">
+                        <div class="text-center">
+                            <p>2024 &copy; All Rights Reserved. <a href="privacy.hbs">Privacy Policy</a> | <a href="terms.hbs">Terms of Service</a></p>
+                        </div>
+                        <div class="social-links">
+                            <ul class="footer-socials">
+                                <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+                                <li><a href="http://www.skype.com"><img src="img/skype.jpg" alt="Skype"></a></li>
+                                <li><a href="http://www.linkedin.com"><img src="img/linkdin.jpg" alt="Linkedin"></a></li>
+                                <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+                                <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+		</div>
+        <!-- End Footer -->
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your JavaScript code here -->
+    <script>
+        // Function to handle form submission
+        function userlogin() {
+            // Get form data
+            var email = document.getElementsByName('userid')[0].value;
+            var password = document.getElementsByName('usrpsw')[0].value;
+
+            // You can add your login logic here, such as sending a request to a server-side script for authentication
+            // For demonstration, let's log the input values to the console
+            console.log("Email:", email);
+            console.log("Password:", password);
+
+            // Redirect to the home page after successful login (replace 'home.hbs' with your actual home page URL)
+            window.location.href = '/';
+
+            // Prevent default form submission
+            return false;
+        }
+    </script>
+</body>
+</html>
