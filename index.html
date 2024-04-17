@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <i><h1>The Traderview</h1></i>
+    <nav>
+      <ul>
+        <u><li><a href="index.html">Home</a></li></u>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="trading.html">Live Trade</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li style="float: right;"><a href="signout.html">Sign Out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="content">
+      <b><h1>WELCOME TRADERS!!!</h1></b>
+      <p>Welcome to The Traderview, your premier destination for navigating the complex world of trading with ease and confidence. 
+         Whether you're a seasoned trader looking to fine-tune your strategies or a novice investor eager to explore the possibilities of financial markets, we're here to empower you every step of the way. 
+         Dive into our comprehensive suite of tools and resources, meticulously designed to provide unparalleled insights and support. 
+         From real-time market data and personalized portfolio analysis to expertly curated news and educational content, we offer everything you need to stay informed, inspired, and ahead of the curve. 
+         Join our community of like-minded traders, unlock your full potential, and embark on a transformative journey towards financial success.</p>
+      <img src="trading.jpg" alt="Trading Image" width="500">
+      <h3>Select your desired feature from the navigation menu and embark on your trading adventure today!</h3>
+    </section>
+    <section id="login">
+      <h2>Login</h2>
+      <form action="login.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="signup.html">Sign up</a> now.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Asvin & Vinod Co. Pvt. Ltd. All rights reserved.</p>
+  </footer>
+</body>
+</html>
