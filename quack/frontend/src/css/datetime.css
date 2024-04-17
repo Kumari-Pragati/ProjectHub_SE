@@ -1,0 +1,133 @@
+/* DateAndTime.css */
+
+.date-time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.date-selector,
+.time-selector,
+.repeat-selector {
+  margin-bottom: 20px;
+}
+
+.date-selector h3,
+.time-selector h3,
+.repeat-selector h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.days .day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.days .day.selected {
+  background-color: lightgray;
+}
+
+.days .day span {
+  font-size: 14px;
+}
+
+.hours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.hours .hour {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hours .hour.selected {
+  background-color: lightgray;
+}
+
+.hours .hour span {
+  font-size: 14px;
+}
+
+.repeat-options {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.repeat-option {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.repeat-option.selected {
+  background-color: lightgray;
+}
+
+.repeat-option span {
+  font-size: 14px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+/* Styles for .description h3 */
+.description h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.description textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.upload-attachments,
+.submit-button {
+  margin-bottom: 20px;
+}
+
+.submit-button button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-attachments button:hover,
+.submit-button button:hover {
+  background-color: gray;
+}
