@@ -1,5 +1,5 @@
 # ProjectHub_SE
-The Online Food Ordering System Project is a software solution, available as a web application, designed to streamline the process of placing food orders online. Catering to the needs of discerning customers seeking culinary delights, this system provides a platform for browsing restaurant menus and placing orders conveniently.
+
 Project Details :
 Project Name : Online Food Ordering System
 Programming Language Used : PHP, CSS(Frontend)
