@@ -18,6 +18,11 @@ Responsive web design for accessibility on various devices
 To test Selenium in your project, you typically create Python scripts that use Selenium WebDriver to automate interactions with your web application. These scripts simulate user interactions such as clicking buttons, filling out forms, and verifying elements on the page.
 
 
+**How to Run**
+1. Open Folder "WebApp" in VS Code
+2. Open index.html file present in folder **Home**
+3. Go Live
+
 **In this script**
 
 We import the necessary modules from Selenium.
