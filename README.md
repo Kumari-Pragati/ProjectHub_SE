@@ -49,4 +49,14 @@ Before running Spy Camera, ensure that you configure the following settings:
 
 ---
 
+## Screeshots
+
+![image](https://github.com/daivik-hirpara/Spy_Camera/assets/122077395/e98568dc-74ca-41d9-82a3-1edd2841e88f)
+
+![image](https://github.com/daivik-hirpara/Spy_Camera/assets/122077395/76810e32-22d9-460d-9015-01f92207dfdb)
+
+![image](https://github.com/daivik-hirpara/Spy_Camera/assets/122077395/bfce2a1b-6ed7-43d7-9f6e-955a5f194156)
+
+
+
 Feel free to explore the Spy Camera application and contribute to its development! If you encounter any issues or have suggestions, please let us know. 
