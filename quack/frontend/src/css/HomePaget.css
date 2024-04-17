@@ -1,0 +1,96 @@
+/* HomePageT.css */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header-buttons button {
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-buttons button:hover {
+  background-color: gray;
+}
+
+.queries-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
+}
+
+.queries-section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.worker-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.worker-card {
+  width: calc(33.333% - 20px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.worker-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.worker-name, .worker-job, .worker-rating {
+  margin: 5px 0;
+}
+
+.working-on-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
+}
+
+.working-on-section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.query-list {
+  display: flex;
+  gap: 20px;
+}
+
+.query-card {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
