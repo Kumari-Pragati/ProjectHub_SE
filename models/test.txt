@@ -1,0 +1,23 @@
+{
+  "firstname": "PALKUSH",
+  "lastname": "Dave",
+  "email": "Dave@gamil.com",
+  "password": "12345",
+  "isAdmin": false,
+  "isDoctor": true,
+  "age": 30,
+  "gender": "male",
+  "mobile": 1234567890,
+  "address": "123 Main Street",
+  "status": "active",
+  "pic": "https://example.com/profile_pic.jpg"
+}
+
+
+{
+  "userId": "", // Replace with a valid user ID from your database
+  "specialization": "heart specialization",
+  "experience": 10,
+  "fees": 150,
+  "isDoctor": true
+}
