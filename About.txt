@@ -77,3 +77,5 @@ This version of the website integrates with a MySQL database for data storage an
 ---
 
 This documentation provides an overview of both versions of the website, including their features, technologies used, setup instructions, and testing procedures. Let me know if you need further clarification or assistance with any specific aspect!
+
+© online learning platform 2024
