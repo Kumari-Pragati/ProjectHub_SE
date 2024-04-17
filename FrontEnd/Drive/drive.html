@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon-Voyage</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="drive.css">
+</head>
+<body>
+
+    <div id="main">
+        <div id="nav">
+          <div id="logo">
+            <img src="../HOME-removebg-preview.png" alt="">
+          </div>
+          <div id="right">
+            <a href="../index.html">
+                <h1 class="op" >
+                    Home
+                   </h1>
+            </a>
+            <a href="drive.html">
+                <h1 class="op" >
+                    Drive
+                   </h1>
+            </a>
+            <a href="../Schedule/schedule.html">
+                <h1 class="op" >
+                    Schedule
+                   </h1>
+            </a>
+            <a href="http://localhost:3002">
+                <h1 class="op" >
+                    Account
+                   </h1>
+            </a>
+               <a href = "http://localhost:3000/"><i  id="logout" class="ri-logout-box-r-line"></i></a>
+          </div>
+        </div>
+
+        <div id="card">
+            <h1>Enter Your Sharing Ride Details</h1>
+            <form id="rideForm">
+                <input id="nameInput" type="text" placeholder="Name">
+                <input id="genderInput" type="text" placeholder="Gender">
+                <input id="timingInput" type="text" placeholder="Timing">
+                <input id="stopsInput" type="text" placeholder="Stops (put | between Stops)">
+                <input id="vehicleTypeInput" type="text" placeholder="Vehicle Type">
+                <input id="vehicleInput" type="text" placeholder="Vehicle">
+                <input id="vehicleNoInput" type="text" placeholder="Vehicle Number">
+                <button type="submit">Ride</button>
+            </form>
+        </div>
+        <div id="filtericon">
+            <i class="ri-arrow-up-s-line"></i>
+        </div>
+
+        
+                
+    <script src="drive.js"></script>
+    </div>
+
+</body>
+</html>

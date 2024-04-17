@@ -1,0 +1,36 @@
+.navbar {
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height:  100px;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  }
+  
+  .logo img {
+    width: 11rem;
+    margin-left: 64rem;
+    
+  }
+  
+  .nav-options {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-options li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .nav-options li:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-options li a {
+    color: white;
+    text-decoration: none;
+  }
+  

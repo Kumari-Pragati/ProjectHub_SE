@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon-Voyage</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+
+    <div id="main">
+        <div id="nav">
+            <div id="logo">
+              <img src="../HOME-removebg-preview.png" alt="">
+            </div>
+            <div id="right">
+              <a href="../index.html">
+                  <h1 class="op" >
+                      Home
+                     </h1>
+              </a>
+              <a href="another_page.html">
+                  <h1 class="op" >
+                      Drive
+                     </h1>
+              </a>
+              <a href="/Schedule/schedule.html">
+                  <h1 class="op" >
+                      Schedule
+                     </h1>
+              </a>
+              <a href="http://localhost:3002">
+                  <h1 class="op" >
+                      Account
+                     </h1>
+              </a>
+              <a href = "http://localhost:3000/"><i  id="logout" class="ri-logout-box-r-line"></i></a>
+            </div>
+          </div>
+    </div>
+    
+    <div id="heading"> 
+        <h1>Schedule</h1>
+    </div>
+
+   <!-- Search bar -->
+   <div class="search-container">
+    <input type="text" id="search" placeholder="Search..." oninput="filterTiles()">
+    </div>
+
+
+    <!-- Filter icon -->
+    <div id="filterIcon">
+        <i class="ri-equalizer-line"></i>
+    </div>
+
+  
+
+    <!-- Container for tiles -->
+    <div class="container" id="container">
+        <!-- Tiles will be dynamically added here -->
+    </div>
+    
+
+    <script src="schedule.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const destination = urlParams.get('destination');
+
+            // Set the destination value to the search input field
+            const searchInput = document.getElementById('search');
+            searchInput.value = destination;
+        });
+ 
+    </script>
+</body>
+</html>

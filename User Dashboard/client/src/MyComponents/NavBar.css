@@ -1,0 +1,33 @@
+.navbar {
+    background-color:black;
+    overflow: hidden;
+    opacity: 0.8;
+    display: flex;
+}
+
+/* Logo style */
+.navbar img.logo {
+    height: 99px;
+    margin-right: 10px;
+}
+
+.navbar .title {
+    display: inline-flex;
+    color:#F8F6E3;
+    font-size: 38px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 43rem;
+    margin-top: 1rem;
+    flex: 1; /* Allow the title to take up remaining space */
+}
+
+/* Profile picture style */
+.navbar .profile-pic {
+    height: 81px;
+    width: 79px;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}

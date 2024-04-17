@@ -1,0 +1,199 @@
+{
+  "id": "326d1c2d-fbc3-4702-a72c-119b572cead6",
+  "version": "2.0",
+  "name": "Bon Voyage",
+  "url": "http://127.0.0.1:5500",
+  "tests": [{
+    "id": "70d19d8b-0468-4705-b1ce-fb91264f0403",
+    "name": "Test1",
+    "commands": [{
+      "id": "e548a16b-b188-4b56-b377-cc64842d181b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fae10f3-3968-4881-82b1-15dcb2feb8a6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7134ac8-8745-4697-ade4-f5db89107808",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) > .op",
+      "targets": [
+        ["css=a:nth-child(3) > .op", "css:finder"],
+        ["xpath=//div[@id='right']/a[3]/h1", "xpath:idRelative"],
+        ["xpath=//a[3]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Schedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e42d3a61-9e35-4ed1-b844-e201e13b2aab",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbd14143-a532-49fa-854a-a15edec41389",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1) > .op",
+      "targets": [
+        ["css=a:nth-child(1) > .op", "css:finder"],
+        ["xpath=//div[@id='right']/a/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9450e7f-b47d-4c59-9e06-5099a1d44b07",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputs",
+      "targets": [
+        ["id=inputs", "id"],
+        ["xpath=//input[@id='inputs']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab1b2c10-7477-4e5c-b22a-d59fc020ab9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputs",
+      "targets": [
+        ["id=inputs", "id"],
+        ["xpath=//input[@id='inputs']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Dinosaur Park"
+    }, {
+      "id": "fb7fbe17-47d0-4a38-a50a-a3cd0006b09f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//input[@id='inputs'])[2]",
+      "targets": [
+        ["xpath=(//input[@id='inputs'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='card']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f1333b6-57b8-4705-97f6-8342603286e1",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='inputs'])[2]",
+      "targets": [
+        ["xpath=(//input[@id='inputs'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='card']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Kevdi"
+    }, {
+      "id": "1b1cbc8a-26c0-4044-ad8e-d8253b018834",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//div[@id='card']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ride')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba707a45-c006-4899-ad55-e5f16d530469",
+      "comment": "",
+      "command": "click",
+      "target": "id=main",
+      "targets": [
+        ["id=main", "id"],
+        ["css=#main", "css:finder"],
+        ["xpath=//div[@id='main']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdee3193-7c33-4d1b-a391-d698f1c7278c",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputs",
+      "targets": [
+        ["id=inputs", "id"],
+        ["xpath=//input[@id='inputs']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0e04eb7-58ad-48df-a783-5873b17c07e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputs",
+      "targets": [
+        ["id=inputs", "id"],
+        ["xpath=//input[@id='inputs']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e78e3613-1f36-498a-8faf-e13591b52dc8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//input[@id='inputs'])[2]",
+      "targets": [
+        ["xpath=(//input[@id='inputs'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='card']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5bd69c8-107c-48d7-ba08-b262a5609de1",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='inputs'])[2]",
+      "targets": [
+        ["xpath=(//input[@id='inputs'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='card']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb74979c-20de-4c04-877d-5e4f356ceb8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) > .op",
+      "targets": [
+        ["css=a:nth-child(3) > .op", "css:finder"],
+        ["xpath=//div[@id='right']/a[3]/h1", "xpath:idRelative"],
+        ["xpath=//a[3]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Schedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "23057522-00be-497e-96dc-eba4155c5c33",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1:5500/"],
+  "plugins": []
+}
