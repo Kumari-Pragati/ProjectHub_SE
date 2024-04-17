@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voting Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Vote for your favorite Candidate</h1>
+  </header>
+  
+  <main>
+    <section id="voting-section">
+      <h2>Available Positions/Categories:</h2>
+      <ul>
+        <li>President</li>
+        <li>Vice President</li> 
+
+      </ul>
+      
+      <form id="voting-form">
+        <h3>Select Candidates:</h3>
+        <label for="president">President:</label>
+        <select id="president" name="president">
+          <option value="candidate1">Candidate 1</option>
+          <option value="candidate2">Candidate 2</option>
+
+        </select>
+        
+        <label for="vice-president">Vice President:</label>
+        <select id="vice-president" name="vice-president">
+          <option value="candidate3">Candidate 3</option>
+          <option value="candidate4">Candidate 4</option>
+
+        </select>
+        
+        
+        <button type="submit">Submit Vote</button>
+      </form>
+      
+      <p>Instructions: Please select one candidate for each position. Make sure to review your selections before submitting.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 IIITV-ICD Electoral Authority. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+h1{
+    background-color: #01363c;
+    color: white    ;
+    text-align: center;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #01363c;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0;
+}

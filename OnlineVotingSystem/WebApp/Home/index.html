@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="pic.png" alt="logo">
+                <h2>ONLINE VOTING SYSTEM</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="../Dashboard/index.html">Dashboard</a></li>
+                <li><a href="../Adminoption/admin.html">Admin Portal</a></li>
+                <li><a href="../About US/index.html">About us</a></li>
+                <li><a href="../Adminoption/admin.html">View Result</a></li>
+                <li><a href="../contact/index.html">Contact us</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+    <div class="content-container">
+        <div class="left-content">
+            <h2>Welcome to Our Online Voting System</h2>
+            <p>An online voting system is a digital platform that allows individuals to cast their votes electronically, typically through the internet. Here are some key features and benefits of using our software for online voting:</p>
+            <ul>
+                <li>Secure and efficient voting process</li>
+                <li>Access from anywhere, anytime</li>
+                <li>Real-time result tracking</li>
+                <li>Transparency</li>
+                <li>Faster and User-Friendly</li>
+            </ul>
+        </div>
+        <div class="right-content">
+            <img src="election.png" alt="Image related to online voting system">
+        </div>
+    </div>
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2 style="color: black">Hey there</h2>
+                <p style="color: black">Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2 style="color: black">Create Account</h2>
+                <p style="color: black">To become a part of our system, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-container left-con">
+        <h3>General Rules</h3>
+        <ul>
+            <li>Voters must undergo verification by the administrator before they can cast their vote.</li>
+            <li>The administrator is responsible for adding candidate details provided by the candidates for the election.</li>
+            <li>Each voter is allowed to cast only one vote in any given election.</li>
+            <li>Voters have access to basic information about the candidates and their agendas.</li>
+            <li>Neither candidates, voters, nor the administrator can ascertain which voter has voted for a specific candidate.</li>
+            <li>The results of the election are only accessible to voters after the election has concluded.</li>
+            <li>In the event of a tie between candidates, a runoff election may be held to determine the winner.</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
