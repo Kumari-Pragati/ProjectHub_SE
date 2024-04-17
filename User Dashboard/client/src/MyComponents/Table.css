@@ -1,0 +1,41 @@
+/* Table.css */
+.table-container {
+  margin-top: 20px;
+}
+
+.table {
+  width: 240%;
+  border-collapse: collapse;
+  height: 100%;
+}
+
+.table th,
+.table td {
+  padding: 40px; /* Adjust padding as needed */
+}
+
+.table th {
+  background-color: #f2f2f2; /* Change background color if needed */
+  text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Change background color if needed */
+}
+
+.table tbody tr:hover {
+  background-color: #ddd; /* Change hover color if needed */
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd; /* Add borders */
+}
+
+.table th {
+  font-size: 40px; /* Increase font size of table header */
+}
+
+.table td {
+  font-size: 25 px; /* Increase font size of table data */
+}

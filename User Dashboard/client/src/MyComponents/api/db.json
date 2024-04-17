@@ -1,0 +1,42 @@
+{
+    "drivers" : [
+       {
+         "Name" : "Mahesh Singh",
+         "Date" : "05-05-2024",
+         "VehicleNumber" : "MH12AB1234",
+         "PhoneNumber" : "+91909876543"
+       },
+       {
+        "Name" : "Suresh Singh",
+        "Date" : "05-06-2024",
+        "VehicleNumber" : "GH12AB1231",
+        "PhoneNumber" : "+91903276543"
+      },
+      {
+        "Name" : "Mahesh Singh",
+        "Date" : "05-05-2024",
+        "VehicleNumber" : "MH12AB1234",
+        "PhoneNumber" : "+91909876543"
+      },
+      {
+        "Name" : "Mahesh Singh",
+        "Date" : "05-05-2024",
+        "VehicleNumber" : "MH12AB1234",
+        "PhoneNumber" : "+91909876543"
+      },
+      {
+        "Name" : "Mahesh Singh",
+        "Date" : "05-05-2024",
+        "VehicleNumber" : "MH12AB1234",
+        "PhoneNumber" : "+91909876543"
+      },
+      {
+        "Name" : "Mahesh Singh",
+        "Date" : "05-05-2024",
+        "VehicleNumber" : "MH12AB1234",
+        "PhoneNumber" : "+91909876543"
+      }
+
+
+    ]
+}
