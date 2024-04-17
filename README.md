@@ -1,5 +1,5 @@
 # ProjectHub_SE
-Overview
+**Overview**
 
 Designed an Online Voting System using HTML, CSS and JS, enabling internet-based election processes. Increased voting accessibility and streamlined election management for enhanced democratic participation.
 
