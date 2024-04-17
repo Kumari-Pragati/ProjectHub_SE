@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .signup-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .signup-form h2 img {
+      display: block;
+      margin: 0 auto 10px; /* Adjust margin as needed */
+      width: 100px; /* Adjust width as needed */
+      height: auto;
+    }
+
+    .signup-form input[type="text"],
+    .signup-form input[type="email"],
+    .signup-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .signup-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: hsl(43, 87%, 43%);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .signup-form button:hover {
+      background-color: hsl(43, 87%, 43%);
+    }
+
+    .go-back {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .go-back a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .go-back a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="#" method="POST" class="signup-form">
+      <h2><img src="google.jpg" alt="Google Logo"> Create an Account</h2>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <!-- Back button -->
+  <div class="go-back">
+    <a href="#" onclick="goBack()">Back</a>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

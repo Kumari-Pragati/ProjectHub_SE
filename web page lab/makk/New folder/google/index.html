@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div>
+                <h2>Login</h2>
+            </div>
+            
+            <div class="field input">
+                <label for="Email">Email Address:</label>
+                <input type="text" name="Email Address" id="Email Address" required>
+                <!-- <a href="forgotemail.html" class="forgot-Email">Forgot Email?</a> -->
+                <br>
+            </div>
+
+            <div class="field input">
+                <label for="Password">Password:</label> 
+                <input type="password" name="password" id="password" required> <br>
+                <a href="forgotpassword.html" class="forgot-password">Forgot Password?</a>
+            </div>
+            <div class="field remember">
+                <input type="checkbox" id="remember-me">
+                   <b> Remember me</b>
+            </div>
+
+            <div class="field "> <br>
+                <input type="submit" class="btn" name="submit" Value="Login"> <br>
+            </div>
+            <div class="links"><br>
+                Don't have an account? <a href="register.html">Sign up now</a>
+            </div>
+            <div class="or-login-with">
+                <p>----------------or login with------------------</p>
+            </div>
+            <div class="social-login">
+                <button class="loginBtn loginBtn--google">
+                    <img src="google.png" alt="Login with google" width="60" height="20"> 
+                </button>
+                <button class="loginBtn loginBtn--facebook">
+                    <img src="facebook.png" alt="Login with facebook" width="60" height="20"> 
+              </button>
+            </div>
+        </div>
+        <div class="photo-container">
+            <img src="images.png" alt="Photo">
+        </div>
+    </div>
+</body>
+</html>

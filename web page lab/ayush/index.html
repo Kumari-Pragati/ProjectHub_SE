@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .go-back-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+
+        .btn-go-back {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-go-back:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="go-back-container">
+        <button onclick="goBack()" class="btn-go-back">Go Back</button>
+    </div>
+
+    <div class="profile-container">
+        <div class="profile-picture">
+            <img src="01_profile.jpg" alt="Profile Picture">
+        </div>
+        <div class="user-info">
+            <h2>User Information</h2>
+            <p>Name: Ayush Gupta</p>
+            <p>Email: ayush9473@gmail.com</p>
+            <!-- Add more user information here -->
+        </div>
+        <div class="order-history">
+            <h2><a href="order.html">Order History</a></h2> <!-- Make "Order History" clickable -->
+            <!-- Display past orders here -->
+        </div>
+        <div class="shipping-addresses">
+            <h2><a href="shipping.html">Shipping Addresses</a></h2> <!-- Make "Shipping Addresses" clickable -->
+            <!-- Display shipping addresses here -->
+        </div>
+        <div class="change-password">
+            <h2><a href="pass.html">Change Password</a></h2> <!-- Make "Change Password" clickable -->
+            <!-- Add change password form here -->
+        </div>
+        <div class="logout">
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>

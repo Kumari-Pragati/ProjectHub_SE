@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #87ceeb; /* Sky blue background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .cart-container {
+            background-color: #fff; /* White background for cart container */
+            width: 80%; /* Adjusted width */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .cart-heading {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .product-item {
+            display: flex; /* Display items in a row */
+            align-items: center; /* Center items vertically */
+            justify-content: space-between; /* Distribute space evenly */
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .product-item img {
+            max-width: 120px; /* Increased image size by 20 pixels */
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px; /* Add margin between image and text */
+        }
+        .product-details {
+            flex: 1; /* Take up remaining space */
+            text-align: left; /* Align text to the left */
+        }
+        .product-details h2 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .product-details .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .delete-button {
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+        .delete-button button {
+            font-size: 16px;
+            background-color: #ff6347; /* Tomato color for delete button */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .delete-button button:hover {
+            background-color: #cc4b37;
+        }
+        .buy-now-button button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ffc107; /* Yellow color for buy now button */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buy-now-button button:hover {
+            background-color: #ff9800;
+        }
+        .go-back-button button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff; /* Blue color for go back button */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .go-back-button button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <h1 class="cart-heading">CART</h1>
+        <div class="product-item">
+            <img src="tshirt.jpg" alt="Product Image">
+            <div class="product-details">
+                <h2>T-Shirt Casual</h2>
+                <p class="price">$100</p>
+            </div>
+            <div class="delete-button">
+                <button>Delete</button>
+            </div>
+            <div class="buy-now-button">
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="t2.jpg" alt="Product Image">
+            <div class="product-details">
+                <h2>T-Shirt HRX</h2>
+                <p class="price">$200</p>
+            </div>
+            <div class="delete-button">
+                <button>Delete</button>
+            </div>
+            <div class="buy-now-button">
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <!-- Add more product items here -->
+        <div class="go-back-button">
+            <button onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
