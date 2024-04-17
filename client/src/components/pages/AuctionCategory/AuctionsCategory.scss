@@ -1,0 +1,42 @@
+.products {
+  padding: 30px 50px;
+  display: flex;
+
+  .left {
+    flex: 0.7;
+    position: sticky;
+    height: 300%;
+    top: 50px;
+    background-color: rgb(233, 240, 238);
+      border-right: 2px solid black;
+      margin-right: 15px;
+
+    .filterItem{
+      margin-bottom: 30px;
+
+      h2{
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .inputItem{
+        margin-bottom: 10px;
+        label{
+          margin-left: 10px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  
+  .right {
+    flex: 3;
+
+    .catImg{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 50px;
+    }
+  }
+}
