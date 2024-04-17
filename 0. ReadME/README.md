@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="./icons/logo.png" width=40>
+    <img src="../icons/logo.png" width=40>
     Food Delivery System
 </h1>
 
@@ -10,12 +10,12 @@
 </h1>
 
 <h4 align="center"> 
-     <img src="./icons/html-5.png" width=40>
-     <img src="./icons/css-3.png" width=40>
-     <img src="./icons/js.png" width=40>
-     <img src="./icons/MongoDB_Logo.svg.png" width=150>
-     <img src="./icons/nodejs.png" width=40>
-     <img src="./icons/1_i2fRBk3GsYLeUk_Rh7AzHw.png" width=100>
+     <img src="../icons/html-5.png" width=40>
+     <img src="../icons/css-3.png" width=40>
+     <img src="../icons/js.png" width=40>
+     <img src="../icons/MongoDB_Logo.svg.png" width=150>
+     <img src="../icons/nodejs.png" width=40>
+     <img src="../icons/1_i2fRBk3GsYLeUk_Rh7AzHw.png" width=100>
 </h4>
 
 <h1 align="left">
@@ -50,31 +50,31 @@
 ### Customer App:
 
 <h4 align="center"> 
-     <img src="./Customer App ss/home-screen.jpg" >
-     <img src="./Customer App ss/login.jpg">
-     <img src="./Customer App ss/menu.jpg">
-     <img src="./Customer App ss/cart.jpg">
-     <img src="./Customer App ss/payment.jpg">
+     <img src="../Customer App ss/home-screen.jpg" >
+     <img src="../Customer App ss/login.jpg">
+     <img src="../Customer App ss/menu.jpg">
+     <img src="../Customer App ss/cart.jpg">
+     <img src="../Customer App ss/payment.jpg">
 </h4>
 
 ### For Restaurants:
 
 <h4 align="center"> 
-     <img src="./Restaurant App ss/dashboard.jpg">
-     <img src="./Restaurant App ss/login.jpg">
-     <img src="./Restaurant App ss/history.jpg">
-     <img src="./Restaurant App ss/pastorders.jpg">
-     <img src="./Restaurant App ss/changepassword.jpg">
+     <img src="../Restaurant App ss/dashboard.jpg">
+     <img src="../Restaurant App ss/login.jpg">
+     <img src="../Restaurant App ss/history.jpg">
+     <img src="../Restaurant App ss/pastorders.jpg">
+     <img src="../Restaurant App ss/changepassword.jpg">
 </h4>
 
 ### For Delivery Man:
 
 <h4 align="center"> 
-     <img src="./Delivery Man ss/homepage.jpg">
-     <img src="./Delivery Man ss/login.jpg">
-     <img src="./Delivery Man ss/upcoming.jpg">
-     <img src="./Delivery Man ss/past.jpg">
-     <img src="./Delivery Man ss/earnings.jpg">
+     <img src="../Delivery Man ss/homepage.jpg">
+     <img src="../Delivery Man ss/login.jpg">
+     <img src="../Delivery Man ss/upcoming.jpg">
+     <img src="../Delivery Man ss/past.jpg">
+     <img src="../Delivery Man ss/earnings.jpg">
 </h4>
 
 <h1 align="left">
