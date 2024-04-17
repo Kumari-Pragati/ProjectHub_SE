@@ -1,0 +1,1005 @@
+{
+  "id": "7abb3caf-c4cd-45a8-b350-25c3f08016e6",
+  "version": "2.0",
+  "name": "CS206_Selenium",
+  "url": "http://localhost/SE%20Hotel%20Management%20Part/index.php",
+  "tests": [{
+    "id": "3aa677a0-ded0-4ab0-ad36-9fb0565e9bdc",
+    "name": "Signin",
+    "commands": [{
+      "id": "f34a81ca-1f4d-4f8d-8fe1-4e8b77c662d0",
+      "comment": "",
+      "command": "open",
+      "target": "/SE%20Hotel%20Management%20Part/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1a97218-2db5-406a-81f7-27458f996c9a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82855f5c-b0ba-4d1d-aed3-56effb3c85ea",
+      "comment": "",
+      "command": "click",
+      "target": "name=Username",
+      "targets": [
+        ["name=Username", "name"],
+        ["css=#userlogin > .form-floating:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Username']", "xpath:attributes"],
+        ["xpath=//form[@id='userlogin']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2113b579-4cbd-4aaa-8532-d970d7941293",
+      "comment": "",
+      "command": "type",
+      "target": "name=Username",
+      "targets": [
+        ["name=Username", "name"],
+        ["css=#userlogin > .form-floating:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Username']", "xpath:attributes"],
+        ["xpath=//form[@id='userlogin']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Vibhansh"
+    }, {
+      "id": "ff230f65-215e-4123-9408-23b1ff7a306e",
+      "comment": "",
+      "command": "click",
+      "target": "name=Email",
+      "targets": [
+        ["name=Email", "name"],
+        ["css=#userlogin > .form-floating:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Email']", "xpath:attributes"],
+        ["xpath=//form[@id='userlogin']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66c0450e-2667-4bd7-a72b-8632d9cc9557",
+      "comment": "",
+      "command": "type",
+      "target": "name=Email",
+      "targets": [
+        ["name=Email", "name"],
+        ["css=#userlogin > .form-floating:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Email']", "xpath:attributes"],
+        ["xpath=//form[@id='userlogin']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "vibhansh@gmail.com"
+    }, {
+      "id": "78ced614-0856-4689-8c0b-2d90e072c486",
+      "comment": "",
+      "command": "click",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=#userlogin > .form-floating:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//form[@id='userlogin']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2a479b8-c79f-4dc7-b6d1-0eb9026a3afd",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=#userlogin > .form-floating:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//form[@id='userlogin']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Vibhansh"
+    }, {
+      "id": "e80a4304-fac2-415c-9b64-0b25d8fcf280",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_login_submit",
+      "targets": [
+        ["name=user_login_submit", "name"],
+        ["css=.auth_btn:nth-child(4)", "css:finder"],
+        ["xpath=//button[@name='user_login_submit']", "xpath:attributes"],
+        ["xpath=//form[@id='userlogin']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4d5478e2-2105-4007-b7d5-d3f5fe470c3a",
+    "name": "Room booking",
+    "commands": [{
+      "id": "7e6d07e3-0360-4116-aa30-5d0439c42601",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/SE%20Hotel%20Management%20Part/home.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd38bb3a-8f6d-45b0-9453-b635f71fc240",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c159ca9-2d04-4d7f-b273-8d548244e9c7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rooms",
+      "targets": [
+        ["linkText=Rooms", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Rooms')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#secondsection')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rooms')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d661bd2-714e-4768-bae9-69183c976845",
+      "comment": "",
+      "command": "click",
+      "target": "css=.roombox:nth-child(3) .btn",
+      "targets": [
+        ["css=.roombox:nth-child(3) .btn", "css:finder"],
+        ["xpath=(//button[@onclick='openbookbox()'])[3]", "xpath:attributes"],
+        ["xpath=//section[@id='secondsection']/div/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28c74d4b-3f74-4f86-b96a-14b3c612d900",
+      "comment": "",
+      "command": "click",
+      "target": "name=Name",
+      "targets": [
+        ["name=Name", "name"],
+        ["css=.guestinfo > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='Name']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4305bba3-4a0d-43b5-a319-af36caf3c172",
+      "comment": "",
+      "command": "type",
+      "target": "name=Name",
+      "targets": [
+        ["name=Name", "name"],
+        ["css=.guestinfo > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='Name']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Vibhansh"
+    }, {
+      "id": "ca673798-dd85-4ced-8dbd-c92e17da241f",
+      "comment": "",
+      "command": "click",
+      "target": "name=Email",
+      "targets": [
+        ["name=Email", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='Email']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fcfe342-9556-4ac6-b16a-9a7274df8d36",
+      "comment": "",
+      "command": "type",
+      "target": "name=Email",
+      "targets": [
+        ["name=Email", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='Email']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "vibhansh@gmail.com"
+    }, {
+      "id": "0c6a790d-364a-45c1-909c-4c1431796085",
+      "comment": "",
+      "command": "click",
+      "target": "name=Country",
+      "targets": [
+        ["name=Country", "name"],
+        ["css=.guestinfo > .selectinput", "css:finder"],
+        ["xpath=//select[@name='Country']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "453b1ddd-3d38-4364-8c6f-b3e91b45c662",
+      "comment": "",
+      "command": "select",
+      "target": "name=Country",
+      "targets": [],
+      "value": "label=India"
+    }, {
+      "id": "3291b014-a6dd-4c46-b1ce-84d61ed9ba89",
+      "comment": "",
+      "command": "click",
+      "target": "name=Phone",
+      "targets": [
+        ["name=Phone", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='Phone']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cea80ab1-3715-47e0-9162-8250218f8dfc",
+      "comment": "",
+      "command": "type",
+      "target": "name=Phone",
+      "targets": [
+        ["name=Phone", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='Phone']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "81515999521"
+    }, {
+      "id": "835459d4-b58a-49f9-b0eb-808d2d66499d",
+      "comment": "",
+      "command": "click",
+      "target": "name=RoomType",
+      "targets": [
+        ["name=RoomType", "name"],
+        ["css=.selectinput:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='RoomType']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b05d1c68-0b47-489f-857e-37e9f639a8d8",
+      "comment": "",
+      "command": "select",
+      "target": "name=RoomType",
+      "targets": [],
+      "value": "label=SUPERIOR ROOM"
+    }, {
+      "id": "08335a03-832b-4b8c-ac6d-e8b7aee32ef9",
+      "comment": "",
+      "command": "click",
+      "target": "name=Bed",
+      "targets": [
+        ["name=Bed", "name"],
+        ["css=.selectinput:nth-child(3)", "css:finder"],
+        ["xpath=//select[@name='Bed']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ded379d4-aa2d-4512-a1c9-475e5401bc73",
+      "comment": "",
+      "command": "select",
+      "target": "name=Bed",
+      "targets": [],
+      "value": "label=Double"
+    }, {
+      "id": "12b8f274-22bd-42e8-a787-d07a51da5b0c",
+      "comment": "",
+      "command": "click",
+      "target": "name=NoofRoom",
+      "targets": [
+        ["name=NoofRoom", "name"],
+        ["css=.reservationinfo > .selectinput:nth-child(4)", "css:finder"],
+        ["xpath=//select[@name='NoofRoom']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "714d17b7-dcdb-4d79-ad12-2a49251794a0",
+      "comment": "",
+      "command": "select",
+      "target": "name=NoofRoom",
+      "targets": [],
+      "value": "label=1"
+    }, {
+      "id": "c94a19a9-167b-43f2-9fb4-aef5088f41d3",
+      "comment": "",
+      "command": "click",
+      "target": "name=Meal",
+      "targets": [
+        ["name=Meal", "name"],
+        ["css=.selectinput:nth-child(5)", "css:finder"],
+        ["xpath=//select[@name='Meal']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/select[4]", "xpath:idRelative"],
+        ["xpath=//select[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcde69e9-a94e-48ac-9de0-7df6ef3e1df8",
+      "comment": "",
+      "command": "select",
+      "target": "name=Meal",
+      "targets": [],
+      "value": "label=Half Board"
+    }, {
+      "id": "445a8693-3d30-481a-a73a-8eee0e91b880",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "name=cin",
+      "targets": [
+        ["name=cin", "name"],
+        ["css=span:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cin']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "240.79998779296875,18.600006103515625"
+    }, {
+      "id": "2a2007d3-15a9-403c-8066-2e601e3faf96",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "name=cin",
+      "targets": [
+        ["name=cin", "name"],
+        ["css=span:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cin']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "240.79998779296875,18.600006103515625"
+    }, {
+      "id": "ced263ff-c2d6-4410-8f57-780de37806f6",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "name=cin",
+      "targets": [
+        ["name=cin", "name"],
+        ["css=span:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cin']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "240.79998779296875,18.600006103515625"
+    }, {
+      "id": "c4376993-3515-4c89-87d8-c9f2c6ca547b",
+      "comment": "",
+      "command": "click",
+      "target": "name=cin",
+      "targets": [
+        ["name=cin", "name"],
+        ["css=span:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cin']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f7b6130-dfc8-42fd-b62c-c02f2949915a",
+      "comment": "",
+      "command": "click",
+      "target": "name=cin",
+      "targets": [
+        ["name=cin", "name"],
+        ["css=span:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cin']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6354835e-389c-4d8b-90a8-491c1d3edb53",
+      "comment": "",
+      "command": "type",
+      "target": "name=cin",
+      "targets": [
+        ["name=cin", "name"],
+        ["css=span:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cin']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "2024-04-26"
+    }, {
+      "id": "5ea8abc1-a6b5-4c6c-badd-bbfda2a76d41",
+      "comment": "",
+      "command": "click",
+      "target": "name=cout",
+      "targets": [
+        ["name=cout", "name"],
+        ["css=span:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='cout']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a575f49-7209-495b-953b-67f0a001fbb5",
+      "comment": "",
+      "command": "type",
+      "target": "name=cout",
+      "targets": [
+        ["name=cout", "name"],
+        ["css=span:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='cout']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "2024-05-01"
+    }, {
+      "id": "6ed189c4-546c-41c3-b44a-9cf81f4439d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reservationinfo",
+      "targets": [
+        ["css=.reservationinfo", "css:finder"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "521a2a0d-a524-4086-b8ff-8fb27990ac7a",
+      "comment": "",
+      "command": "click",
+      "target": "name=guestdetailsubmit",
+      "targets": [
+        ["name=guestdetailsubmit", "name"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@name='guestdetailsubmit']", "xpath:attributes"],
+        ["xpath=//div[@id='guestdetailpanel']/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3c5b39d-637e-446a-9d2b-71eb82a535f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7d4f9cc4-85db-44f6-ac97-11dea02c4dbf",
+    "name": "tour booking",
+    "commands": [{
+      "id": "7ca63c17-a9a2-4b85-862b-744a2b8ce00b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/SE%20Hotel%20Management%20Part/home.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "987fab4f-52d1-460e-a86b-d41b0272a4f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fffd3a0-d83e-498e-b6d2-c5f710c742e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3)",
+      "targets": [
+        ["css=li:nth-child(3)", "css:finder"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Tour')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f9eabae-42d7-42d5-a9b0-0f63d7d09dbf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tour",
+      "targets": [
+        ["linkText=Tour", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Tour')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'tour_home.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tour')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee69b8f6-0972-4771-b7b7-51950846d61a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar > a:nth-child(4)",
+      "targets": [
+        ["css=.navbar > a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'package')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'package.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adf32c0a-576a-408e-b4c3-1aabab251736",
+      "comment": "",
+      "command": "click",
+      "target": "css=.box:nth-child(5) .btn",
+      "targets": [
+        ["css=.box:nth-child(5) .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'book now')])[5]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'book.php')])[6]", "xpath:href"],
+        ["xpath=//div[5]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "414f495f-f4a0-4836-abbf-c6fe9e9e8330",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.inputBox:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe76b75f-3431-4a7b-9e81-db6835aa416b",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.inputBox:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Vibhansh"
+    }, {
+      "id": "f8450758-4c8c-4dfe-b09c-913d2cf7975e",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.inputBox:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b48bf714-3efa-40ea-90bb-653253b9c126",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.inputBox:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "8000443641"
+    }, {
+      "id": "bb31b999-e2da-443c-9ce7-b2413278f3dd",
+      "comment": "",
+      "command": "click",
+      "target": "name=location",
+      "targets": [
+        ["name=location", "name"],
+        ["css=.inputBox:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='location']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e5513f3-66d2-4272-9d91-167f2fd744bb",
+      "comment": "",
+      "command": "type",
+      "target": "name=location",
+      "targets": [
+        ["name=location", "name"],
+        ["css=.inputBox:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='location']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Rome"
+    }, {
+      "id": "8394047a-642c-4e48-8698-edff15964997",
+      "comment": "",
+      "command": "click",
+      "target": "name=arrivals",
+      "targets": [
+        ["name=arrivals", "name"],
+        ["css=.inputBox:nth-child(7) > input", "css:finder"],
+        ["xpath=//input[@name='arrivals']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1091e766-71ff-49f7-a75f-9b8d8f333afa",
+      "comment": "",
+      "command": "click",
+      "target": "name=arrivals",
+      "targets": [
+        ["name=arrivals", "name"],
+        ["css=.inputBox:nth-child(7) > input", "css:finder"],
+        ["xpath=//input[@name='arrivals']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a37c6b57-4ad7-4def-a182-0afb0f45dd60",
+      "comment": "",
+      "command": "type",
+      "target": "name=arrivals",
+      "targets": [
+        ["name=arrivals", "name"],
+        ["css=.inputBox:nth-child(7) > input", "css:finder"],
+        ["xpath=//input[@name='arrivals']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "2024-05-07"
+    }, {
+      "id": "0b4d7077-a3c7-4e56-9f30-4c52b5def3e5",
+      "comment": "",
+      "command": "click",
+      "target": "name=leaving",
+      "targets": [
+        ["name=leaving", "name"],
+        ["css=.inputBox:nth-child(8) > input", "css:finder"],
+        ["xpath=//input[@name='leaving']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88ab1c5b-c6c7-478e-85a5-0beeabfa1bc1",
+      "comment": "",
+      "command": "type",
+      "target": "name=leaving",
+      "targets": [
+        ["name=leaving", "name"],
+        ["css=.inputBox:nth-child(8) > input", "css:finder"],
+        ["xpath=//input[@name='leaving']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "2024-05-09"
+    }, {
+      "id": "bacd38c2-52b7-4324-beb8-294aab398af8",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.inputBox:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9c77c4f-d48a-4cc4-84e2-29857cd0c07b",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.inputBox:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "vibhansh@gmail.com"
+    }, {
+      "id": "7750e935-c723-475f-a517-2a80e1fa5542",
+      "comment": "",
+      "command": "click",
+      "target": "name=address",
+      "targets": [
+        ["name=address", "name"],
+        ["css=.inputBox:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='address']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06e1b267-9882-4610-87ce-3cbdd1755dc0",
+      "comment": "",
+      "command": "type",
+      "target": "name=address",
+      "targets": [
+        ["name=address", "name"],
+        ["css=.inputBox:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='address']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Diu"
+    }, {
+      "id": "643a58c7-986a-42f5-a296-4b941ff1fa2f",
+      "comment": "",
+      "command": "click",
+      "target": "name=guests",
+      "targets": [
+        ["name=guests", "name"],
+        ["css=.inputBox:nth-child(6) > input", "css:finder"],
+        ["xpath=//input[@name='guests']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fc6d6f4-d952-4ffe-97a9-36e4587c4f6b",
+      "comment": "",
+      "command": "type",
+      "target": "name=guests",
+      "targets": [
+        ["name=guests", "name"],
+        ["css=.inputBox:nth-child(6) > input", "css:finder"],
+        ["xpath=//input[@name='guests']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "994a797b-efa0-4dcd-954a-3f187b3ed0cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "83bbc566-c108-4d03-91be-42b6816db523",
+    "name": "aboutus",
+    "commands": [{
+      "id": "4045b2ee-24d6-4000-99fa-dc4dbf79a393",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/SE%20Hotel%20Management%20Part/home.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b50d01a2-892b-49e9-bda8-80f1b8a4b045",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09c47264-1fec-44b8-95bd-69c701df9149",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About Us",
+      "targets": [
+        ["linkText=About Us", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'about.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'About Us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fc3b761-4ae9-4fa5-9528-74cb3fa8856c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.box:nth-child(1) > a:nth-child(2)",
+      "targets": [
+        ["css=.box:nth-child(1) > a:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(@href, 'tour_home.php')])[3]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e27e65f2-a0bc-4285-aff4-0dea5f13d8e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar > a:nth-child(1)",
+      "targets": [
+        ["css=.navbar > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'home')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../SE Hotel Management Part/home.php')]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "11125d54-8a12-4dff-8f1b-08d974aaa99b",
+    "name": "Admin login",
+    "commands": [{
+      "id": "5d48f361-e48b-4f43-a0c6-ad62f3ae8e7c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/SE%20Hotel%20Management%20Part/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a270dd07-9a5d-41de-91be-677c0ee5b524",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "450169cd-85dd-444f-8715-eb2bbad99de6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btns:nth-child(2)",
+      "targets": [
+        ["css=.btns:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='Log_in']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c510c417-a440-4d9c-add7-cb2547c59ff3",
+      "comment": "",
+      "command": "click",
+      "target": "name=Emp_Email",
+      "targets": [
+        ["name=Emp_Email", "name"],
+        ["css=#employeelogin > .form-floating:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Emp_Email']", "xpath:attributes"],
+        ["xpath=//form[@id='employeelogin']/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "feab4358-b5f3-42fa-b904-c56805f28d0b",
+      "comment": "",
+      "command": "type",
+      "target": "name=Emp_Email",
+      "targets": [
+        ["name=Emp_Email", "name"],
+        ["css=#employeelogin > .form-floating:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Emp_Email']", "xpath:attributes"],
+        ["xpath=//form[@id='employeelogin']/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/input", "xpath:position"]
+      ],
+      "value": "admin@gmail.com"
+    }, {
+      "id": "39e7309e-2d11-463a-b2ac-f367e08c2291",
+      "comment": "",
+      "command": "click",
+      "target": "name=Emp_Password",
+      "targets": [
+        ["name=Emp_Password", "name"],
+        ["css=#employeelogin > .form-floating:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Emp_Password']", "xpath:attributes"],
+        ["xpath=//form[@id='employeelogin']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f97e925-6c85-4354-a25b-9ae01182424c",
+      "comment": "",
+      "command": "type",
+      "target": "name=Emp_Password",
+      "targets": [
+        ["name=Emp_Password", "name"],
+        ["css=#employeelogin > .form-floating:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Emp_Password']", "xpath:attributes"],
+        ["xpath=//form[@id='employeelogin']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "9d1bdae0-69e3-4e34-a355-12d6f261750f",
+      "comment": "",
+      "command": "click",
+      "target": "name=Emp_login_submit",
+      "targets": [
+        ["name=Emp_login_submit", "name"],
+        ["css=.auth_btn:nth-child(3)", "css:finder"],
+        ["xpath=//button[@name='Emp_login_submit']", "xpath:attributes"],
+        ["xpath=//form[@id='employeelogin']/button", "xpath:idRelative"],
+        ["xpath=//form[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55f89926-cfe8-4dd4-a565-d8b3f04a7a28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pagebtn:nth-child(2)",
+      "targets": [
+        ["css=.pagebtn:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'    Room Booking')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f99f864c-9a0b-4e70-ad98-9fc8c4830121",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb9c14b1-8ab5-4b54-8a8b-2098395cf0ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) .btn-success",
+      "targets": [
+        ["css=tr:nth-child(5) .btn-success", "css:finder"],
+        ["xpath=//table[@id='table-data']/tbody/tr[5]/td[14]/a/button", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[14]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3cb0b49-1600-46bd-b82c-31d116caeb14",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ed8a6da-5b55-44ea-bd99-db35373af569",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pagebtn:nth-child(3)",
+      "targets": [
+        ["css=.pagebtn:nth-child(3)", "css:finder"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'    Payment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dac7e283-c06c-4a39-a6ca-d6c27e0c1e68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pagebtn:nth-child(4)",
+      "targets": [
+        ["css=.pagebtn:nth-child(4)", "css:finder"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'    Rooms')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd3af203-eb9c-4f0e-9f5f-95237dbed55e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pagebtn:nth-child(1)",
+      "targets": [
+        ["css=.pagebtn:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'    Dashboard')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5d31a85-f8b6-4c69-a95e-ede2b455f905",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6aca3df0-8599-41fb-9f3a-2e412947806d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3aa677a0-ded0-4ab0-ad36-9fb0565e9bdc"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/SE%20Hotel%20Management%20Part/index.php", "http://localhost/SE%20Hotel%20Management%20Part/home.php"],
+  "plugins": []
+}
