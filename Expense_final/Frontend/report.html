@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+    <header>
+        <h1>Reports</h1>
+        <div class="header-actions">
+          <button>New Report</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Filters</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="filters">
+            <h2>Filters</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="report-type">Report Type:</label>
+                <select name="report-type" id="report-type">
+                    <option value="all">All Expenses</option>
+                    <option value="expenses">Expenses on Education</option>
+                    <option value="expenses">Expenses on Household groceries</option>
+                    <option value="expenses">Expenses on Bills</option>
+                    <option value="expenses">Expenses on Food</option>
+                    <option value="expenses">Expenses on Medical</option>
+                    <option value="expenses">Expenses on Entertainment</option>
+                    <option value="expenses">Other Expenses</option>
+                    </select>
+                <label for="start-date">From:</label>
+                <input type="date" id="start-date" name="start-date">
+                <label for="end-date">To:</label>
+                <input type="date" id="end-date" name="end-date"><br>
+                <button type="submit">Get Report</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+        <div class="reports">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Report ID</th>
+                        <th>Name</th>
+                        <th>Total Workspace</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Submitted</th>
+                        <th>Exported</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+            <p class="no-reports-message">The current filters show 0 reports</p>
+        </div>
+    </main>
+    <footer>
+        <p>Adjust the filters to the left or create a new report using the button above.</p>
+    </footer>
+</body>
+</html>

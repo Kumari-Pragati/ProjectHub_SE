@@ -1,0 +1,126 @@
+
+header {
+    background-color: #242731;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.header-actions button {
+    background-color: #50BEFF;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+nav {
+    background-color: #f0f2f5;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #242731;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #50BEFF;
+}
+
+
+main {
+    padding: 1rem 2rem;
+}
+
+
+.filters {
+    background-color: #f0f2f5;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.filters h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.filters form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filters form label {
+    width: 100px;
+    margin-right: 0.5rem;
+}
+
+.filters form input,
+.filters form select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 80px);
+}
+
+.filters form button {
+    background-color: #50BEFF;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+
+.reports table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.reports th,
+.reports td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.reports thead th {
+    background-color: #f0f2f5;
+}
+
+.reports .no-reports-message {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+footer {
+    background-color: #242731;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}

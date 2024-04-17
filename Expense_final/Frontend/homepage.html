@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense trackify</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="./index.css">
+ + <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="mylogo " src="./Images/logo.png" height="60" alt="Logo"  width="60px" >
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span><a class="btn" href="./homepage.html">Home</a> </span>
+                    </li>
+                    <li><span><a class="btn" href="./homepage.html">about</a></span>
+                    </li>
+                    <li><span> <a class="btn btn-primary" href="./login.html">Login</a> </span>
+                    </li>
+                    <li><span><a class="btn btn-primary" href="./signup.html">Sign up</a></span>
+                    </li>
+                    
+            </div>
+
+            </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Expense Trackify</h2>
+      <p>Manage your Expenses efficiently with us ...</p>
+      <a href="#" class="btn">Call to Action</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Our mission is to provide an easy and efficient way for individuals and businesses to manage their expenses.</p>
+    <p>Founded in 2024, we have been committed to helping our users gain control over their finances.</p>
+    <p>We believe in the power of technology to transform personal finance management.</p>
+    <p>Our platform is designed with the user in mind, ensuring a seamless and intuitive experience.</p>
+  </section>
+
+  <section class="benefits">
+    <h2>Benefits & Solutions</h2>
+    <ul>
+      <li>Manage your expenses with ease and simplicity</li>
+      <li>Track, analyze, and control your spending in one place.</li>
+      <li>Spend smarter, save better with our expense management tool.</li>
+      <li>Your expenses, simplified. Your savings, amplified.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>Features</h4>
+        <ul>
+          <li><a href="#">Expense Management</a></li>
+          <li><a href="#">Spend Management</a></li>
+          <li><a href="#">Company Card</a></li>
+          <li><a href="#">Receipt Scanning App</a></li>
+          <li><a href="#">Payments</a></li>
+          <li><a href="#">Invoicing</a></li>
+          <li><a href="#">Travel</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">ExpenseTrackify Approved!</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">ExpenseTrakify app</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Learn more</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">ExpenseTrackify.org</a></li>
+          <li><a href="#">Investor Relations</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <p class="footer-copyright">© 2024 Expense_Trackify</p>
+  </footer>
+
+
+</div>
+
+<div class="form-popup" id="myform">
+  <span class="close" onclick="closeForm()"></span>
+
+  <h1>Add Expense</h1>
+  <form id="expenseForm" action="../project.php" method="POST" >
+      <label for="amount">Amount Spend:</label>
+      <input type="text" id="amount" name="amount" required>
+      
+      <label for="date">Date of Investment:</label>
+      <input type="date" id="date" name="date" required>
+      
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description">
+      
+      <label for="mode">Mode of Payment:</label>
+      <select id="mode" name="mode" required>
+          <option value="UPI">UPI</option>
+          <option value="Credit Card">Credit Card</option>
+          <option value="Cash">Cash</option>
+      </select>
+      
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+          <option value="Household Bill">Household Bill</option>
+          <option value="Travelling">Travelling</option>
+          <option value="Food">Food</option>
+          <option value="Cloths">Cloths</option>
+          <option value="Study Material">Study Material</option>
+          <option value="Grocery">Grocery</option>
+      </select>
+      
+      <input type="submit" value="Submit" >
+  </form>
+</div>
+
+</body>
+</html>

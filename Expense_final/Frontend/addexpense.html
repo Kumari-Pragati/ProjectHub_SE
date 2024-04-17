@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Expense</title>
+<link rel="stylesheet" href="addexpense.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Add Expense</h1>
+        <form action="#" method="post">
+            <label for="amount">Amount Spend:</label>
+            <input type="text" id="amount" name="amount" required>
+            
+            <label for="date">Date of Investment:</label>
+            <input type="date" id="date" name="date">
+            
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description">
+            
+            <label for="mode">Mode of Payment:</label>
+            <select id="mode" name="mode">
+                <option value="UPI">UPI</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Cash">Cash</option>
+            </select>
+            
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="Household Bill">Household Bill</option>
+                <option value="Travelling">Travelling</option>
+                <option value="Food">Food</option>
+                <option value="Cloths">Cloths</option>
+                <option value="Study Material">Study Material</option>
+                <option value="Grocery">Grocery</option>
+            </select>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
