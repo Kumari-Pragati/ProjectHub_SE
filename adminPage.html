@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin adminPage</title>
+    <style>
+        .searchResults{
+            display: flex;
+            gap: 20px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .car {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .makeModelYear {
+            font-weight: bold;
+        }
+        .images img {
+            max-width: 100px;
+            margin-right: 5px;
+        }
+        .deleteButton {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        .addCar{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            gap: 20px;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+        }
+        input{
+            width: 40%;
+            height: 5%;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+        button{
+            width: 35%;
+            height: 5%;
+            background-color: rgb(157, 157, 247);
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="searchResults"></div>
+    <h1 class="heading">Add Cars</h1>
+    <div class="addCar">
+        <input type="text" placeholder="Enter Make" class="make">
+        <input type="number" placeholder="Mileage" class="mileage">
+        <input type="number" placeholder="Price" class="price">
+        <input type="text" placeholder="Model" class="model">
+        <input type="number" placeholder="Year" class="year">
+        <input type="number" placeholder="SellerID" class="sellerid">
+        <input type="text" placeholder="Description" class="description">
+        <input type="text" placeholder="ImageURLs" class="imageurls">
+        <button class="btn">Submit</button>
+    </div>
+</body>
+<script>
+const make=document.querySelector('.make');
+const mileage=document.querySelector('.mileage');
+const price=document.querySelector('.price');
+const model=document.querySelector('.model');
+const year=document.querySelector('.year');
+const sellerid=document.querySelector('.sellerid');
+const description=document.querySelector('.description');
+const imageurls=document.querySelector('.imageurls');
+const btn=document.querySelector('.btn');
+
+
+fetch('http://localhost:8080/carDetails')
+  .then(response => {
+    // Check if the response is successful
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    // Parse the JSON response
+    return response.json();
+  })
+  .then(data => {
+    // Handle the response data here
+    const searchResultDiv = document.querySelector('.searchResults');
+    // Clear any previous search results
+    searchResultDiv.innerHTML = '';
+
+    if (data.result.length === 0) {
+        // Car not found message
+        const notFoundMessage = document.createElement('h2');
+        notFoundMessage.classList.add('notFound');
+        notFoundMessage.textContent = 'Car not found';
+        searchResultDiv.appendChild(notFoundMessage);
+    } else {
+        // Loop through the data array and create HTML elements for each car
+        data.result.forEach(car => {
+            console.log(car)
+            const carDiv = document.createElement('div');
+            carDiv.classList.add('car');
+    
+            const makeModelYear = document.createElement('p');
+            makeModelYear.classList.add('makeModelYear');
+            makeModelYear.textContent = `${car.Make} ${car.Model} ${car.Year}`;
+            carDiv.appendChild(makeModelYear);
+    
+            const mileagePrice = document.createElement('p');
+            mileagePrice.classList.add('mileagePrice');
+            mileagePrice.textContent = `Mileage: ${car.Mileage} | Price: $${car.Price}`;
+            carDiv.appendChild(mileagePrice);
+    
+            const description = document.createElement('p');
+            description.classList.add('description');
+            description.textContent = car.Description;
+            carDiv.appendChild(description);
+    
+            // Split the ImageURLs string into an array of image URLs
+            const imageUrls = car.ImageURLs.split(',');
+            const images = document.createElement('div');
+            images.classList.add('images');
+    
+            imageUrls.forEach(imageUrl => {
+                const img = document.createElement('img');
+                img.src = `${car.Make}/${imageUrl.trim()}`; // trim to remove any leading/trailing spaces
+                images.appendChild(img);
+            });
+            carDiv.appendChild(images);
+
+            // Create a delete button for each car
+            const deleteButton = document.createElement('button');
+            deleteButton.classList.add('deleteButton');
+            deleteButton.textContent = 'Delete';
+            deleteButton.addEventListener('click', () => {
+                deleteCar(car.CarID); 
+            });
+            carDiv.appendChild(deleteButton);
+
+            searchResultDiv.appendChild(carDiv);
+        });
+    } 
+  })
+  .catch(error => {
+    // Handle errors
+    console.error('There was a problem with the fetch operation:', error);
+    // Update UI to indicate error
+  });
+
+function deleteCar(carId) {
+    fetch(`http://localhost:8080/deleteCar/${carId}`, {
+        method: 'DELETE'
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to delete car');
+        }
+        // Reload the page or update UI to reflect the deletion
+        location.reload(); // Reload the page to reflect changes
+    })
+    .catch(error => {
+        console.error('Failed to delete car:', error);
+        // Handle error
+    });
+}
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    let makeValue = make.value;
+    let mileageValue = mileage.value;
+    let priceValue = price.value;
+    let modelValue = model.value;
+    let yearValue = year.value;
+    let sellerIdValue = sellerid.value;
+    let descriptionValue = description.value;
+    let imageUrlsValue = imageurls.value;
+
+    fetch('http://localhost:8080/addCar', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                makeValue: makeValue,
+                mileageValue: mileageValue,
+                priceValue: priceValue,
+                modelValue: modelValue,
+                yearValue: yearValue,
+                sellerIdValue: sellerIdValue,
+                descriptionValue: descriptionValue,
+                imageUrlsValue: imageUrlsValue
+            }),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to add car');
+            }
+            // Redirect to admin page upon success
+            window.location.href = 'adminPage.html';
+        })
+        .catch(error => {
+            console.error('Error adding car:', error);
+            alert('Failed to add car. Please try again later.');
+        });
+});
+
+</script>
+</html>
