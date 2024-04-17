@@ -39,12 +39,12 @@ Before running Spy Camera, ensure that you configure the following settings:
 
 ## Team Members
 
-- Harshit Soni
-- Hirpara Daivik
-- Hridhyansh Sharma
-- Daksh Mehta
-- Shreyas Makwana
+- Harshit Soni       -   202211027
+- Hirpara Daivik     -   202211028
+- Hridhyansh Sharma  -   202211029
+- Shreyas Makwana    -   202211046
+- Daksh Mehta        -   202211049
 
 ---
 
-Feel free to explore the Spy Camera application and contribute to its development! If you encounter any issues or have suggestions, please let us know. Happy monitoring!
+Feel free to explore the Spy Camera application and contribute to its development! If you encounter any issues or have suggestions, please let us know. 
