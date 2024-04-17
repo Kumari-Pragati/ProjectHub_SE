@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Order History</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 100%;
+      padding: 20px;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    .order-details {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .order-id {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    #back-to-main-menu {
+      margin-top: 15px;
+      text-align: center;
+
+    }
+    #back-to-main-menu button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 40px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #back-to-main-menu button:hover 
+    {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Food Order History</h1>
+    <div id="orderDetailsContainer">
+      <!-- Order details will be inserted here -->
+    </div>
+    <div id="back-to-main-menu">
+      <button onclick="goToSettingsPage()">Back to Main Menu</button>
+    </div>
+  </div>
+
+  <script>
+    // Sample data for demonstration
+    const orders = [
+      { id: 1, person: "John Doe", address: "123 Main St", food: "Pizza", timestamp: "2024-04-01 12:00 PM", price: "12.99", quantity: 1 },
+      { id: 2, person: "Alice Smith", address: "456 Oak Ave", food: "Burger", timestamp: "2024-04-02 01:30 PM", price: "8.50", quantity: 2 },
+      { id: 3, person: "Bob Johnson", address: "789 Elm St", food: "Sushi", timestamp: "2024-04-03 02:45 PM", price: "15.75", quantity: 1 },
+      { id: 4, person: "Emma Davis", address: "101 Pine St", food: "Tacos", timestamp: "2024-04-04 10:15 AM", price: "10.25", quantity: 3 },
+      { id: 5, person: "Michael Brown", address: "202 Maple Ave", food: "Salad", timestamp: "2024-04-05 11:00 AM", price: "7.99", quantity: 1 },
+      { id: 6, person: "Sarah Wilson", address: "303 Cedar St", food: "Pasta", timestamp: "2024-04-06 12:30 PM", price: "11.50", quantity: 2 },
+      { id: 7, person: "David Lee", address: "404 Spruce Ave", food: "Sandwich", timestamp: "2024-04-07 01:45 PM", price: "6.75", quantity: 1 },
+      { id: 8, person: "Emily Taylor", address: "505 Birch St", food: "Steak", timestamp: "2024-04-08 02:00 PM", price: "18.99", quantity: 1 },
+      { id: 9, person: "James Clark", address: "606 Walnut Ave", food: "Soup", timestamp: "2024-04-09 03:15 PM", price: "5.25", quantity: 2 },
+      { id: 10, person: "Olivia Martinez", address: "707 Willow St", food: "Sushi", timestamp: "2024-04-10 04:30 PM", price: "15.75", quantity: 1 }
+    ];
+
+    // Function to render orders details
+    function renderOrderDetails() {
+      const orderDetailsContainer = document.getElementById("orderDetailsContainer");
+      orders.forEach(order => {
+        const orderDetails = document.createElement("div");
+        orderDetails.classList.add("order-details");
+        orderDetails.innerHTML = `
+          <p class="order-id">Order ID: ${order.id}</p>
+          <p>Person: ${order.person}</p>
+          <p>Address: ${order.address}</p>
+          <p>Food Name: ${order.food}</p>
+          <p>Timestamp: ${order.timestamp}</p>
+          <p>Price: ${order.price}</p>
+          <p>Quantity: ${order.quantity}</p>
+        `;
+        orderDetailsContainer.appendChild(orderDetails);
+      });
+    }
+
+    // Function to redirect to settings.html
+    function goToSettingsPage() {
+      window.location.href = "setting.html";
+    }
+
+    // Call renderOrderDetails when the page loads
+    window.onload = renderOrderDetails;
+  </script>
+</body>
+</html>

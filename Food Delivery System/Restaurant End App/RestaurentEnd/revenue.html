@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="button-container">
+            <button class="button" onclick="showPastOrders()">Past Orders</button>
+            <button class="button" onclick="showOrdersToDeliver()">Orders to Deliver</button>
+        </div>
+
+        <div class="section pastOrders" style="display: none;">
+            <div class="section-header">
+                <h2>Past Orders</h2>
+            </div>
+            <div class="order-list" id="pastOrdersList">
+                <!-- Past orders will be fetched dynamically -->
+            </div>
+            <div id="back-to-main-menu">
+                <button onclick="goToSettingsPage()">Back to Main Menu</button>
+            </div>
+        </div>
+
+        <div class="section toDeliver" style="display: none;">
+            <div class="section-header">
+                <h2>Orders to Deliver</h2>
+            </div>
+            <div class="order-list" id="ordersToDeliverList">
+                <!-- Orders to deliver will be fetched dynamically -->
+            </div>
+            <div id="back-to-main-menu">
+                <button onclick="goToSettingsPage()">Back to Main Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function showPastOrders() {
+            // Fetch past orders
+            const response = await fetch('http://localhost:5500/pastOrders');
+            const pastOrders = await response.json();
+            const pastOrdersList = document.getElementById('pastOrdersList');
+            pastOrdersList.innerHTML = '';
+
+            // Display past orders section
+            const pastOrdersSection = document.querySelector('.pastOrders');
+            pastOrdersSection.style.display = 'block';
+
+            // Hide orders to deliver section
+            const ordersToDeliverSection = document.querySelector('.toDeliver');
+            ordersToDeliverSection.style.display = 'none';
+
+            // Render past orders
+            pastOrders.forEach(order => {
+                const orderElement = document.createElement('div');
+                orderElement.classList.add('order');
+                orderElement.innerHTML = `
+                    <div class="order-header">
+                        <h3>Order #${order.id}</h3>
+                        <div class="order-status">${order.order_status}</div>
+                    </div>
+                    <p>Customer: ${order.customer_name}</p>
+                    <p>Address: ${order.address}</p>
+                    <p class="total-price">Total: ${order.total_price} /-</p>
+                `;
+                pastOrdersList.appendChild(orderElement);
+            });
+        }
+
+        async function showOrdersToDeliver() {
+            // Fetch orders to deliver
+            const response = await fetch('http://localhost:5500/ordersToDeliver');
+            const ordersToDeliver = await response.json();
+            const ordersToDeliverList = document.getElementById('ordersToDeliverList');
+            ordersToDeliverList.innerHTML = '';
+
+            // Display orders to deliver section
+            const ordersToDeliverSection = document.querySelector('.toDeliver');
+            ordersToDeliverSection.style.display = 'block';
+
+            // Hide past orders section
+            const pastOrdersSection = document.querySelector('.pastOrders');
+            pastOrdersSection.style.display = 'none';
+
+            // Render orders to deliver
+            ordersToDeliver.forEach(order => {
+                const orderElement = document.createElement('div');
+                orderElement.classList.add('order');
+                orderElement.innerHTML = `
+                    <div class="order-header">
+                        <h3>Order #${order.id}</h3>
+                        <div class="order-status">${order.order_status}</div>
+                    </div>
+                    <p>Customer: ${order.customer_name}</p>
+                    <p>Address: ${order.address}</p>
+                    <p class="total-price">Total: ${order.total_price} /-</p>
+                `;
+                ordersToDeliverList.appendChild(orderElement);
+            });
+        }
+        function goToSettingsPage() {
+            window.location.href = "setting.html";
+        }
+    </script>
+</body>
+
+</html>

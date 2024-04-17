@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("background_image_url_here");
+
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  width: 300px;
+}
+
+.user-info img {
+  width: 15px;
+  height: 15px;
+  margin-right: 0px;
+}
+
+.delivery-location {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.restaurant-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.user-info .fas.fa-user {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.restaurant-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+.restaurant-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .restaurant-card {
+    width: calc(50% - 20px);
+  }
+
+  .restaurant-card:nth-child(odd) {
+    margin-right: 0;
+  }
+}
+
+.restaurant-card:hover {
+  background-color: #e0e0e0;
+}
+.restaurant-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}

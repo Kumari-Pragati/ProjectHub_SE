@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order from Restaurant</title>
+    <link rel="stylesheet" href="style_fooditems.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Sizzle</h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for food..." />
+      </div>
+      <div class="cart-icon">
+        <a href="cart.html"><img src="cart.png" alt="Cart Icon" /></a>
+      </div>
+    </header>
+    <div class="restaurant-details">
+      <h2>Amigos Cafe and Restaurant</h2>
+      <p>Shop No.12, Food Street, Diu</p>
+    </div>
+    <div class="food-cards">
+      <div class="food-card">
+        <div class="food-details">
+          <img src="food.avif" alt="Burger" class="food-image" />
+          <div class="food-info">
+            <h3>Burger</h3>
+            <p class="food-price">Price: ₹80</p>
+            <a href="#" class="add-to-cart" data-name="Burger" data-price="80"
+              >Add to Cart</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-details">
+          <img src="pizza.jpg" alt="Pizza" class="food-image" />
+          <div class="food-info">
+            <h3>Pizza</h3>
+            <p class="food-price">Price: ₹200</p>
+            <a href="#" class="add-to-cart" data-name="Pizza" data-price="200"
+              >Add to Cart</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-details">
+          <img src="salad.jpg" alt="Salad" class="food-image" />
+          <div class="food-info">
+            <h3>Salad</h3>
+            <p class="food-price">Price: ₹80</p>
+            <a href="#" class="add-to-cart" data-name="Salad" data-price="80"
+              >Add to Cart</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-details">
+          <img src="sandwich.jpg" alt="Sandwich" class="food-image" />
+          <div class="food-info">
+            <h3>Sandwich</h3>
+            <p class="food-price">Price: ₹90</p>
+            <a href="#" class="add-to-cart" data-name="Sandwich" data-price="90"
+              >Add to Cart</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Sizzle. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".add-to-cart").forEach((item) => {
+        item.addEventListener("click", addToCart);
+      });
+
+      function addToCart(event) {
+        event.preventDefault();
+
+        const itemName = event.target.dataset.name;
+        const itemPrice = parseFloat(event.target.dataset.price);
+        const cart = JSON.parse(localStorage.getItem("cart")) || {};
+
+        cart[itemName] = cart[itemName] ? cart[itemName] + 1 : 1;
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+      }
+    </script>
+  </body>
+</html>
