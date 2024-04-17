@@ -1,0 +1,64 @@
+.bg{
+    background-color: #6964ff;
+    color: aliceblue;
+}
+
+.bg:hover{
+    
+        background-color: #6964ff;
+        color: aliceblue;
+    
+}
+
+.width{
+    width:80px;
+    height:40px;
+}
+
+.wct{
+    width: 100px !important;
+}
+
+.centrify{
+    margin:auto;
+}
+.text-align-center{
+    text-align: center;
+
+}
+
+
+.wdt-mng{
+    width: 90vw;
+    max-height: 80vh;
+    object-fit: contain;
+    margin: auto;
+}
+
+.maxi{
+    max-width: 90vw;
+}
+
+.card{
+    background-color: aliceblue;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 2px 5px 0px #787878;
+    
+  
+}
+
+.mngmt{
+    overflow-wrap: break-word;
+    overflow: scroll;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+select{
+    max-width: 80vw !important;
+}
+
+.mngmt::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
