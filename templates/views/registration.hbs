@@ -1,0 +1,526 @@
+<!DOCTYPE hbs>
+<hbs> 
+<head>
+<title> Unity Hospital | Registration </title>
+
+		<!-- Web Fonts -->
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+		{{!-- bootstrap link --}}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+		<!-- CSS Global Compulsory -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- CSS Header and Footer -->
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+
+		<!-- CSS Customization -->
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/social_style.css">
+
+</head>
+
+<body>
+		<div class="wrapper">
+		<!--=== Header v1 ===-->
+		<div class="header-v1">
+		<!-- Topbar -->
+		<div class="topbar-v1">
+		<div class="container">
+		<div class="row">
+		<div class="col-md-6">
+			<ul class="list-inline top-v1-contacts">
+			<li>
+			<i class="fa fa-envelope"></i> Email: unityhospital@gmail.com
+			</li>
+			<li>
+			<i class="fa fa-phone"></i> Contact no : 63002 51986
+			</li>
+			</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+
+<!-- End Topbar -->
+
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a href="/">
+            <img src="img/logo/unity_white.jpg" alt="Logo">
+        </a>
+    </div>
+
+    <ul class="navbar-nav">
+        <li><a href="/">HOME</a></li>
+        <li><a href="about.hbs">ABOUT US</a></li>
+        <li><a href="doctors.hbs">DOCTORS</a></li>
+        <li><a href="gallery.hbs">GALLERY</a></li>
+        <li><a href="blog.hbs">BLOGS</a></li>
+        <li><a href="/contact">CONTACT US</a></li>
+        <li><a href="/registration">REGISTRATION</a></li>
+        <li><a href="/login">LOGIN</a></li>
+        <li><a href="appointment.hbs">BOOK APPOINTMENT</a></li>
+    </ul>
+
+    <button class="navbar-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</nav>
+
+<style>
+.navbar {
+    background-color: #313131;
+    color: #efeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 18px;
+}
+
+.navbar-brand img {
+    height: 50px; /* Adjust the height as needed */
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-right: 15px;
+}
+
+.navbar-nav a {
+    color: #d6e8ef;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #b8f2df;
+    margin-bottom: 5px;
+}
+
+.navbar-nav.active {
+    display: block;
+}
+</style>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarNav = document.querySelector('.navbar-nav');
+
+            navbarToggler.addEventListener('click', () => {
+                navbarNav.classList.toggle('active');
+            });
+
+            function showMsg(flag) {
+                if (flag === 0) {
+                    $('.successBox').css('display', 'block');
+                } else {
+                    $('.successBox').css('display', 'none');
+                }
+            }
+        });
+    </script>
+
+<!-- End Navbar -->
+
+ <style>
+			/* Global styles */
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f4f4f4;
+			}
+	
+			.container {
+				background-color: #fff;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				padding: 20px;
+			}
+	
+			.form-group {
+				margin-bottom: 20px;
+			}
+	
+			label {
+				font-weight: bold;
+			}
+	
+			input[type="text"],
+			input[type="email"],
+			input[type="tel"],
+			input[type="date"],
+			select,
+			input[type="password"],
+			.btn-register {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-sizing: border-box;
+			}
+	
+			select {
+				width: calc(100% + 2px);
+			}
+	
+			.color-red {
+				color: red;
+			}
+	
+			/* Additional styles */
+			.reg-header {
+				text-align: center;
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="container">
+			<h2 class="reg-header">REGISTER A NEW ACCOUNT</h2>
+			<p class="reg-header">Already Signed Up? Click <a href="/login" class="text-success">Sign In</a> to log in to your account.</p>
+	        <form action="/registration" method="post" class="reg-page">
+				<!-- Personal Information -->
+<div class="reg-header">
+    <h3>Personal Information <span class="color-red">*</span></h3>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="fullname">Full Name <span class="color-red">*</span></label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="dob">Date of Birth <span class="color-red">*</span></label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="gender">Gender <span class="color-red">*</span></label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <label for="address">Address <span class="color-red">*</span></label>
+    <input type="text" id="address" name="address" placeholder="Street, City, State, ZIP code" required>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="contact">Contact Number <span class="color-red">*</span></label>
+            <input type="tel" id="contact" name="contact" required>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="email">Email Address <span class="color-red">*</span></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <label for="maritalstatus">Marital Status <span class="color-red">*</span></label>
+    <select id="maritalstatus" name="maritalstatus" required>
+        <option value="">Select Marital Status</option>
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        <option value="divorced">Divorced</option>
+        <option value="widowed">Widowed</option>
+    </select>
+</div>
+	
+				<!-- Emergency Contact Information -->
+				<div class="reg-header">
+					<h3>Emergency Contact Information <span class="color-red">*</span></h3>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="emergencycontact">Name of Emergency Contact <span class="color-red">*</span></label>
+							<input type="text" id="emergencycontact" name="emergencycontact" required>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="relationship">Relationship to Patient <span class="color-red">*</span></label>
+							<input type="text" id="relationship" name="relationship" required>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="emergencycontactnumber">Contact Number of Emergency Contact <span class="color-red">*</span></label>
+							<input type="tel" id="emergencycontactnumber" name="emergencycontactnumber" required>
+						</div>
+					</div>
+				</div>
+				<!-- Additional fields for Emergency Contact Information -->
+	
+				<!-- Insurance Information -->
+				<div class="reg-header">
+					<h3>Insurance Information (if applicable)</h3>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<label>Insurance Company Name</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label>Policy Number</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label>Group Number</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label>Primary Insured Name (if differ patient)</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+				</div>
+				<!-- Additional fields for Insurance Information -->
+	
+		<!-- Medical Information -->
+<div class="reg-header">
+    <h3>Medical Information</h3>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-container">
+            <label>Known Allergies</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-container">
+            <label>Chronic Medical Conditions</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-container">
+            <label>Current Medications</label>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-container">
+            <label>Previous Surgeries or Medical Procedures</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-container">
+            <label>Blood Type (if known)</label>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+</div>
+
+<!-- Employment Information -->
+<div class="reg-header">
+    <h3>Employment Information (optional)</h3>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-container">
+            <label>Occupation</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-container">
+            <label>Employer Name</label>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-container">
+            <label>Employer Contact Information</label>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+</div>	
+				<!-- Password -->
+				<div class="reg-header">
+					<h3>Password <span class="color-red">*</span></h3>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="password">Password <span class="color-red">*</span></label>
+							<input type="password" id="password" name="password" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="confirmpassword">Confirm Password <span class="color-red">*</span></label>
+							<input type="password" id="confirmpassword" name="confirmpassword" required>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Agreement -->
+				<div class="form-group" style="text-align: center;">
+					<label>
+						<input type="checkbox" required>
+						I read <a href="#" class="text-success">Terms and Conditions</a> <span class="color-red">*</span>
+					</label>
+				</div>
+	
+				<!-- Submit Button -->
+				<div class="form-group" style="text-align: center;">
+					<button class="btn btn-primary" type="submit">Register</button>
+				</div>
+			</form>
+			
+                    <div class="alert alert-success successBox">
+                       <button type="button" class="close" onclick="showMsg(1);">×</button>
+                        <strong style="font-size: 16px;">Congratulations!</strong><span class="alert-link"> You Have Successfully Registered.</span>
+                    </div>
+		</div>
+
+
+
+		<!--=== Footer ===-->
+		<div class="footer-v1">
+		<div class="footer">
+		<div class="container">
+		<div class="row">
+		<!-- About -->
+		<div class="col-md-3 " style="margin-bottom: 40px;">
+		<a href="/"><img id="logo-footer" class="footer-logo" src="img/logo/unity_white.jpg" alt=""></a>
+		<p>At Unity Hospital, we are convinced that 'quality' and 'lowest cost' are not mutually exclusive when it comes to healthcare delivery.</a></p>
+		<p> mission is to deliver high quality, affordable healthcare services to the broader population in India.</a></p>
+		</div><!--/col-md-3-->
+		<!-- End About -->
+
+		 {{!-- <p>No worries, <a class="color-green" href="#">click here</a> to reset your password.</p> --}}
+
+		<div class="row">
+			<!-- Latest -->
+			<div class="col-md-4" style="margin-bottom: 40px;">
+				<div class="posts">
+					<div class="headline"><h2>Latest Posts</h2></div>
+					<ul class="list-unstyled latest-list">
+						<li>
+							<a href="blog.hbs">Incredible content</a>
+							<small>December 16, 2020</small>
+						</li>
+						<li>
+							<a href="gallery.hbs">Latest Images</a>
+							<small>December 16, 2020</small>
+						</li>
+						<li>
+							<a href="terms.hbs">Terms and Conditions</a>
+							<small>December 16, 2020</small>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--/col-md-4-->
+			<!-- End Latest -->
+		
+			<!-- Link List -->
+			<div class="col-md-4" style="margin-bottom: 40px;">
+				<div class="headline"><h2>Useful Links</h2></div>
+				<ul class="list-unstyled link-list">
+					<li><a href="/about">About us</a><i class="fa fa-angle-right"></i></li>
+					<li><a href="/Contact">Contact us</a><i class="fa fa-angle-right"></i></li>
+					<li><a href="/appointment">Book Appointment</a><i class="fa fa-angle-right"></i></li>
+				</ul>
+			</div><!--/col-md-4-->
+			<!-- End Link List -->
+		
+			<!-- Address -->
+			<div class="col-md-4 map-img" style="margin-bottom: 40px;">
+				<div class="headline"><h2>Contact Us</h2></div>
+				<address class="" style="margin-bottom: 40px; margin-left: 18px; margin-right: 18px;">
+					Unity Hospital <br />
+					Ahmedabad, IN <br />
+					Phone: 886 666 00555 <br />
+					Email: unityhospital@gmail.com 
+				</address>
+			</div><!--/col-md-4-->
+			<!-- End Address -->
+		</div><!--/row-->
+		</div>
+		</div>
+		</div><!--/footer-->
+
+		<div class="copyright">
+		<div class="container">
+        <div class="col-md-12">
+                        <div class="text-center">
+                            <p>2024 &copy; All Rights Reserved. <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+                        </div>
+                        <div class="social-links">
+                            <ul class="footer-socials">
+                                <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+                                <li><a href="http://www.skype.com"><img src="img/skype.jpg" alt="Skype"></a></li>
+                                <li><a href="http://www.linkedin.com"><img src="img/linkdin.jpg" alt="Linkedin"></a></li>
+                                <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+                                <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+		</div>
+		<!-- End Social Links -->
+
+		<!-- Your JavaScript code here -->
+<script>
+    // Function to open social media links in a new tab when clicked
+    document.addEventListener("DOMContentLoaded", function() {
+        var socialLinks = document.querySelectorAll('.footer-socials a');
+        socialLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default behavior of link click
+                var url = this.href;
+                window.open(url, '_blank'); // Open link in a new tab
+            });
+        });
+    });
+</script>
+</div><!--/wrapper-->
+
+	<!-- Java scripts -->
+	<script type="text/javascript">
+	function showMsg(flag){
+	if(flag==0){
+	$('.successBox').css('display', 'block');
+	}else{
+	$('.successBox').css('display', 'none');
+	}
+	}
+	</script>
+
+</body>
+</hbs>

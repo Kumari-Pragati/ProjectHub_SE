@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Unity Hospital | Contact Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/social_style.css">
+    <link rel="stylesheet" href="css/header.css">
+    {{!-- <link rel="stylesheet" href="css/custom.css"> --}}
+    <link rel="stylesheet" href="blog_timeline.css">
+
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styling here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 150px; /* Added margin to move footer down */
+        }
+
+        .navbar-brand img {
+            height: 50px; /* Adjust as needed */
+        }
+
+        .navbar-nav .nav-link {
+            color: #333;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff; /* Change to your preferred color */
+        }
+
+        /* Add styles for the contact form */
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 35px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #007bff; /* Change to your preferred color */
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3; /* Change to your preferred color */
+        }
+
+        /* Footer styles */
+        .footer-v1 {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .footer-v1 p {
+            margin-bottom: 20px;
+        }
+
+        .footer-socials img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="img/logo/unity_white.jpg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/doctors">DOCTORS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallery">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">BLOGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/registration">REGISTRATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/appointment">BOOK APPOINTMENT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <form onsubmit="showMsg(0);return false;" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Mobile Number</label>
+                            <input type="text" class="form-control" id="number" name="number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div class="alert alert-success mt-3" role="alert" style="display: none;">
+                        Congratulations! Your message has been sent!
+                    </div>
+                </div>
+                <!-- End Contact Form -->
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Your custom JavaScript -->
+    <script>
+        function showMsg(flag) {
+            if (flag === 0) {
+                $('.alert-success').fadeIn();
+            } else {
+                $('.alert-success').fadeOut();
+            }
+        }
+    </script>
+
+ <!-- Footer -->
+ <footer class="footer-v1 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="/index"><img id="logo-footer" class="footer-logo" src="img/logo/unity_white.jpg" alt=""></a>
+                <p>At Unity Hospital, we are convinced that 'quality' and 'lowest cost' are not mutually exclusive when it comes to healthcare delivery.</p>
+                <p>Our mission is to deliver high quality, affordable healthcare services to the broader population in India.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="posts">
+                    <div class="headline"><h2>Latest Posts</h2></div>
+                    <ul class="list-unstyled latest-list">
+                        <li>
+                            <a href="/blog">Incredible content</a>
+                            <small>December 16, 2020</small>
+                        </li>
+                        <li>
+                            <a href="/gallery">Latest Images</a>
+                            <small>December 16, 2020</small>
+                        </li>
+                        <li>
+                            <a href="/terms">Terms and Conditions</a>
+                            <small>December 16, 2020</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="headline"><h2>Useful Links</h2></div>
+                <ul class="list-unstyled link-list">
+                    <li><a href="/about">About us</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/Contact">Contact us</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/appointment">Book Appointment</a><i class="fa fa-angle-right"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="headline"><h2>Contact Us</h2></div>
+                <address class="">
+                    Unity Hospital <br>
+                    Ahmedabad, IN <br>
+                    Phone: 630 025 1986 <br>
+                    Email: unityhospital@gmail.com 
+                </address>
+
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <p>2024 &copy; All Rights Reserved. <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+                    </div>
+                    <div class="social-links">
+                        <ul class="footer-socials">
+                            <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+                            <li><a href="http://www.skype.com"><img src="img/skype.jpg" alt="Skype"></a></li>
+                            <li><a href="http://www.linkedin.com"><img src="img/linkdin.jpg" alt="Linkedin"></a></li>
+                            <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+                            <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+</body>
+</html>

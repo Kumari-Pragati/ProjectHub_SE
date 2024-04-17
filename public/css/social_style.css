@@ -1,0 +1,27 @@
+/* Style for social links container */
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the social links horizontally */
+    align-items: center; /* Center the social links vertically */
+    height: 100px; /* Set a fixed height for the social links container */
+}
+
+/* Style for social links list */
+.footer-socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+/* Style for each social link */
+.footer-socials li {
+    margin: 0 10px; /* Adjust the margin between social icons */
+
+}
+/* Style for social link images */
+.footer-socials img {
+    width: 35px; /* Set the width of the images */
+    height: 35px; /* Set the height of the images */
+    border-radius: 25%;/* Display the list items as flex items */
+}

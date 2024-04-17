@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity Hospital | Doctors </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Font Awesome CSS (Add Font Awesome CSS Link) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    {{!-- <link rel="stylesheet" href="css/style.css"> --}}
+    <link rel="stylesheet" href="css/header.css">
+    {{!-- <link rel="stylesheet" href="css/about.css"> --}}
+    <link rel="stylesheet" href="css/social_style.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/blog_timeline.css">
+	<link rel="stylesheet" href="css/doctors.css">
+<style>
+  /* Custom Styles */
+  .team-v1 {
+    margin-top: 30px;
+  }
+
+  .team-img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .team-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+  }
+
+  .team-img ul {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+  }
+
+  .team-img ul li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .team-img ul li a {
+    color: #fff;
+    display: block;
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    line-height: 30px; /* Adjust as needed */
+    border-radius: 50%; /* Add border-radius for rounded corners */
+  }
+
+  .team-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+  }
+
+  .team-info h3 {
+    margin-top: 0;
+  }
+
+  .team-info h4 {
+    color: #666;
+    margin-top: 5px;
+  }
+
+  .team-info p {
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="wrapper">
+        <div class="header-v1">
+            <!-- Topbar -->
+            <div class="topbar-v1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-inline top-v1-contacts">
+                                <li><i class="fa fa-envelope"></i> Email: unityhospital@gmail.com</li>
+                                <li><i class="fa fa-phone"></i> Contact no : 630 025 1986</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Topbar -->
+
+            
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="img/logo/unity_white.jpg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/doctors">DOCTORS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallery">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">BLOGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/registration">REGISTRATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appointment">BOOK APPOINTMENT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+        </div>
+    </div>
+    <!-- End Header -->
+
+	<!-- Image title -->
+
+	<div style="text-align: center; margin-top: 50px;">
+	<h2>DOCTORS</h2>
+	</div>
+
+	<!-- End title  -->
+
+
+
+				<!--=== Team v1 ===-->
+				<div class="container content-md team-v1">
+				<ul class="list-unstyled row">
+				<li class="col-sm-3 col-xs-6 " style="margin-bottom: 30px;">
+				<div class="team-img">
+				<img class="img-responsive" src="img/team/1.jpg" alt="">
+				<ul>
+		         <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+	             <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+	             <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+				</ul>
+				</div>
+				<h3>Dr. Harshil Patel</h3>
+				<h4>/ Consultant</h4>
+				<p>Child care</p>
+				</li>
+				<li class="col-sm-3 col-xs-6 " style="margin-bottom: 30px;">
+				<div class="team-img">
+				<img class="img-responsive" src="img/team/2.jpg" alt="">
+				<ul>
+		         <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+	             <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+	             <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+				</ul>
+				</div>
+				<h3>Dr. Sahil Achhava</h3>
+				<h4>/ MBBS</h4>
+				<p>Neurology</p>
+				</li>
+				<li class="col-sm-3 col-xs-6">
+				<div class="team-img">
+				<img class="img-responsive" src="img/team/3.jpg" alt="">
+				<ul>
+		         <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+	             <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+	             <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+				</ul>
+				</div>
+				<h3>Dr. Dhruv Shah</h3>
+				<h4>/ MBBS, MS, DNB</h4>
+				<p>General Surgery</p>
+				</li>
+
+				<li class="col-sm-3 col-xs-6">
+				<div class="team-img">
+				<img class="img-responsive" src="img/team/4.jpg" alt="">
+				<ul>
+		         <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+	             <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+	             <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+				</ul>
+				</div>
+				<h3>Dr. Vijeta Kumari</h3>
+				<h4>/ MBBS</h4>
+				<p>Health Checkup</p>
+				</li>
+				</ul>
+
+				<!-- Second Line -->
+				<div class="container content-md team-v1" style="margin-left: -13px;">
+				<ul class="list-unstyled row">
+				<li class="col-sm-3 col-xs-6 " style="margin-bottom: 30px;">
+				<div class="team-img">
+				<img class="img-responsive" src="img/team/5.jpg" alt="">
+				<ul>
+		         <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+	             <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+	             <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+				</ul>
+				</div>
+				<h3>Dr. Yagnesh Patel</h3>
+				<h4>/ MD</h4>
+				<p>Dermatology</p>
+				</li>
+				<li class="col-sm-3 col-xs-6 " style="margin-bottom: 30px;">
+				<div class="team-img">
+				<img class="img-responsive" src="img/team/6.jpg" alt="">
+				<ul>
+		         <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+	             <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+	             <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+				</ul>
+				</div>
+				<h3>Dr. Namita Bhoj</h3>
+				<h4>/ MBBS,MS, MD</h4>
+				<p>Eye Specialist</p>
+				</li>
+				<li class="col-sm-3 col-xs-6">
+				<div class="team-img">
+				<img class="img-responsive" src="img/team/7.jpg" alt="">
+				<ul>
+		         <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+	             <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+	             <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+				</ul>
+				</div>
+				<h3>Dr. Jeel Patel</h3>
+				<h4>/ MBBS</h4>
+				<p>CCU & ICU</p>
+				</li>
+
+				<li class="col-sm-3 col-xs-6 " style="margin-bottom: 30px;">
+				<div class="team-img">
+				<img class="img-responsive" src="img/team/8.jpg" alt="">
+				<ul>
+		         <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+	             <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+	             <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+				</ul>
+				</div>
+				<h3>Dr. Harman</h3>
+				<h4>/ MBBS</h4>
+				<p>Health Checkup</p>
+				</li>
+				</ul>
+				</div>
+				</div>
+				<script><!-- jQuery (Add jQuery CDN Link) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- JavaScript Code for Hover Effect -->
+<script>
+  $(document).ready(function(){
+    $(".team-img").hover(function(){
+      $(this).find('ul').slideDown(200);
+    }, function(){
+      $(this).find('ul').slideUp(200);
+    });
+  });
+</script>
+</script>
+
+<!--=== End Team v1 ===-->	
+
+<!--=== End About Me ===-->
+
+
+
+
+
+		<!--=== Footer ===-->
+		<div class="footer-v1">
+		<div class="footer">
+		<div class="container">
+		<div class="row">
+		<!-- About -->
+		<div class="col-md-3 " style="margin-bottom: 40px;">
+		<a href="/"><img id="logo-footer" class="footer-logo" src="img/logo/unity_white.jpg" alt=""></a>
+		<p>At Unity Hospital, we are convinced that 'quality' and 'lowest cost' are not mutually exclusive when it comes to healthcare delivery.</a></p>
+		<p> mission is to deliver high quality, affordable healthcare services to the broader population in India.</a></p>
+		</div><!--/col-md-3-->
+		<!-- End About -->
+
+		 {{!-- <p>No worries, <a class="color-green" href="#">click here</a> to reset your password.</p> --}}
+
+		<div class="row">
+			<!-- Latest -->
+			<div class="col-md-4" style="margin-bottom: 40px;">
+				<div class="posts">
+					<div class="headline"><h2>Latest Posts</h2></div>
+					<ul class="list-unstyled latest-list">
+						<li>
+							<a href="\blog">Incredible content</a>
+							<small>December 16, 2020</small>
+						</li>
+						<li>
+							<a href="\gallery">Latest Images</a>
+							<small>December 16, 2020</small>
+						</li>
+						<li>
+							<a href="\terms">Terms and Conditions</a>
+							<small>December 16, 2020</small>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--/col-md-4-->
+			<!-- End Latest -->
+		
+			<!-- Link List -->
+			<div class="col-md-4" style="margin-bottom: 40px;">
+				<div class="headline"><h2>Useful Links</h2></div>
+				<ul class="list-unstyled link-list">
+					<li><a href="/about">About us</a><i class="fa fa-angle-right"></i></li>
+					<li><a href="/Contact">Contact us</a><i class="fa fa-angle-right"></i></li>
+					<li><a href="/appointment">Book Appointment</a><i class="fa fa-angle-right"></i></li>
+				</ul>
+			</div><!--/col-md-4-->
+			<!-- End Link List -->
+		
+			<!-- Address -->
+			<div class="col-md-4 map-img" style="margin-bottom: 40px;">
+				<div class="headline"><h2>Contact Us</h2></div>
+				<address class="" style="margin-bottom: 40px; margin-left: 18px; margin-right: 18px;">
+					Unity Hospital <br />
+					Ahmedabad, IN <br />
+					Phone: 886 666 00555 <br />
+					Email: unityhospital@gmail.com 
+				</address>
+			</div><!--/col-md-4-->
+			<!-- End Address -->
+		</div><!--/row-->
+		</div>
+		</div>
+		</div><!--/footer-->
+
+		<div class="copyright">
+		<div class="container">
+        <div class="col-md-12">
+                        <div class="text-center">
+                            <p>2024 &copy; All Rights Reserved. <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+                        </div>
+                        <div class="social-links">
+                            <ul class="footer-socials">
+                                <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+                                <li><a href="http://www.skype.com"><img src="img/skype.jpg" alt="Skype"></a></li>
+                                <li><a href="http://www.linkedin.com"><img src="img/linkdin.jpg" alt="Linkedin"></a></li>
+                                <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+                                <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+		</div>
+		<!-- End Social Links -->
+		<!-- Your JavaScript code here -->
+<script>
+    // Function to open social media links in a new tab when clicked
+    document.addEventListener("DOMContentLoaded", function() {
+        var socialLinks = document.querySelectorAll('.footer-socials a');
+        socialLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default behavior of link click
+                var url = this.href;
+                window.open(url, '_blank'); // Open link in a new tab
+            });
+        });
+    });
+</script>
+</div><!--/wrapper-->
+
+	<!-- Java scripts -->
+	<script type="text/javascript">
+	function showMsg(flag){
+	if(flag==0){
+	$('.successBox').css('display', 'block');
+	}else{
+	$('.successBox').css('display', 'none');
+	}
+	}
+	</script>
+
+</body>
+</hbs>

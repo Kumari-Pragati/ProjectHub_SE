@@ -1,0 +1,68 @@
+/* Bootstrap Styles (Add Bootstrap CSS Link) */
+
+/* Custom Styles */
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar-brand img {
+    max-height: 40px; /* Adjust height as needed */
+  }
+  
+  .navbar-nav > li > a {
+    color: #fff;
+  }
+  
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus {
+    background-color: #555;
+  }
+  
+  /* Footer */
+  .footer-v1 {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .footer-socials li {
+    margin-right: 10px;
+  }
+  
+  /* Team Section */
+  .team-v1 {
+    margin-top: 30px;
+  }
+  
+  .team-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .team-img ul {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+  }
+  
+  .team-img ul li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .team-img ul li a {
+    color: #fff;
+  }
+  
+  

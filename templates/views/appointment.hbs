@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity Hospital | Appointment</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&display=swap">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS -->
+    {{!-- <link rel="stylesheet" href="css/style.css"> --}}
+    <link rel="stylesheet" href="css/social_style.css">
+    <link rel="stylesheet" href="css/about.css">
+ 
+
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .appointment-section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .appointment-section .section-title {
+            color: #72c02c;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .appointment-section .form-group {
+            margin-bottom: 20px;
+        }
+
+        .appointment-section button[type="submit"] {
+            display: block;
+            margin: 0 auto;
+        }
+
+        
+.footer-v1 {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+.footer-v1 p {
+    margin-bottom: 20px;
+}
+.footer-socials img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-inline top-contacts">
+                            <li><i class="fa fa-envelope"></i> Email: unityhospital@gmail.com</li>
+                            <li><i class="fa fa-phone"></i> Contact no : 630 025 1986</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/">
+                <img src="img/logo/unity_white.jpg" alt="Logo">
+            </a>
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/doctors">DOCTORS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallery">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">BLOGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/registration">REGISTRATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">LOGIN</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/appointment">BOOK APPOINTMENT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Main content -->
+    <section class="container appointment-section">
+        <!-- Appointment Form Section -->
+        <div class="row">
+            <div class="col-md-9">
+                <h2 class="section-title">Appointment Form</h2>
+                <form  class="appointment-form" action="/appointment" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Purpose Of Appointment:</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Mobile Number:</label>
+                        <input type="text" id="number" name="number" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Select Department:</label>
+                        <select id="department" name="department" class="form-control" required>
+                            <option value="" disabled selected>Select Department</option>
+                            <option>Cardiology</option>
+                            <option>Dermatology and Cosmetology</option>
+                            <option>General Surgery</option>
+                            <option>Health Checkup Packages</option>
+                            <option>Neurology</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="date">Select Date:</label>
+                                <input type="date" id="date" name="date" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="time">Select Time:</label>
+                                <select id="time" name="time" class="form-control" required>
+                                    <option value="" disabled selected>Select Time</option>
+                                    <option>8 AM - 10 AM</option>
+                                    <option>10 AM - 12 PM</option>
+                                    <option>12 PM - 2 PM</option>
+                                    <option>2 PM - 4 PM</option>
+                                    <option>4 PM - 6 PM</option>
+                                    <option>6 PM - 8 PM</option>
+                                    <option>8 PM - 10 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-success" style="display: none;">Congratulations! Your Appointment has been
+                        booked successfully.</div>
+                    <button type="submit" class="btn btn-primary">Book Appointment</button>
+                </form>
+            </div>
+
+            <!-- Side part of appointment -->
+            <div class="col-md-3">
+                <h2 class="section-title">Appointment Notes</h2>
+                <p>You Can Book Your Appointment Between <strong>8 AM to 10 PM.</strong></p>
+                <p>In Other Times You Can Call Our Ambulance Which Is Available 24/7.</p>
+
+                <h2 class="section-title">Business Hours</h2>
+                <ul class="list-unstyled">
+                    <li><strong>Monday-Saturday:</strong> 24/7 Available.</li>
+                    <li><strong>Sunday:</strong> 4 AM to 11 PM.</li>
+                </ul>
+
+                <h2 class="section-title">Why Choose Us?</h2>
+                <p>All healthcare facilities can be accessed here under one roof, making UNITY Hospital a one point
+                    contact for all your healthcare needs.</p>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check text-success"></i> 24/7 Ambulance Support.</li>
+                    <li><i class="fas fa-check text-success"></i> Eminent and Experienced Doctors.</li>
+                    <li><i class="fas fa-check text-success"></i> Multiple Options For Treatment.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Appointment Form Section -->
+
+    
+		<!--=== Footer ===-->
+		<div class="footer-v1">
+		<div class="footer">
+		<div class="container">
+		<div class="row">
+		<!-- About -->
+		<div class="col-md-3 " style="margin-bottom: 40px;">
+		<a href="/"><img id="logo-footer" class="footer-logo" src="img/logo/unity_white.jpg" alt=""></a>
+		<p>At Unity Hospital, we are convinced that 'quality' and 'lowest cost' are not mutually exclusive when it comes to healthcare delivery.</a></p>
+		<p> mission is to deliver high quality, affordable healthcare services to the broader population in India.</a></p>
+		</div><!--/col-md-3-->
+		<!-- End About -->
+
+		 {{!-- <p>No worries, <a class="color-green" href="#">click here</a> to reset your password.</p> --}}
+
+		<div class="row">
+			<!-- Latest -->
+			<div class="col-md-4" style="margin-bottom: 40px;">
+				<div class="posts">
+					<div class="headline"><h2>Latest Posts</h2></div>
+					<ul class="list-unstyled latest-list">
+						<li>
+							<a href="/blog">Incredible content</a>
+							<small>December 16, 2020</small>
+						</li>
+						<li>
+							<a href="/gallery">Latest Images</a>
+							<small>December 16, 2020</small>
+						</li>
+						<li>
+							<a href="/terms">Terms and Conditions</a>
+							<small>December 16, 2020</small>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--/col-md-4-->
+			<!-- End Latest -->
+		
+			<!-- Link List -->
+			<div class="col-md-4" style="margin-bottom: 40px;">
+				<div class="headline"><h2>Useful Links</h2></div>
+				<ul class="list-unstyled link-list">
+					<li><a href="/about">About us</a><i class="fa fa-angle-right"></i></li>
+					<li><a href="/Contact">Contact us</a><i class="fa fa-angle-right"></i></li>
+					<li><a href="/appointment">Book Appointment</a><i class="fa fa-angle-right"></i></li>
+				</ul>
+			</div><!--/col-md-4-->
+			<!-- End Link List -->
+		
+			<!-- Address -->
+			<div class="col-md-4 map-img" style="margin-bottom: 40px;">
+				<div class="headline"><h2>Contact Us</h2></div>
+				<address class="" style="margin-bottom: 40px; margin-left: 18px; margin-right: 18px;">
+					Unity Hospital <br />
+					Ahmedabad, IN <br />
+					Phone: 886 666 00555 <br />
+					Email: unityhospital@gmail.com 
+				</address>
+			</div><!--/col-md-4-->
+			<!-- End Address -->
+		</div><!--/row-->
+		</div>
+		</div>
+		</div><!--/footer-->
+
+		<div class="copyright">
+		<div class="container">
+        <div class="col-md-12">
+                        <div class="text-center">
+                            <p>2024 &copy; All Rights Reserved. <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+                        </div>
+                        <div class="social-links">
+                            <ul class="footer-socials">
+                                <li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="Facebook"></a></li>
+                                <li><a href="http://www.skype.com"><img src="img/skype.jpg" alt="Skype"></a></li>
+                                <li><a href="http://www.linkedin.com"><img src="img/linkdin.jpg" alt="Linkedin"></a></li>
+                                <li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a></li>
+                                <li><a href="http://www.instagram.com"><img src="img/instagram.jpg" alt="instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+		</div>
+		<!-- End Social Links -->
+
+		<!-- Your JavaScript code here -->
+<script>
+    // Function to open social media links in a new tab when clicked
+    document.addEventListener("DOMContentLoaded", function() {
+        var socialLinks = document.querySelectorAll('.footer-socials a');
+        socialLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default behavior of link click
+                var url = this.href;
+                window.open(url, '_blank'); // Open link in a new tab
+            });
+        });
+    });
+</script>
+</div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('appointment-form');
+            
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+                // Simulate form submission
+                showSuccessMessage();
+            });
+            
+            function showSuccessMessage() {
+                const successBox = document.querySelector('.alert-success');
+                if (successBox) {
+                    successBox.style.display = 'block';
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
