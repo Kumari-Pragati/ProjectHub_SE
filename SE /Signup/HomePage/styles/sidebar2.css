@@ -1,0 +1,193 @@
+
+.sidebar {
+  position: fixed;
+  background-color: white;
+  top: 57px;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  z-index: 200;
+  
+
+  padding-top: 20px;
+  transition: 0.7s;
+
+}
+
+
+
+.sidebar-link {
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+
+.sidebar-link div {
+
+
+  font-family: Roboto, Arial;
+  font-size: 10px;
+  transition: 0.7s;
+}
+
+.sidebar-link img {
+
+
+  height: 24px;
+
+  margin-top: 4px;
+  transition: 0.7s;
+
+}
+
+@media (max-width:1200px){
+  .sidebar {
+    position: fixed;
+    background-color: white;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    width: 72px;
+  
+    padding-top: 5px;
+    
+  }
+  
+  
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  
+  .sidebar-link div {
+  
+  
+    font-family: Roboto, Arial;
+    font-size: 10px;
+  }
+  
+  .sidebar-link img {
+  
+  
+    height: 24px;
+  
+    margin-top: 4px;
+  
+  
+  }
+  
+  
+  
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+}
+
+@media(min-width: 1201px){
+  .sidebar {
+    position: fixed;
+    background-color: white;
+    top: 57px;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 200;
+    
+  
+    padding-top: 5px;
+    
+  
+  }
+  
+  
+  .sidebar-link {
+    padding-left: 20px;
+    height: 44px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  
+  
+  .sidebar-link div {
+    
+    padding: 5px 10px 0 20px;
+  
+  
+    font-family: Roboto, Arial;
+    font-size: 10px;
+  }
+  
+  .sidebar-link img {
+    
+  
+  
+    height: 24px;
+  
+    margin-top: 4px;
+  
+  
+  }
+  
+  
+  
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+
+
+}
+
+
+
+
+
+
+/*.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+  }
+  
+  .sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+  }
+*/

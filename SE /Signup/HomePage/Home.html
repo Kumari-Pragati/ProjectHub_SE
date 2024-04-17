@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/video2.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header2.css">
+    <link rel="stylesheet" href="styles/sidebar2.css">
+    <title>Sociogram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        body {
+
+            padding-top: 64px;
+            padding-left: 96px;
+            padding-right: 20px;
+            margin: 0;
+            background-color: black;
+            font-family: Roboto;
+            height: 2000px;
+            
+        }
+
+        .video-time {
+            position: absolute;
+            font-size: 12px;
+            font-weight: bold;
+
+            background-color: black;
+            color: white;
+            bottom: 15px;
+            right: 5px;
+            border-radius: 3px;
+            padding: 3px;
+
+        }
+
+        .channel-info {
+            position: relative;
+
+            height: 39px;
+
+        }
+
+        .channel-info .tooltip {
+            display: flex;
+            flex-direction: row;
+            width: 190px;
+            height: 45px;
+            border-radius: 8px;
+            border: solid;
+            border-color: rgb(0, 0, 0, 0.1);
+            box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 10px;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.5s;
+
+
+
+        }
+
+        .channel-info:hover .tooltip {
+            opacity: 1;
+        }
+
+        .channel-info .tooltip .channel-photo {
+            width: 45px;
+            height: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img class="menuimg" src="icons/hamburger-menu.svg">
+            <img class="youtubeimg" src="icons/amd.svg">
+            <div class="appname">SOCIOGRAM</div>
+
+
+        </div>
+        <div class="middle">
+            <input class="search" type="text" placeholder="Search">
+            <button class="search-button">
+                <img class="search-icon" src="icons/search.svg">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search" src="icons/voice-search-icon.svg">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+
+
+        </div>
+        <div class="right">
+
+            
+            <div class="notification">
+                <img class="upload" src="icons/notifications.svg">
+
+                <div class="notifiaction-number">
+                    2
+                </div>
+                <div class="tooltip">Notifocations</div>
+
+            </div>
+            <a href="http://127.0.0.1:5503/Signup/HomePage/Profile/profile.html">
+                <img class="myprofile" src="icons/WhatsApp Image 2024-02-14 at 15.19.10.jpeg">
+
+            </a>
+                    </div>
+
+    </header>
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="icons/home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/icons8-explore-100.png">
+            <div style="margin-top: 5px;">Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/icons8-renew-100.png">
+            <div>Subscriptions</div>
+        </div>
+       
+        <div class="sidebar-link">
+            <img src="icons/icons8-history-100.png">
+            <div>History</div>
+        </div>
+        
+        <div class="sidebar-link">
+            <img src="icons/icons8-library-100.png">
+            <div>Library</div>
+        </div>
+    </nav>
+
+
+
+    <main class="video-grid">
+
+
+
+        <section class="video-preview">
+            <div class="thumbnail-row">
+                <a href="https://www.facebook.com/login/"> 
+                    <img class="thumbnail" src="applogo/facebook-logo.png">
+                </a>
+                <div>Facebook</div>
+
+            </div>
+
+            <div class="video-info-grid">
+
+
+                <div class="about">
+
+                    <div class="video-name">2,53,234
+                        <div class="creator-name">
+                            Followers
+                        </div>
+                    </div>
+                    <hr>
+                
+                    
+
+                    <div class="description">
+                        <img class="positive" src="applogo/arrow.png">
+                        <div>
+                            <b>+198k</b> likes/day
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-preview">
+            <div class="thumbnail-row">
+                
+                <a target="_blank" href="https://www.instagram.com/accounts/login/?next=%2Fsamnotsougly%2F&source=desktop_nav">
+                   
+                    <img class="instagram" src="applogo/2227.jpg">  
+                </a>
+                <div>Instagram</div>
+            </div>
+
+            <div class="video-info-grid">
+
+
+                <div class="about">
+
+                    <div class="video-name">1,35,368
+                        <div class="creator-name">
+                            Followers
+                        </div>
+                    </div>
+                    <hr>
+    
+                    <div class="description">
+                        <img class="positive" src="applogo/arrow.png">
+                        <div>
+                            <b>+25k</b> likes/day
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-preview">
+            <div class="thumbnail-row">
+                <img class="instagram" src="applogo/icons8-twitter-48.png">
+                <div>Twitter</div>
+
+            </div>
+
+            <div class="video-info-grid">
+
+
+                <div class="about">
+
+                    <div class="video-name">124,557
+                        <div class="creator-name">
+                            Followers
+                        </div>
+                    </div>
+                    <hr>
+                
+                    
+
+                    <div class="description">
+                        <img class="positive" src="applogo/arrow.png">
+                        <div>
+                            <b>+235k</b> Reach/day
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+    <div class="DeviceOverview">
+        <div class="heading">Device Overview</div>
+        <div class="subpart">
+            <img class="device" src="icons/icons8-computer-48.png">
+            <div>
+                <div class="devicename">Computer</div>
+                <div class="aboutdevice" >54% ‧ 5,787,654 Users </div>
+                <div class="increment">1.2% Increase</div>
+            </div>
+        </div>
+        <div class="subpart">
+            <img class="device1" src="icons/icons8-laptop-100.png">
+            <div>
+                <div class="devicename">Laptop</div>
+                <div class="aboutdevice" >23% ‧ 698,654 Users </div>
+                <div class="increment">2.1% Deccrease</div>
+
+            </div>
+            
+        </div>
+        <div class="subpart">
+            <img class="device1" src="icons/icons8-mobile-phone-100.png">
+            <div>
+                <div class="devicename">Mobile Phone</div>
+                <div class="aboutdevice" >14% ‧ 87,654 Users </div>
+                <div class="increment">3.2% Increase</div>
+            </div>
+           
+        </div>
+        <div></div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
