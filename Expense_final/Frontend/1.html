@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Trackify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <!--font links-->
+       
+   
+</head>
+<body>
+    <section class="Header ">
+    <div class=" Head_class">
+        <header class="d-flex px-4 py-3 mb-0 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img class="mylogo " src="./Images/logo.png" height="40" alt="Logo" >
+          </a>
+    
+          <ul class="nav nav nav-underline">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-dark ">FAQ</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-dark ">Contact us</a></li>
+            <li class="nav-item"><a href="./homepage.html" class="nav-link text-dark">Logout</a></li>
+          </ul>
+        </header>
+      </div>
+
+      <div class="image-container">
+        <img class="img-fluid" src="./Images/closeup-shot-entrepreneur-working-from-home-his-personal-finances-savings.jpg"  >
+        <h1 class="overlay-text">Manage your<br> Expenses efficiently<br> with us ...</h1>
+      </div>
+
+
+      <div class="popup-message" id="popupMessage" style="display: none;">
+        <span class="popup-text" id="popupText">Submited successfully</span>
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+      </div>
+      
+
+      <div class="d-flex justify-content-center">
+      <div class="container row text-center my-5 align-items-center m">
+        <div class="col ">
+          <img class="rounded-image" src="./Images/Add_Exp.png" alt="Circular Image">
+          
+          <p>Add your daily expenses</p>
+          <p><a id="Expense_adder" class="btn btn-primary " onclick="openform()">Add Expense »</a></p>
+        </div>
+        <div class="col">
+          <img class="rounded-image" src="./Images/View_exp.png">
+          
+          <p>View your expenses</p>
+          <p><a id="Expense_viewer" class="btn btn-primary" href="./new_view.html">View Expense »</a></p>
+        </div>
+        <div class="col">
+          <img class="rounded-image" src="./Images/Stats.png">
+          <p>Get your expenses report</p>
+          <p><a id="report_viewer" class="btn btn-primary" href="./report.html">Get Report »</a></p>
+        </div>
+      </div>
+    </div>
+
+
+      <footer class="footer">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4>Features</h4>
+            <ul>
+              <li><a href="#">Expense Management</a></li>
+              <li><a href="#">Spend Management</a></li>
+              <li><a href="#">Company Card</a></li>
+              <li><a href="#">Receipt Scanning App</a></li>
+              <li><a href="#">Payments</a></li>
+              <li><a href="#">Invoicing</a></li>
+              <li><a href="#">Travel</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">ExpenseTrackify Approved!</a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">ExpenseTrakify app</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Learn more</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">ExpenseTrackify.org</a></li>
+              <li><a href="#">Investor Relations</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <p class="footer-copyright">© 2024 Expense_Trackify</p>
+      </footer>
+    
+
+    </div>
+
+    <div class="form-popup" id="myform">
+      <span class="close" onclick="closeForm()"></span>
+
+      <h1>Add Expense</h1>
+      <form id="expenseForm" action="../project.php" method="POST" >
+          <label for="amount">Amount Spend:</label>
+          <input type="text" id="amount" name="amount" required>
+          
+          <label for="date">Date of Investment:</label>
+          <input type="date" id="date" name="date" required>
+          
+          <label for="description">Description:</label>
+          <input type="text" id="description" name="description">
+          
+          <label for="mode">Mode of Payment:</label>
+          <select id="mode" name="mode" required>
+              <option value="UPI">UPI</option>
+              <option value="Credit Card">Credit Card</option>
+              <option value="Cash">Cash</option>
+          </select>
+          
+          <label for="category">Category:</label>
+          <select id="category" name="category" required>
+              <option value="Household Bill">Household Bill</option>
+              <option value="Travelling">Travelling</option>
+              <option value="Food">Food</option>
+              <option value="Cloths">Cloths</option>
+              <option value="Study Material">Study Material</option>
+              <option value="Grocery">Grocery</option>
+              <option value="Medical">Medical</option>
+              <option value="Entertainment">Entertainment</option>
+          </select>
+          
+          <input type="submit" value="Submit" >
+      </form>
+  </div>
+    </body>
+    </html>
+
+  

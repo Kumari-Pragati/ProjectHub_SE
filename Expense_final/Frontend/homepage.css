@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #e7e7e7;
+    padding: 5px;
+    text-align: center;
+  }
+  .hero-content h2 {
+    font-size: 2vw;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Segoe UI";
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right ul li {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li span {
+    padding: 0 5px;
+
+}
+.right ul li span a{
+    text-decoration: none;
+
+
+}
+
+
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    height: 500px; 
+    background-image: url("https://img.freepik.com/free-photo/business-team-situation-present-share-idea_1421-633.jpg?t=st=1712937779~exp=1712941379~hmac=507628bd97a3789ac4bad7bbeaff5392de5f5d189b5c7184fd1dfec574d61a67&w=1060"); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero img {
+    width: 50%;
+    object-fit: cover; 
+  }
+  
+  .hero-content {
+    height: 10vh;
+    background-color: #333;
+    width: 40%;
+    margin-left: 10%;
+    opacity:  75%;
+    border-radius: 2vh;
+    padding: 60px;
+    color: #ffffff;
+  }
+  
+  .btn {
+    background-color: #faf5f5;
+
+    color:#191717;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .about, .benefits {
+    height: 20vh;
+    box-shadow:5px 5px 5px 5px #333;
+    background-color: #ffffff;
+    width: 70%;
+    margin: 10% 5%;
+    padding: 40px;
+    z-index: 10;
+    display: flexbox;
+  }
+  .about, .benefits h2 {
+    padding: 20px;
+
+  }
+
+  .benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .benefits li {
+    margin-bottom: 10px;
+  }
+  
+  .trust img {
+    width: 150px;
+    margin: 0 10px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-column {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  .footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li a{
+    margin-bottom: 5px;
+    color: rgb(6, 6, 211);
+  }
+
+  .footer-copyright {
+    margin-top: 20px;
+  }
+
+  /* .btn-primary{
+    background-color: blue;
+  }
+
+:hover.btn-primary{
+
+} */

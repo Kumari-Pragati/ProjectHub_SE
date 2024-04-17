@@ -1,0 +1,172 @@
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-column {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  .footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+
+  .footer-copyright {
+    margin-top: 20px;
+  }
+
+  .image-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 5vw;
+    color: white;
+    background-color: rgba(78, 47, 236, 0.7);
+    padding: 10px;
+}
+
+
+.rounded-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+.container{
+  justify-content: center;
+  justify-content: space-around;
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 30%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  background-color: white;
+  padding: 20px;
+  max-width: 500px;
+  min-width: 40%;
+}
+
+
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: dodgerblue;
+}
+
+input[type="submit"] {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #007bff;
+}
+
+
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.7;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 25px;
+  width: 2px;
+  background-color: #d81010;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
+ 
+.popup-message {
+ 
+  position: fixed;
+  bottom: 45%;
+  right: 45%;
+  border: 3px solid #0bd326;
+  z-index: 9;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  max-width: 500px;
+  min-width: 10%;
+  color: green;
+  font-weight: bold;
+  border-radius: 5%;
+}
