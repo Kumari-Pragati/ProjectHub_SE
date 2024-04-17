@@ -14,6 +14,3 @@ Tushant Akar (202251146)
 Vaddadi Lakshmi Nihalmai Joshna (202251149)
 Anjali Lodhi (202252306)
 Prashant Reddy (202252315)
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
