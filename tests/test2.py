@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.service import Service
 options = Options()
 options.add_experimental_option("detach", True)
 
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(executable_path='tests\driver\chromedriver.exe',options=options)
 username="User"+str(random.randint(0,1000))
 
 driver.get("http://localhost:5173/login")
