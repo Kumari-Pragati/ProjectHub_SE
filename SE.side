@@ -1,0 +1,183 @@
+{
+  "id": "4bea1fdf-a365-4c53-91a1-7d2546d1333c",
+  "version": "2.0",
+  "name": "SE",
+  "url": "http://localhost:3000/",
+  "tests": [{
+    "id": "9c314570-ea5d-4472-9112-006a58824e85",
+    "name": "",
+    "commands": []
+  }, {
+    "id": "736a3ea7-e76f-4e48-964f-a110e9d5c928",
+    "name": "test",
+    "commands": [{
+      "id": "0b8581fe-f849-4f63-a69c-42f85d349856",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "703431f1-481f-4597-b276-f3db43ff5961",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ed247a1-4114-43f9-9116-911616de2908",
+      "comment": "",
+      "command": "click",
+      "target": "css=.whitespace-nowrap",
+      "targets": [
+        ["css=.whitespace-nowrap", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5871cf0c-19ae-40a3-bbc0-92035dfa5f4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.whitespace-nowrap",
+      "targets": [
+        ["css=.whitespace-nowrap", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb74ef18-48ac-4670-a3e9-0fad8f4b96e1",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.whitespace-nowrap",
+      "targets": [
+        ["css=.whitespace-nowrap", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1906aa1d-0658-45ef-b5f6-f97f59780437",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Convert Bill",
+      "targets": [
+        ["linkText=Convert Bill", "linkText"],
+        ["css=.flex:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Convert Bill')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/upload')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Convert Bill')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eded12e1-cd2d-4649-be85-674f0000eed5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.gap-3:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/bills')]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6771950c-4915-4451-86f4-9021fb5dc032",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.flex:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[3]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c2d4a929-0061-4d66-bad4-8ebbece123bf",
+    "name": "test2",
+    "commands": [{
+      "id": "60de5076-3406-4c7e-a9ee-662ef9457330",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f16844f1-fb1d-4436-8bed-cf86d24db611",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "420ef4b8-7484-45e4-911c-59a0091c7bc0",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@type='file']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4768a5f-ac56-4c15-ac84-529428014cd2",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@type='file']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\ediText.txt"
+    }, {
+      "id": "4d9574e1-ebf8-47e0-8f28-728f92134fe8",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload and Convert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1513027d-46e1-47d5-a593-2bf62fb1cd9e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a61695e-34b4-4c73-bf7e-8a40707e04fe",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "229175e5-cebc-4a30-b03d-0a4050f1f0e9",
+    "name": "",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9c314570-ea5d-4472-9112-006a58824e85"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
