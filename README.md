@@ -1,2 +1,24 @@
-# ProjectHub_SE
-This GitHub repository contains the Software Engineering Lab projects for educational purposes. It includes comprehensive project documentation, source code, and testing frameworks to help students learn and contribute. Explore, learn, and contribute to help improve your software engineering skills. 
+# Whitecollar-services
+## Group Members
+- Abhijeet singh
+- Abhishek kumar 
+- Rohit Varshney
+- Shailesh Kumar singh
+- Poojan Barliya 
+- Krishna Chaitnya
+
+
+# Backend Setup 
+`cd backend` 
+
+`npm install`
+
+`nodemon server.js`
+
+# Frontend Setup 
+
+`cd frontend`
+
+`npm install`
+
+`npm start`
