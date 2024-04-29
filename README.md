@@ -16,3 +16,7 @@ Steps to Launch:
     npm init
     npm run dev
    ```
+6. To run tests just enter
+   ```
+   npm test
+   ```
