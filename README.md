@@ -1,2 +1,3 @@
-# ProjectHub_SE
-This GitHub repository contains the Software Engineering Lab projects for educational purposes. It includes comprehensive project documentation, source code, and testing frameworks to help students learn and contribute. Explore, learn, and contribute to help improve your software engineering skills. 
+# Book Selling System
+Welcome to our Book Selling Website! This platform is designed to provide a convenient and efficient way for users to buy and sell books online. Whether you're a book lover looking to expand your collection or a seller hoping to reach a wider audience, our website offers a user-friendly interface and a range of features to meet your needs.
+

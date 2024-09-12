@@ -1,0 +1,25 @@
+.imgmanager{
+    width: 95vw;
+    max-height: 85vh;
+  
+
+}   
+
+
+@media screen and (max-width: 600px) {
+    .imgmanager{
+        width: 99vw;
+        max-height: 280px;
+     
+    
+    } 
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mgn{
+    margin-bottom: 30px !important;
+  }

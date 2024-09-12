@@ -1,0 +1,149 @@
+.size{
+    border: 1px solid #e0e0e0;
+    box-shadow: 1px 1px 4px 0px rgba(53, 53, 53, 0.75);
+    width: 250px ;
+    background-color: rgb(255, 255, 255) !important;
+    
+}
+
+.img-dynamics{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+
+}
+.line{
+    background-color: rgb(183, 179, 179);
+    height: 0.3px;
+}
+.text-design{
+    font-size: 0.85rem;
+    max-height: 5rem;
+    overflow: hidden;
+    text-align: start;
+}
+
+.text-design2{
+    font-size: 0.85rem;
+    max-height: 3rem;
+    overflow: hidden;
+    text-align: start;
+}
+
+.MAIN:hover{
+    scale: 1.2;
+    margin-top: 50px!important;
+    margin-bottom: 50px;
+}
+
+.MAIN{
+ 
+  
+}
+.offer{
+    font-size: 1.3rem !important;
+    color: #1f55de !important;
+    font-weight: 500;
+}
+.mrp{
+    font-size: 1.1rem;
+    color: #9e9e9e;
+    text-decoration: line-through;
+    padding-right: 8px;
+}
+
+@media screen and (max-width: 800px) {
+    .size{
+        border: 1px solid #e0e0e0;
+        width: 200px ;
+    }
+    
+    .img-dynamics{
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+        
+    
+    }
+    
+    .text-design{
+        font-size: 0.85rem;
+    }
+    
+    .offer{
+        font-size: 1.2rem !important;
+        color: #1f55de;
+        font-weight: 400 !important;
+    }
+    .mrp{
+        font-size: 0.9rem !important;
+        color: #1f55de;
+        text-decoration: line-through;
+    }
+    
+}
+    
+
+@media screen and (max-width: 600px) {
+    .size{
+        border: 1px solid #e0e0e0;
+        width: 165px;
+        
+    }
+    
+    .img-dynamics{
+        width: 155px;
+        height: 155px;
+        object-fit: cover;
+    
+    }
+    
+    .text-design{
+        font-size: 0.75rem;
+    }
+    
+  
+    .mrp{
+        font-size: 0.70rem !important;
+        color: #9e9e9e;
+        text-decoration: line-through;
+    }
+
+    .offer{
+        font-size: 1rem !important;
+        color: #1f55de !important;
+        font-weight: 400 !important;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    .size{
+        border: 1px solid #e0e0e0;
+        width: 260px ;
+        
+    }
+    
+    .img-dynamics{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    
+    }
+    
+    .text-design{
+        font-size: 0.80rem;
+    }
+
+    .mrp{
+        font-size: 0.65rem !important;
+        color: #9e9e9e;
+        text-decoration: line-through;
+    }
+    .offer{
+        font-size: 0.95rem !important;
+        color: #1f55de;
+        font-weight: 400;
+    }
+
+}
